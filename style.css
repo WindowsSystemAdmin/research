@@ -1,0 +1,965 @@
+html {
+	margin-left: 5;
+	margin-top: 5;
+	padding: 0;
+}
+body, td { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	margin: 3; 
+	padding: 0;
+}
+.forms {
+background-color: #E4F8FA;
+font: normal 12px arial,verdana;
+padding: 3px;
+
+border: 1px solid #CAE4FF;
+}
+
+.myaccount {
+background-color: #E4F8FA;
+font: normal 12px arial,verdana;
+padding: 2px 5px;
+border: 2px solid #CAE4FF;
+
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.padded {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.index {
+	width: 148px;
+}
+
+.index {
+	padding: 3px;
+}
+
+.sa {
+	background: rgba(132,108,67,.7);
+}
+
+.ba {
+	background: rgba(183,139,19,.7);
+}
+
+.ia {
+	background: rgba(114,47,20,.7);
+}
+
+.ema {
+	background: rgba(80,129,69,.7);
+}
+
+.hma {
+	background: rgba(47,141,141,.5);
+}
+
+.lma {
+	background: rgba(126,66,134,.5);
+}
+
+.ca {
+	background: rgba(161,86,5,.5);
+}
+
+.inda {
+	background: rgba(169,41,38,.5);
+}
+
+.pe {
+	background: rgba(182,152,96,.5);
+}
+
+.me {
+	background: rgba(91,161,230,.5);
+}
+
+.pme {
+	background: rgba(166,177,168,.5);
+}
+
+.ce {
+	background: rgba(255,142,109,.5);
+}
+
+.te {
+	background: rgba(64,67,72,.5);
+}
+
+.fe {
+	background: rgba(143,192,95,.5);
+}
+
+.afe {
+	background: rgba(220,220,220,.5);
+}
+
+.ofe {
+	background: rgba(28,81,67,.5);
+}
+
+.vfe {
+	background: rgba(37,12,88,.7);
+}
+
+
+.main {
+font: normal 12px arial,verdana;
+padding: 2px;
+margin: 2px;
+
+ }
+ 
+.titlehdr {
+ font: normal 22px arial, verdana;
+ color: #c00;
+ border-bottom: 1px solid #c00;
+ 
+ 
+ }
+ 
+.msg {
+padding: 5px;
+width: 600px;
+margin: 2px;
+color: #c00;
+border: 2px solid #c00;
+background-color: #FEF1ED;
+font: bold 13px  verdana;
+} 
+ 
+.error {
+font: normal 11px arial, verdana;
+color: #c00;
+border: 2px solid #c00;
+padding: 2px;
+margin: 5px;
+float: left;
+background-color: #FEF1ED;
+}
+ 
+.example {
+font: normal 10px arial;
+color: red;
+}
+
+.approved {
+font: normal 10px arial;
+color: green;
+}
+
+.loginform {
+font: 16px normal arial;
+background-color: #fff;
+font: normal 12px arial,verdana;
+padding: 3px;
+
+}
+
+.loginform #txtbox {
+font: bold 12px arial;
+color: #000;
+}
+
+.button_home {
+	position: absolute;
+	left: 127px;
+	top: 19px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.button_empire {
+	position: absolute;
+	left: 127px;
+	top: 43px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.button_military {
+	position: absolute;
+	left: 127px;
+	top: 67px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.button_tools {
+	position: absolute;
+	left: 127px;
+	top: 91px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.nav_line_on {
+	position: absolute;
+	left: 70px;
+	top: 11px;
+}
+
+.main_tab {
+	position: absolute;
+	top: 124px;
+}
+
+.main_tab_text {
+	position: absolute;
+	top: 128px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.sub_tab {
+	position: absolute;
+	top: 0px;
+	font-weight: normal;
+	font-size: 13px;
+	font-family: sans-serif,arial,verdana;
+	font-weight:bold;
+	color: #FFFFFF;
+}
+
+.main_text_area { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	position: absolute;
+	width: 93%;
+	height: 75%;
+	left: 30px;
+	right: 30px;
+	top: 145px;
+	border-width: 3px;
+	border-style: solid;
+	background-color:#ffffff;
+	padding-left: 20px;
+}
+
+.main_text { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+
+	height: 93%;
+	background:#ffffff none repeat scroll 0 0;
+	overflow:auto;
+	position:relative;
+	top:30px;
+	z-index:3;
+
+}
+
+.main_text_ff { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+
+	background:#ffffff none repeat scroll 0 0;
+	overflow:auto;
+	position:absolute;
+	left:15px;
+	right:5px;
+	top:30px;
+	bottom:10px;
+	z-index:3;
+
+}
+
+div.dyntext { 
+	font-family: arial, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+a:link { 
+	font-weight: bold;
+	color: #0000ff;
+	text-decoration: none;
+}
+
+a:visited { 
+	font-weight: bold;
+	color: 660066;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline; 
+}
+
+a:active { 
+	text-decoration: none; 
+}
+
+table.menu {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+	width: 800px;
+	border: 0px;
+	border-spacing: 2px;
+}
+
+table.viewtowndata {
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	width: 785px;
+	border: 1px #000000 solid;
+	border-spacing: 2px;
+	
+}
+
+td.menulogo { 
+	text-align: left;
+	vertical-align: top;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.menucenter { 
+	text-align: center;
+	vertical-align: bottom;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.menuleft { 
+	text-align: left;
+	vertical-align: bottom;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.menuright { 
+	text-align: right;
+	vertical-align: bottom;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.logincenter { 
+	text-align: center;
+	vertical-align: middle;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.loginleft { 
+	text-align: left;
+	vertical-align: middle;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.loginright { 
+	text-align: right;
+	vertical-align: middle;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.menulogin { 
+	text-align: right;
+	vertical-align: top;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.menulogout { 
+	text-align: right;
+	vertical-align: top;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+td.standardcenter { 
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.standardright { 
+	text-align: right;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+td.smallleft { 
+	text-align: left;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+td.smallcenter { 
+	text-align: center;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+td.smallright { 
+	text-align: right;
+	font-family: arial, helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 9px;
+}
+
+td.headericon { 
+	text-align: center;
+}
+
+td.linktext { 
+	text-align: center;
+}
+
+td.headertext { 
+	text-align: left;
+}
+
+.world { 
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 2;
+}
+
+.con_world_divide { 
+	background-color: grey;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	padding: 2;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.construction { 
+	background-color: #be8b66;
+}
+
+.attacks { 
+	background-color: #d63030;
+}
+
+.attack { 
+	background-color: #d63030;
+}
+
+.transports { 
+	background-color: mediumseagreen;
+}
+
+.artefacts { 
+	background-color: gold;
+}
+
+.research { 
+	background-color: mediumorchid;
+}
+
+.att_cell {
+	width: 10px;
+}
+
+.def_cell { 
+	border-style:solid;
+	border-width:1px;
+	border-right:thin #000000;
+	border-top:thin #000000;
+	border-bottom:thin #000000;
+}
+
+.resource { 
+	text-align: center;
+	font-weight: normal;
+	background-color: lightsalmon;
+	padding: 1px;
+}
+
+.resources { 
+	text-align: center;
+	font-weight: normal;
+	background-color: lightsalmon;
+	padding: 1px;
+}
+
+.pretty { 
+	text-align: left;
+	font-weight: normal;
+	white-space: nowrap;
+	padding: 1px;
+}
+
+.pretty_time { 
+	text-align: center;
+	font-weight: bold;
+	white-space: nowrap;
+	padding: 2px;
+}
+
+.bonus { 
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.level { 
+	background-color: #666666;
+	text-align: center;
+	font-weight: bold;
+	white-space: nowrap;
+	padding: 2px;
+	font-size: 14px;
+}
+
+.production { 
+	text-align: center;
+	font-weight: normal;
+	background-color: darkseagreen;
+	padding: 2px;
+}
+
+.building { 
+	text-align: center;
+	font-weight: normal;
+	background-color: sandybrown;
+	padding: 2px;
+}
+
+.build { 
+	background-color: sandybrown;
+}
+
+.mexican { 
+	text-align: center;
+	width: 100px;
+	padding: 7px;
+}
+
+.indian { 
+	text-align: center;
+	width: 100px;
+	padding: 7px;
+}
+
+.cowboy { 
+	text-align: center;
+	width: 100px;
+	padding: 7px;
+}
+
+.buildings { 
+	text-align: center;
+	font-weight: normal;
+	background-color: sandybrown;
+	padding: 2px;
+}
+
+.military { 
+	text-align: center;
+	font-weight: normal;
+	background-color: lightsteelblue;
+	padding: 2px;
+}
+
+.defence { 
+	text-align: center;
+	font-weight: normal;
+	background-color: lightsteelblue;
+	padding: 2px;
+}
+
+.head { 
+	text-align: center;
+	vertical-align: center;
+	font-weight: normal;
+	padding: 3px;
+}
+
+.icon {
+	width: 10px;
+}
+
+.mini_icon {
+	width: 50px;
+	height: 20px;
+	padding: 5px;
+	spacing: 5px;
+}
+
+.nav {
+	width: 30px;
+	text-align: left;
+	vertical-align: bottom;
+	border-collapse:collapse;
+}
+.mini_table {
+	height: 35px;
+	padding-right: 0px;
+	padding-left: 0px;
+	spacing-right: 0px;
+	spacing-left: 0px;
+	vertical-align: bottom;
+}
+
+.townbuilding { 
+	text-align: center;
+	vertical-align: bottom;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.res_figures { 
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.townhead { 
+	background-color: #999999;
+	text-align: center;
+	vertical-align: bottom;
+	font-weight: bold;
+	padding: 3px;
+	font-size: 14px;
+}
+
+.townlevel { 
+	background-color: lightgrey;
+	text-align: center;
+	vertical-align: bottom;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.town { 
+	text-align: right;
+	vertical-align: middle;
+	font-weight: bold;
+	white-space: nowrap;
+	padding: 4px;
+}
+
+.sep { 
+	background-color: #000000;
+	padding: 2px;
+}
+
+.alert { 
+	background-color: #ff3333;
+	font-weight: bold;
+}
+
+.inprog { 
+	background-color: #33cc33;
+	font-weight: bold;
+}
+
+.inprog_down { 
+	background-color: #cc3333;
+	font-weight: bold;
+}
+
+.upg { 
+	background-color: #aaffaa;
+}
+
+.noupg { 
+	background-color: #ff6666
+}
+
+.max { 
+	background-color: #66aaff;
+	font-weight: bold;
+}
+
+.total { 
+	background-color: #cccccc;
+}
+
+.perfect { 
+	color: goldenrod;
+	font-weight: bold;
+}
+
+.bonus { 
+	color: #0000FF;
+	font-weight: bold;
+}
+
+.win { 
+	color: #0000FF;
+	font-weight: bold;
+}
+
+.notify { 
+	color: dimgray;
+	font-weight: bold;
+}
+.critical { 
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.danger { 
+	color: #cc0000;
+	font-weight: bold;
+}
+
+.warning { 
+	color: #0000cc;
+	font-weight: bold;
+}
+
+.fine { 
+	color: #00aa00;
+	font-weight: bold;
+}
+
+.static { 
+	color: #000000;
+	font-weight: bold;
+}
+
+.figures { 
+	text-align: center;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+.mini_battles {
+	width: 200px;
+	border: 1px solid black;
+	padding: 1px;
+	vertical-align: middle;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.bwhen {
+	text-align: left;
+	width: 70px;
+}
+
+.bcoord {
+	text-align: left;
+	width: 45px;
+}
+
+.bmax {
+	text-align: center;
+	width: 12px;
+}
+
+.btroop {
+	text-align: center;
+	width: 12px;
+}
+
+.bbuild {
+	text-align: center;
+	width: 12px;
+}
+
+.brace {
+	text-align: center;
+	width: 12px;
+}
+
+.minib_1 {
+	background-color: #CAC293;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.minib_2 {
+	background-color: #EAF2D3;
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.gtip_table {
+	border: 0px;
+	padding: 0px;
+	vertical-align: middle;
+}
+
+.gtip_data { 
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.con_image { 
+	background-color: #ffffff;
+	vertical-align: middle;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.art_image { 
+	vertical-align: top;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.art_neg { 
+	background-color: #ff6666
+}
+
+.art_p , .art_n { 
+	background-color: gold;
+}
+
+.art_pos { 
+	background-color: #aaffaa;
+}
+
+.con_figures { 
+	padding: 0px;
+}
+
+.countdown { 
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.minitable4 { 
+	width: 200px;
+}
+
+.minitable6 { 
+	width: 300px;
+}
+
+.mini { 
+	width: 20px;
+}
+
+.mini_type_1 {
+	background-color: #ccccff;
+	text-align: right;
+	vertical-align: middle;
+	padding: 1px;
+}
+
+.mini_type_2 {
+	background-color: #aaaaff;
+	text-align: right;
+	vertical-align: middle;
+	padding: 1px;
+}
+
+.mini_data_1 {
+	background-color: #ccccff;
+	text-align: left;
+	vertical-align: middle;
+	padding: 1px;
+}
+
+.mini_data_2 {
+	background-color: #aaaaff;
+	text-align: left;
+	vertical-align: middle;
+	padding: 1px;
+}
+
+.login_details { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	position: absolute;
+	top: 1px;
+	right: 55px;
+}
+
+.logout { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	text-align: right;
+	position: absolute;
+	top: 2px;
+	right: 5px;
+}
+
+.login_row { 
+	width: 785px;
+	text-align: left;
+	vertical-align: bottom;
+	font-weight: normal;
+	padding: 1px;
+	background-color: #ffffff;
+	white-space: nowrap;
+}
+
+.minilogin_row { 
+	width: 187px;
+	text-align: left;
+	vertical-align: bottom;
+	font-weight: normal;
+	padding: 1px;
+	background-color: #ffffff;
+	white-space: nowrap;
+}
+
+.minilogin_details { 
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	vertical-align: middle;
+	position: relative;
+	top: 1px;
+	white-space: nowrap;
+}
+
+.minilogout { 
+	width: 42px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 10px;
+	text-align: right;
+	vertical-align: middle;
+	position: relative;
+	top: 2px;
+	white-space: nowrap;
+}
+
+acronym {
+	border-bottom: none;
+}
