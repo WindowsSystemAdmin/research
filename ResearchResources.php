@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<meta name="viewport" content="width=350", initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
-	<title>Trade Tools - Figures Table</title>
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="jquery-2.1.3.min.js"></script>
-	<script src="jquery-hashtable.js"></script>
-	<script src="jquery.numberformatter-1.2.4.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('input[type=checkbox]').change(function (event) {
-				$e = $(event.target);
-				json = $.parseJSON($e.attr('data-obj'));
-				if (typeof json !== 'undefined') {
-					for (var key in json) {
-						if (json.hasOwnProperty(key)) {
-							switch(key) {
-								case 'depend' :
-									// Handle dependencies later
-								break;
-								default :
-									keyname = key;
-									switch ($e.prop('checked')) {
-										case true :
-											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
-										break;
-										case false :
-											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
-										break;
-									}
-								break;
-							};
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+		<meta name="viewport" content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"></meta>
+		<title>Trade Tools - Figures Table</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="jquery-2.1.3.min.js"></script>
+		<script src="jquery-hashtable.js"></script>
+		<script src="jquery.numberformatter-1.2.4.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input[type=checkbox]').change(function (event) {
+					$e = $(event.target);
+					json = $.parseJSON($e.attr('data-obj'));
+					if (typeof json !== 'undefined') {
+						for (var key in json) {
+							if (json.hasOwnProperty(key)) {
+								switch(key) {
+									case 'depend' :
+										// Handle dependencies later
+									break;
+									default :
+										keyname = key;
+										switch ($e.prop('checked')) {
+											case true :
+												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
+											break;
+											case false :
+												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
+											break;
+										}
+									break;
+								};
+							}
+						}
+						if (typeof json.depend !== 'undefined') {
+							$(json.depend).each(function(idx, value) {
+								$nextE = $('input[name='+value+']');
+								if($nextE.prop('checked') != $e.prop('checked')) {
+									$nextE.prop('checked', $e.prop('checked'));
+									$nextE.trigger('change');
+								}
+							});
+							return true;
 						}
 					}
-					if (typeof json.depend !== 'undefined') {
-						$(json.depend).each(function(idx, value) {
-							$nextE = $('input[name='+value+']');
-							if($nextE.prop('checked') != $e.prop('checked')) {
-								$nextE.prop('checked', $e.prop('checked'));
-								$nextE.trigger('change');
-							}
-						});
-						return true;
-					}
-				}
+				});
 			});
-		});
 		</script>
-		</head>
+	</head>
 	<body bgcolor=#FFFFFF leftmargin=2 >
-	
-<br><table border=1><tr><td class="padded bold" colspan="10">Resources Required for Remaining Research</td></tr>
+	<br>
+		<table border=1>
+			<tr>
+				<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
+			</tr>
 <tr>
 <td colspan=2 align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> <span id=FP>34,917</span></td>
 <td colspan=2 align=center><img src=/FoE/images/Coins.png alt="Coins" title="Coins" align=absmiddle> <span id=Coins>249,980,493</span></td>
