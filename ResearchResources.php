@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -5515,3 +5516,5 @@
 <td class="padded" align=center>Energy Preserving Surfaces</td>
 </tr>
 </table>
+</body>
+</html>
