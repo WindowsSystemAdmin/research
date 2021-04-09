@@ -5463,16 +5463,55 @@
 <td class="padded" align=center>Reliable Hash Generators<br>Accelerated Food Engineering<br>Compounding Robotics</td>
 </tr>
 <tr class="vfe bold index">
-<td align=center><input type="checkbox" name="357" id="357" data-obj='{"depend":[354],"Biolight":"250","Tea Silk":"160","FP":"245","Supplies":"19,000,000","Golden_Rice":"140"}'></td>
+<td align=center><input type="checkbox" name="357" id="357" data-obj='{"depend":[354],"Pearls":"300","Tea Silk":"150","FP":"235","Data Crystals":"150","Orichalcum":"180"}'></td>
 <td class="padded">Energy Preserving Surfaces</td>
-<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 245</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 235</td>
 <td class="padded" align=center>&nbsp;</td>
-<td class="padded" align=center><img src=/FoE/images/Supplies.png alt="Supplies" title="Supplies" align=absmiddle> 19,000,000</td>
 <td class="padded" align=center>&nbsp;</td>
-<td class="padded" align=center><img src=/FoE/images/Biolight.png alt="Biolight" title="Biolight" align=absmiddle> 250</td>
-<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 160</td>
-<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 140</td>
+<td class="padded" align=center><img src=/FoE/images/Pearls.png alt="Pearls" title="Pearls" align=absmiddle> 300</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 150</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 150</td>
 <td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 180</td>
 <td class="padded" align=center>Compounding Robotics</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="358" id="358" data-obj='{"depend":[355],"Artificial Scales":"280","Golden Rice":"180","FP":"240","Data Crystals":"120","Orichalcum":"210"}'></td>
+<td class="padded">Public Emitters</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 240</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Artificial_Scales.png alt="Artificial Scales" title="Artificial Scales" align=absmiddle> 280</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 180</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 120</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 210</td>
+<td class="padded" align=center>Quantum Photogrammetry</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="359" id="359" data-obj='{"depend":[356,357],"Corals":"230","Nanites":"180","FP":"250","Cryptocash":"200","Promethium":"210"}'></td>
+<td class="padded">Codex of Honor 2.0</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 250</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Corals.png alt="Corals" title="Corals" align=absmiddle> 230</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 180</td>
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 200</td>
+<td class="padded" align=center><img src=/FoE/images/Promethium.png alt="Promethium" title="Promethium" align=absmiddle> 210</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Secured VR Domains<br>Energy Preserving Surfaces</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="360" id="360" data-obj='{"depend":[357],"Plankton":"200","Nanites":"160","FP":"250","Cryptocash":"180","Orichalcum":"210"}'></td>
+<td class="padded">Responsive Holo-Enterainment</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 250</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Plankton.png alt="Plankton" title="Plankton" align=absmiddle> 200</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 160</td>
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 180</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 210</td>
+<td class="padded" align=center>Energy Preserving Surfaces</td>
 </tr>
 </table>
