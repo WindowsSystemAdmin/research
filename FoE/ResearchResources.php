@@ -5462,4 +5462,17 @@
 <td class="padded" align=center>&nbsp;</td>
 <td class="padded" align=center>Reliable Hash Generators<br>Accelerated Food Engineering<br>Compounding Robotics</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="357" id="357" data-obj='{"depend":[354],"Biolight":"250","Tea Silk":"160","FP":"245","Supplies":"19,000,000","Golden_Rice":"140"}'></td>
+<td class="padded">Energy Preserving Surfaces</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 245</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Supplies.png alt="Supplies" title="Supplies" align=absmiddle> 19,000,000</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Biolight.png alt="Biolight" title="Biolight" align=absmiddle> 250</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 160</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 140</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Compounding Robotics</td>
+</tr>
 </table>
