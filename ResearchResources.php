@@ -5518,6 +5518,32 @@
 <td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 210</td>
 <td class="padded" align=center>Energy Preserving Surfaces</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="361" id="361" data-obj='{"depend":[358],"Plankton":"290","Golden Rice":"160","FP":"256","Tea Silk":"200","Orichalcum":"260"}'></td>
+<td class="padded">Noise-Cancelling Concrete</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 256</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Plankton.png alt="Plankton" title="Plankton" align=absmiddle> 290</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 160</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 200</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 260</td>
+<td class="padded" align=center>Public Emitters</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="362" id="362" data-obj='{"depend":[359,360,361],"Biolight":"230","Nanites":"190","FP":"270","Data Crystals":"150","Promethium":"200"}'></td>
+<td class="padded">Cybernetically Augmented Ninjutsu</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 270</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Biolight.png alt="Biolight" title="Biolight" align=absmiddle> 230</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 190</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 150</td>
+<td class="padded" align=center><img src=/FoE/images/Promethium.png alt="Promethium" title="Promethium" align=absmiddle> 200</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Codex of Honor 2.0<br>Responsive Holo-Enterainment<br>Noise-Cancelling Concrete</td>
+</tr>
 </table>
 </body>
 </html>
