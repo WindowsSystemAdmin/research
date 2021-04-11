@@ -5583,6 +5583,71 @@
 <td class="padded" align=center>&nbsp;</td>
 <td class="padded" align=center>Cybernetically Augmented Ninjutsu</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="366" id="366" data-obj='{"depend":[363,364],"Data Crystals":"240","Nanites":"210","FP":"265","Supplies":"30,000,000","Tea Silk":"160"}'></td>
+<td class="padded">Cultural Resurgence</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 265</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Supplies.png alt="Supplies" title="Supplies" align=absmiddle> 30,000,000</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 210</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 240</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 160</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Crypto Gambling<br>VR Overlays</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="367" id="367" data-obj='{"depend":[363,364],"Cryptocash":"240","Nanites":"230","FP":"260","Golden Rice":"180","Promethium":"200"}'></td>
+<td class="padded">VR Domain Archiving</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 260</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 240</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 230</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 180</td>
+<td class="padded" align=center><img src=/FoE/images/Promethium.png alt="Promethium" title="Promethium" align=absmiddle> 200</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Crypto Gambling<br>VR Overlays</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="368" id="368" data-obj='{"depend":[364,365],"Cryptocash":"260","Nanites":"120","FP":"270","Coins":"35,000,000","Tea Silk":"250"}'></td>
+<td class="padded">Non-Votile Fire Shells</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 270</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Coins" title="Coins" align=absmiddle> 35,000,000</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 260</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 120</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 250</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>VR Overlays<br>Encrypted Digital Licensing</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="369" id="369" data-obj='{"depend":[367],"Golden Rice":"230","Nanites":"180","FP":"300","Tea Silk":"185","Orichalcum":"350"}'></td>
+<td class="padded">Citizen Score System</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 300</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 230</td>
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 185</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 180</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 350</td>
+<td class="padded" align=center>VR Domain Archiving</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="370" id="370" data-obj='{"depend":[367],"Golden Rice":"290","Nanites":"350","FP":"275","Supples":"30,000,000"}'></td>
+<td class="padded">Evolving VR Overlays</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 275</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Supplies.png alt="Supplies" title="Supplies" align=absmiddle> 30,000,000</td>
+<td class="padded" align=center>&nbsp;</td>	
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 290</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 350</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>VR Domain Archiving</td>
+</tr>
 </table>
 </body>
 </html>
