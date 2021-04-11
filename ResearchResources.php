@@ -5648,6 +5648,19 @@
 <td class="padded" align=center>&nbsp;</td>
 <td class="padded" align=center>VR Domain Archiving</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="371" id="371" data-obj='{"depend":[366],"Cryptocash":"280","Nanites":"325","FP":"295","Coins":"35,000,000","Promethium":"250"}'></td>
+<td class="padded">VR Supported Celebrations</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 295</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Coins" title="Coins" align=absmiddle> 35,000,000</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>	
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 280</td>
+<td class="padded" align=center><img src=/FoE/images/Nanites.png alt="Nanites" title="Nanites" align=absmiddle> 325</td>
+<td class="padded" align=center><img src=/FoE/images/Promethium.png alt="Promethium" title="Promethium" align=absmiddle> 250</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Cultural Resurgence</td>
+</tr>
 </table>
 </body>
 </html>
