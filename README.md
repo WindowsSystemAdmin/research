@@ -5,4 +5,4 @@ A PHP site that will allow you to track your progress on the research tree in Fo
 - [ ] Space Age Mars
 - [ ] Space Age Asteroid Belt
 - [ ] Space Age Venus
-[link]: url = https://research.ethanlin9.repl.co/ResearchResources.php "Research tree site"
+[link]: (https://research.ethanlin9.repl.co/ResearchResources.php "Research tree site")
