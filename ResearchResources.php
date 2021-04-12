@@ -5674,6 +5674,32 @@
 <td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 200</td>
 <td class="padded" align=center>Evolving VR Overlays</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="373" id="373" data-obj='{"depend":[369,371],"Cryptocash":"280","Data Crystals":"330","FP":"310","Supplies":"35,000,000","Promethium":"300"}'></td>
+<td class="padded">Combat Traditions</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 310</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Supplies" title="Supplies" align=absmiddle> 35,000,000</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>	
+<td class="padded" align=center><img src=/FoE/images/Cryptocash.png alt="Cryptocash" title="Cryptocash" align=absmiddle> 305</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 295</td>
+<td class="padded" align=center><img src=/FoE/images/Promethium.png alt="Promethium" title="Promethium" align=absmiddle> 300</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Citizen Score System<br>VR Supported Celebrations</td>
+</tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="374" id="374" data-obj='{"depend":[372,373],"Tea Silk":"300","Data Crystals":"280","FP":"330","Coins":"40,000,000","Supplies":"40,000,000"}'></td>
+<td class="padded">High Definition VR Domains</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 330</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Coins" title="Coins" align=absmiddle> 40,000,000</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Supplies" title="Supplies" align=absmiddle> 40,000,000</td>
+<td class="padded" align=center>&nbsp;</td>	
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 300</td>
+<td class="padded" align=center><img src=/FoE/images/Data_Crystals.png alt="Data Crystals" title="Data Crystals" align=absmiddle> 280</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>Efficient DNA Analysis<br>Combat Traditions</td>
+</tr>
 </table>
 </body>
 </html>
