@@ -5661,6 +5661,19 @@
 <td class="padded" align=center>&nbsp;</td>
 <td class="padded" align=center>Cultural Resurgence</td>
 </tr>
+<tr class="vfe bold index">
+<td align=center><input type="checkbox" name="372" id="372" data-obj='{"depend":[370],"Tea Silk":"280","Golden Rice":"330","FP":"280","Coins":"30,000,000","Orichalcum":"200"}'></td>
+<td class="padded">Efficient DNA Analysis</td>
+<td class="padded" align=center><img src=/FoE/images/FP.png alt="Forge Points" title="Forge Points" align=absmiddle> 280</td>
+<td class="padded" align=center><img src=/FoE/images/Coins.png alt="Coins" title="Coins" align=absmiddle> 30,000,000</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center>&nbsp;</td>	
+<td class="padded" align=center><img src=/FoE/images/Tea_Silk.png alt="Tea Silk" title="Tea Silk" align=absmiddle> 280</td>
+<td class="padded" align=center><img src=/FoE/images/Golden_Rice.png alt="Golden Rice" title="Golden Rice" align=absmiddle> 330</td>
+<td class="padded" align=center>&nbsp;</td>
+<td class="padded" align=center><img src=/FoE/images/Orichalcum.png alt="Orichalcum" title="Orichalcum" align=absmiddle> 200</td>
+<td class="padded" align=center>Evolving VR Overlays</td>
+</tr>
 </table>
 </body>
 </html>
