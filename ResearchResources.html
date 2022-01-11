@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
-		<meta name="viewport" content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"></meta>
-		<title>Trade Tools - Figures Table</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<script src="jquery-2.1.3.min.js"></script>
-		<script src="jquery-hashtable.js"></script>
-		<script src="jquery.numberformatter-1.2.4.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Trade Tools - Figures Table</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="jquery-2.1.3.min.js">
+
+	</script>
+	<script src="jquery-hashtable.js">
+
+	</script>
+	<script src="jquery.numberformatter-1.2.4.min.js">
+
+	</script>
+	<script>
+		$(document).ready(function() {
 				$('input[type=checkbox]').change(function (event) {
 					$e = $(event.target);
 					json = $.parseJSON($e.attr('data-obj'));
@@ -47,122 +53,175 @@
 					}
 				});
 			});
-		</script>
-	</head>
-	<body bgcolor=#FFFFFF leftmargin=2 >
+	</script>
+</head>
+
+<body bgcolor=#FFFFFF leftmargin=2>
 	<br>
 		<table border=1>
 			<tr>
 				<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 			</tr>
-<tr>
-<td colspan=1 align=center><img src=/FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" align=absmiddle> <span id=FP>66,702</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Coins.jpeg alt="Coins" title="Coins" align=absmiddle> <span id=Coins>1,388,680,493</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Supplies.jpeg alt="Supplies" title="Supplies" align=absmiddle> <span id=Supplies>1,437,179,037</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" align=absmiddle> <span id=Promethium>19,850</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Orichalcum.jpeg alt="Orichalcum" title="Orichalcum" align=absmiddle> <span id=Orichalcum>17,650</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Mars_Ore.jpeg alt="Mars Ore" title="Mars Ore" align=absmiddle> <span id=Mars_Ore>18,750</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Asteroid_Ice.jpeg alt="Asteroid Ice" title="Astroid Ice" align=absmiddle> <span id=Astroid_Ice>18,250</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Venus_Carbon.jpeg alt="Venus Carbon" title="Venus Carbon" align=absmiddle> <span id=Venus_Carbon>11,900</span></td>
-<td colspan=1 align=center><img src=/FoE/images/Coming_Soon.jpeg alt="Coming Soon!!" title="Coming Soon!!" align=absmiddle> <span id=Coming_Soon>0</span></td>
-</tr>
-
-<tr>
-	<td class="ba" width=75>&nbsp; <img src=/FoE/images/Stone.jpeg alt="Stone" title="Stone" align=absmiddle> <span id="Stone">152</span> &nbsp;</td>
-	<td class="ba" width=75>&nbsp; <img src=/FoE/images/Lumber.jpeg alt="Lumber" title="Lumber" align=absmiddle> <span id="Lumber">175</span> &nbsp;</td>
-	<td class="ba" width=75>&nbsp; <img src=/FoE/images/Marble.jpeg alt="Marble" title="Marble" align=absmiddle> <span id="Marble">155</span> &nbsp;</td>
-	<td class="ba" width=75>&nbsp; <img src=/FoE/images/Dye.jpeg alt="Dye" title="Dye" align=absmiddle> <span id="Dye">163</span> &nbsp;</td>
-	<td class="ba" width=75>&nbsp; <img src=/FoE/images/Wine.jpeg alt="Wine" title="Wine" align=absmiddle> <span id="Wine">164</span> &nbsp;</td>
-	<td class="ia" width=75>&nbsp; <img src=/FoE/images/Limestone.jpeg alt="Limestone" title="Limestone" align=absmiddle> <span id="Limestone">251</span> &nbsp;</td>
-	<td class="ia" width=75>&nbsp; <img src=/FoE/images/Ebony.jpeg alt="Ebony" title="Ebony" align=absmiddle> <span id="Ebony">249</span> &nbsp;</td>
-	<td class="ia" width=75>&nbsp; <img src=/FoE/images/Iron.jpeg alt="Iron" title="Iron" align=absmiddle> <span id="Iron">242</span> &nbsp;</td>
-	<td class="ia" width=75>&nbsp; <img src=/FoE/images/Cloth.jpeg alt="Cloth" title="Cloth" align=absmiddle> <span id="Cloth">248</span> &nbsp;</td>
-	<td class="ia" width=75>&nbsp; <img src=/FoE/images/Jewelry.jpeg alt="Jewelry" title="Jewelry" align=absmiddle> <span id="Jewelry">256</span> &nbsp;</td></tr><tr>
-	<td class="ema" width=75>&nbsp; <img src=/FoE/images/Copper.jpeg alt="Copper" title="Copper" align=absmiddle> <span id="Copper">353</span> &nbsp;</td>
-	<td class="ema" width=75>&nbsp; <img src=/FoE/images/Granite.jpeg alt="Granite" title="Granite" align=absmiddle> <span id="Granite">354</span> &nbsp;</td>
-	<td class="ema" width=75>&nbsp; <img src=/FoE/images/Alabaster.jpeg alt="Alabaster" title="Alabaster" align=absmiddle> <span id="Alabaster">354</span> &nbsp;</td>
-	<td class="ema" width=75>&nbsp; <img src=/FoE/images/Gold.jpeg alt="Gold" title="Gold" align=absmiddle> <span id="Gold">351</span> &nbsp;</td>
-	<td class="ema" width=75>&nbsp; <img src=/FoE/images/Honey.jpeg alt="Honey" title="Honey" align=absmiddle> <span id="Honey">350</span> &nbsp;</td>
-	<td class="hma" width=75>&nbsp; <img src=/FoE/images/Brick.jpeg alt="Brick" title="Brick" align=absmiddle> <span id="Brick">420</span> &nbsp;</td>
-	<td class="hma" width=75>&nbsp; <img src=/FoE/images/Rope.jpeg alt="Rope" title="Rope" align=absmiddle> <span id="Rope">424</span> &nbsp;</td>
-	<td class="hma" width=75>&nbsp; <img src=/FoE/images/Salt.jpeg alt="Salt" title="Salt" align=absmiddle> <span id="Salt">421</span> &nbsp;</td>
-	<td class="hma" width=75>&nbsp; <img src=/FoE/images/Dried_Herbs.jpeg alt="Dried Herbs" title="Dried Herbs" align=absmiddle> <span id="Dried Herbs">414</span> &nbsp;</td>
-	<td class="hma" width=75>&nbsp; <img src=/FoE/images/Glass.jpeg alt="Glass" title="Glass" align=absmiddle> <span id="Glass">420</span> &nbsp;</td></tr><tr>
-	<td class="lma" width=75>&nbsp; <img src=/FoE/images/Basalt.jpeg alt="Basalt" title="Basalt" align=absmiddle> <span id="Basalt">590</span> &nbsp;</td>
-	<td class="lma" width=75>&nbsp; <img src=/FoE/images/Brass.jpeg alt="Brass" title="Brass" align=absmiddle> <span id="Brass">580</span> &nbsp;</td>
-	<td class="lma" width=75>&nbsp; <img src=/FoE/images/Silk.jpeg alt="Silk" title="Silk" align=absmiddle> <span id="Silk">570</span> &nbsp;</td>
-	<td class="lma" width=75>&nbsp; <img src=/FoE/images/Talc.jpeg alt="Talc" title="Talc" align=absmiddle> <span id="Talc">580</span> &nbsp;</td>
-	<td class="lma" width=75>&nbsp; <img src=/FoE/images/Gunpowder.jpeg alt="Gunpowder" title="Gunpowder" align=absmiddle> <span id="Gunpowder">570</span> &nbsp;</td>
-	<td class="ca" width=75>&nbsp; <img src=/FoE/images/Paper.jpeg alt="Paper" title="Paper" align=absmiddle> <span id="Paper">460</span> &nbsp;</td>
-	<td class="ca" width=75>&nbsp; <img src=/FoE/images/Coffee.jpeg alt="Coffee" title="Coffee" align=absmiddle> <span id="Coffee">620</span> &nbsp;</td>
-	<td class="ca" width=75>&nbsp; <img src=/FoE/images/Wire.jpeg alt="Wire" title="Wire" align=absmiddle> <span id="Wire">580</span> &nbsp;</td>
-	<td class="ca" width=75>&nbsp; <img src=/FoE/images/Porcelain.jpeg alt="Porcelain" title="Porcelain" align=absmiddle> <span id="Porcelain">690</span> &nbsp;</td>
-	<td class="ca" width=75>&nbsp; <img src=/FoE/images/Tar.jpeg alt="Tar" title="Tar" align=absmiddle> <span id="Tar">640</span> &nbsp;</td></tr><tr>
-	<td class="inda" width=75>&nbsp; <img src=/FoE/images/Rubber.jpeg alt="Rubber" title="Rubber" align=absmiddle> <span id="Rubber">1,000</span> &nbsp;</td>
-	<td class="inda" width=75>&nbsp; <img src=/FoE/images/Coke.jpeg alt="Coke" title="Coke" align=absmiddle> <span id="Coke">1,000</span> &nbsp;</td>
-	<td class="inda" width=75>&nbsp; <img src=/FoE/images/Textiles.jpeg alt="Textiles" title="Textiles" align=absmiddle> <span id="Textiles">1,000</span> &nbsp;</td>
-	<td class="inda" width=75>&nbsp; <img src=/FoE/images/Whale_Oil.jpeg alt="Whale Oil" title="Whale Oil" align=absmiddle> <span id="Whale Oil">1,000</span> &nbsp;</td>
-	<td class="inda" width=75>&nbsp; <img src=/FoE/images/Fertilizer.jpeg alt="Fertilizer" title="Fertilizer" align=absmiddle> <span id="Fertilizer">1,000</span> &nbsp;</td>
-	<td class="pe" width=75>&nbsp; <img src=/FoE/images/Asbestos.jpeg alt="Asbestos" title="Asbestos" align=absmiddle> <span id="Asbestos">1,400</span> &nbsp;</td>
-	<td class="pe" width=75>&nbsp; <img src=/FoE/images/Gasoline.jpeg alt="Gasoline" title="Gasoline" align=absmiddle> <span id="Gasoline">1,400</span> &nbsp;</td>
-	<td class="pe" width=75>&nbsp; <img src=/FoE/images/Machine_Parts.jpeg alt="Machine Parts" title="Machine Parts" align=absmiddle> <span id="Machine Parts">1,400</span> &nbsp;</td>
-	<td class="pe" width=75>&nbsp; <img src=/FoE/images/Tinplate.jpeg alt="Tinplate" title="Tinplate" align=absmiddle> <span id="Tinplate">1,400</span> &nbsp;</td>
-	<td class="pe" width=75>&nbsp; <img src=/FoE/images/Explosives.jpeg alt="Explosives" title="Explosives" align=absmiddle> <span id="Explosives">1,400</span> &nbsp;</td></tr><tr>
-	<td class="me" width=75>&nbsp; <img src=/FoE/images/Ferroconcrete.jpeg alt="Ferroconcrete" title="Ferroconcrete" align=absmiddle> <span id="Ferroconcrete">1,600</span> &nbsp;</td>
-	<td class="me" width=75>&nbsp; <img src=/FoE/images/Packaging.jpeg alt="Packaging" title="Packaging" align=absmiddle> <span id="Packaging">1,600</span> &nbsp;</td>
-	<td class="me" width=75>&nbsp; <img src=/FoE/images/Luxury_Materials.jpeg alt="Luxury Materials" title="Luxury Materials" align=absmiddle> <span id="Luxury Materials">1,600</span> &nbsp;</td>
-	<td class="me" width=75>&nbsp; <img src=/FoE/images/Convenience_Food.jpeg alt="Convenience Food" title="Convenience Food" align=absmiddle> <span id="Convenience Food">1,600</span> &nbsp;</td>
-	<td class="me" width=75>&nbsp; <img src=/FoE/images/Flavourants.jpeg alt="Flavourants" title="Flavourants" align=absmiddle> <span id="Flavourants">1,600</span> &nbsp;</td>
-	<td class="pme" width=75>&nbsp; <img src=/FoE/images/Renewable_Resources.jpeg alt="Renewable Resources" title="Renewable Resources" align=absmiddle> <span id="Renewable Resources">1,800</span> &nbsp;</td>
-	<td class="pme" width=75>&nbsp; <img src=/FoE/images/Steel.jpeg alt="Steel" title="Steel" align=absmiddle> <span id="Steel">1,800</span> &nbsp;</td>
-	<td class="pme" width=75>&nbsp; <img src=/FoE/images/Semiconductors.jpeg alt="Semiconductors" title="Semiconductors" align=absmiddle> <span id="Semiconductors">1,800</span> &nbsp;</td>
-	<td class="pme" width=75>&nbsp; <img src=/FoE/images/Industrial_Filters.jpeg alt="Industrial Filters" title="Industrial Filters" align=absmiddle> <span id="Industrial Filters">1,800</span> &nbsp;</td>
-	<td class="pme" width=75>&nbsp; <img src=/FoE/images/Genome_Data.jpeg alt="Genome Data" title="Genome Data" align=absmiddle> <span id="Genome Data">1,800</span> &nbsp;</td></tr><tr>
-	<td class="ce" width=75>&nbsp; <img src=/FoE/images/Gas.jpeg alt="Gas" title="Gas" align=absmiddle> <span id="Gas">2,250</span> &nbsp;</td>
-	<td class="ce" width=75>&nbsp; <img src=/FoE/images/Robots.jpeg alt="Robots" title="Robots" align=absmiddle> <span id="Robots">2,210</span> &nbsp;</td>
-	<td class="ce" width=75>&nbsp; <img src=/FoE/images/Electromagnets.jpeg alt="Electromagnets" title="Electromagnets" align=absmiddle> <span id="Electromagnets">1,755</span> &nbsp;</td>
-	<td class="ce" width=75>&nbsp; <img src=/FoE/images/Plastics.jpeg alt="Plastics" title="Plastics" align=absmiddle> <span id="Plastics">1,700</span> &nbsp;</td>
-	<td class="ce" width=75>&nbsp; <img src=/FoE/images/Bionics_Data.jpeg alt="Bionics Data" title="Bionics Data" align=absmiddle> <span id="Bionics Data">2,480</span> &nbsp;</td>
-	<td class="te" width=75>&nbsp; <img src=/FoE/images/Translucent_Concrete.jpeg alt="Translucent Concrete" title="Translucent Concrete" align=absmiddle> <span id="Translucent Concrete">1,510</span> &nbsp;</td>
-	<td class="te" width=75>&nbsp; <img src=/FoE/images/Smart_Materials.jpeg alt="Smart Materials" title="Smart Materials" align=absmiddle> <span id="Smart Materials">1,770</span> &nbsp;</td>
-	<td class="te" width=75>&nbsp; <img src=/FoE/images/Papercrete.jpeg alt="Papercrete" title="Papercrete" align=absmiddle> <span id="Papercrete">1,885</span> &nbsp;</td>
-	<td class="te" width=75>&nbsp; <img src=/FoE/images/Preservatives.jpeg alt="Preservatives" title="Preservatives" align=absmiddle> <span id="Preservatives">1,570</span> &nbsp;</td>
-	<td class="te" width=75>&nbsp; <img src=/FoE/images/Nutrition_Research.jpeg alt="Nutrition Research" title="Nutrition Research" align=absmiddle> <span id="Nutrition Research">1,520</span> &nbsp;</td></tr><tr>
-	<td class="fe" width=75>&nbsp; <img src=/FoE/images/Biogeochemical_Data.jpeg alt="Biogeochemical Data" title="Biogeochemical Data" align=absmiddle> <span id="Biogeochemical Data">1,640</span> &nbsp;</td>
-	<td class="fe" width=75>&nbsp; <img src=/FoE/images/Purified_Water.jpeg alt="Purified Water" title="Purified Water" align=absmiddle> <span id="Purified Water">1,530</span> &nbsp;</td>
-	<td class="fe" width=75>&nbsp; <img src=/FoE/images/Algae.jpeg alt="Algae" title="Algae" align=absmiddle> <span id="Algae">1,490</span> &nbsp;</td>
-	<td class="fe" width=75>&nbsp; <img src=/FoE/images/Superconductor.jpeg alt="Superconductor" title="Superconductor" align=absmiddle> <span id="Superconductor">1,575</span> &nbsp;</td>
-	<td class="fe" width=75>&nbsp; <img src=/FoE/images/Nanoparticles.jpeg alt="Nanoparticles" title="Nanoparticles" align=absmiddle> <span id="Nanoparticles">1,665</span> &nbsp;</td>
-	<td class="afe" width=75>&nbsp; <img src=/FoE/images/Nanowire.jpeg alt="Nanowire" title="Nanowire" align=absmiddle> <span id="Nanowire">2,380</span> &nbsp;</td>
-	<td class="afe" width=75>&nbsp; <img src=/FoE/images/Transester_Gas.jpeg alt="Transester Gas" title="Transester Gas" align=absmiddle> <span id="Transester Gas">2,230</span> &nbsp;</td>
-	<td class="afe" width=75>&nbsp; <img src=/FoE/images/AI_Data.jpeg alt="AI Data" title="AI Data" align=absmiddle> <span id="AI Data">2,170</span> &nbsp;</td>
-	<td class="afe" width=75>&nbsp; <img src=/FoE/images/Paper_Batteries.jpeg alt="Paper Batteries" title="Paper Batteries" align=absmiddle> <span id="Paper Batteries">2,730</span> &nbsp;</td>
-	<td class="afe" width=75>&nbsp; <img src=/FoE/images/Bioplastics.jpeg alt="Bioplastics" title="Bioplastics" align=absmiddle> <span id="Bioplastics">2,060</span> &nbsp;</td></tr><tr>
-	<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Artificial_Scales.jpeg alt="Artificial Scales" title="Artificial Scales" align=absmiddle> <span id="Artificial Scales">3,400</span> &nbsp;</td>
-	<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Biolight.jpeg alt="Biolight" title="Biolight" align=absmiddle> <span id="Biolight">2,870</span> &nbsp;</td>
-	<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Corals.jpeg alt="Corals" title="Corals" align=absmiddle> <span id="Corals">3,350</span> &nbsp;</td>
-	<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Pearls.jpeg alt="Pearls" title="Pearls" align=absmiddle> <span id="Pearls">2,860</span> &nbsp;</td>
-	<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Plankton.jpeg alt="Plankton" title="Plankton" align=absmiddle> <span id="Plankton">3,060</span> &nbsp;</td>	
-	<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Golden_Rice.jpeg alt="Golden Rice" title="Golden Rice" align=absmiddle> <span id="Golden Rice">1,990</span> &nbsp;</td>
-	<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Cryptocash.jpeg alt="Cryptocash" title="Cryptocash" align=absmiddle> <span id="Cryptocash">1,985</span> &nbsp;</td>
-	<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Nanites.jpeg alt="Nanites" title="Nanites" align=absmiddle> <span id="Nanites">1,945</span> &nbsp;</td>
-	<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Data_Crystals.jpeg alt="Data Crystals" title="Data Crystals" align=absmiddle> <span id="Data Crystals">1,865</span> &nbsp;</td>
-	<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Tea_Silk.jpeg alt="Tea Silk" title="Tea Silk" align=absmiddle> <span id="Tea Silk">1,985</span> &nbsp;</td></tr><tr>
-	<td class="sam" width=75>&nbsp; <img src=/FoE/images/Mars_Microbe.jpeg alt="Mars Microbe" title="Mars Microbe" align=absmiddle> <span id="Mars Microbe">10,000</span> &nbsp;</td>
-	<td class="sam" width=75>&nbsp; <img src=/FoE/images/Biotech_Crops.jpeg alt="Biotech Crops" title="Biotech Crops" align=absmiddle> <span id="Biotech Crops">10,000</span> &nbsp;</td>
-	<td class="sam" width=75>&nbsp; <img src=/FoE/images/Fusion_Reactors.jpeg alt="Fusion Reactors" title="Fusion Reactors" align=absmiddle> <span id="Fusion Reactors">10,000</span> &nbsp;</td>
-	<td class="sam" width=75>&nbsp; <img src=/FoE/images/Lubricant.jpeg alt="Lubricant" title="Lubricant" align=absmiddle> <span id="Lubricant">10,000</span> &nbsp;</td>
-	<td class="sam" width=75>&nbsp; <img src=/FoE/images/Superalloys.jpeg alt="Superalloys" title="Superalloys" align=absmiddle> <span id="Superalloys">10,000</span> &nbsp;</td>
-	<td class="saab" width=75>&nbsp; <img src=/FoE/images/Bromine.jpeg alt="Bromine" title="Bromine" align=absmiddle> <span id="Bromine">12,800</span> &nbsp;</td>
-	<td class="saab" width=75>&nbsp; <img src=/FoE/images/Compound_Fluid.jpeg alt="Compound Fluid" title="Compound Fluid" align=absmiddle> <span id="Compound Fluid">12,800</span> &nbsp;</td>
-	<td class="saab" width=75>&nbsp; <img src=/FoE/images/Processed_Materials.jpeg alt="Processed Materials" title="Processed Materials" align=absmiddle> <span id="Processed Materials">12,850</span> &nbsp;</td>
-	<td class="saab" width=75>&nbsp; <img src=/FoE/images/Platinum_Crystals.jpeg alt="Platinum Crystals" title="Platinum Crystals" align=absmiddle> <span id="Platinum Crystals">13,500</span> &nbsp;</td>
-	<td class="saab" width=75>&nbsp; <img src=/FoE/images/Nickel.jpeg alt="Nickel" title="Nickel" align=absmiddle> <span id="Nickel">12,850</span> &nbsp;</td>
-</table>
-
-<br><table border=1><tr><td class="padded bold" colspan="5">Fully Completed Research Eras</td></tr><tr><td class="sa bold index" align="left"><input type="checkbox" name="allsa" id="allsa" data-obj='{"depend": [1]}'> &nbsp;Stone Age</td><td class="ba bold index" align="left"><input type="checkbox" name="allba" id="allba" data-obj='{"depend": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,"allsa"]}'> &nbsp;Bronze Age</td><td class="ia bold index" align="left"><input type="checkbox" name="allia" id="allia" data-obj='{"depend": [24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,"allba"]}'> &nbsp;Iron Age</td><td class="ema bold index" align="left"><input type="checkbox" name="allema" id="allema" data-obj='{"depend": [43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,"allia"]}'> &nbsp;Early Middle Age</td><td class="hma bold index" align="left"><input type="checkbox" name="allhma" id="allhma" data-obj='{"depend": [64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,"allema"]}'> &nbsp;High Middle Age</td></tr><tr><td class="lma bold index" align="left"><input type="checkbox" name="alllma" id="alllma" data-obj='{"depend": [84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,"allhma"]}'> &nbsp;Late Middle Age</td><td class="ca bold index" align="left"><input type="checkbox" name="allca" id="allca" data-obj='{"depend": [105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,"alllma"]}'> &nbsp;Colonial Age</td><td class="inda bold index" align="left"><input type="checkbox" name="allinda" id="allinda" data-obj='{"depend": [125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,"allca"]}'> &nbsp;Industrial Age</td><td class="pe bold index" align="left"><input type="checkbox" name="allpe" id="allpe" data-obj='{"depend": [144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,"allinda"]}'> &nbsp;Progressive Era</td><td class="me bold index" align="left"><input type="checkbox" name="allme" id="allme" data-obj='{"depend": [166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,"allpe"]}'> &nbsp;Modern Era</td></tr><tr><td class="pme bold index" align="left"><input type="checkbox" name="allpme" id="allpme" data-obj='{"depend": [184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,"allme"]}'> &nbsp;Post-Modern Era</td><td class="ce bold index" align="left"><input type="checkbox" name="allce" id="allce" data-obj='{"depend": [205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,"allpme"]}'> &nbsp;Contemporary Era</td><td class="te bold index" align="left"><input type="checkbox" name="allte" id="allte" data-obj='{"depend": [223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,"allce"]}'> &nbsp;Tomorrow Era</td><td class="fe bold index" align="left"><input type="checkbox" name="allfe" id="allfe" data-obj='{"depend": [241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,"allte"]}'> &nbsp;Future Era</td><td class="afe bold index" align="left"><input type="checkbox" name="allafe" id="allafe" data-obj='{"depend": [261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,"allfe"]}'> &nbsp;Arctic Future Era</td></tr><tr><td class="ofe bold index" align="left"><input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'> &nbsp;Oceanic Future Era</td><td class="vfe bold index" align="left"><input type="checkbox" name="allvfe" id="allvfe" data-obj='{"depend": [348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,"allofe"]}'> &nbsp;Virtual Future Era</td><td class="sam bold index" align="left"><input type="checkbox" name="allsam" id="allsam" data-obj='{"depend": [375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,"allvfe"]}'> &nbsp;Space Age Mars</td><td class="saab bold index" align="left"><input type="checkbox" name="allsaab" id="allsaab" data-obj='{"depend": [399,400,"allsam"]}'> &nbsp;Space Age Asteroid Belt</td></tr></table>
-
-<br><table border=1><tr><td class="padded bold" colspan="12">Tech Tree</td></tr><tr>
+			<tr>
+				<td colspan=1 align=center><img src=/FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" align=absmiddle><span id=FP>66,702</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Coins.jpeg alt="Coins" title="Coins" align=absmiddle><span id=Coins>1,388,680,493</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Supplies.jpeg alt="Supplies" title="Supplies" align=absmiddle> <span id=Supplies>1,437,179,037</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" align=absmiddle> <span id=Promethium>19,850</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Orichalcum.jpeg alt="Orichalcum" title="Orichalcum" align=absmiddle> <span id=Orichalcum>17,650</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Mars_Ore.jpeg alt="Mars Ore" title="Mars Ore" align=absmiddle> <span id=Mars_Ore>18,750</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Asteroid_Ice.jpeg alt="Asteroid Ice" title="Astroid Ice" align=absmiddle> <span id=Astroid_Ice>18,250</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Venus_Carbon.jpeg alt="Venus Carbon" title="Venus Carbon" align=absmiddle> <span id=Venus_Carbon>11,900</span></td>
+				<td colspan=1 align=center><img src=/FoE/images/Coming_Soon.jpeg alt="Coming Soon!!" title="Coming Soon!!" align=absmiddle> <span id=Coming_Soon>0</span></td>
+			</tr>
+			<tr>
+				<td class="ba" width=75>&nbsp; <img src=/FoE/images/Stone.jpeg alt="Stone" title="Stone" align=absmiddle> <span id="Stone">152</span> &nbsp;</td>
+				<td class="ba" width=75>&nbsp; <img src=/FoE/images/Lumber.jpeg alt="Lumber" title="Lumber" align=absmiddle> <span id="Lumber">175</span> &nbsp;</td>
+				<td class="ba" width=75>&nbsp; <img src=/FoE/images/Marble.jpeg alt="Marble" title="Marble" align=absmiddle> <span id="Marble">155</span> &nbsp;</td>
+				<td class="ba" width=75>&nbsp; <img src=/FoE/images/Dye.jpeg alt="Dye" title="Dye" align=absmiddle> <span id="Dye">163</span> &nbsp;</td>
+				<td class="ba" width=75>&nbsp; <img src=/FoE/images/Wine.jpeg alt="Wine" title="Wine" align=absmiddle> <span id="Wine">164</span> &nbsp;</td>
+				<td class="ia" width=75>&nbsp; <img src=/FoE/images/Limestone.jpeg alt="Limestone" title="Limestone" align=absmiddle> <span id="Limestone">251</span> &nbsp;</td>
+				<td class="ia" width=75>&nbsp; <img src=/FoE/images/Ebony.jpeg alt="Ebony" title="Ebony" align=absmiddle> <span id="Ebony">249</span> &nbsp;</td>
+				<td class="ia" width=75>&nbsp; <img src=/FoE/images/Iron.jpeg alt="Iron" title="Iron" align=absmiddle> <span id="Iron">242</span> &nbsp;</td>
+				<td class="ia" width=75>&nbsp; <img src=/FoE/images/Cloth.jpeg alt="Cloth" title="Cloth" align=absmiddle> <span id="Cloth">248</span> &nbsp;</td>
+				<td class="ia" width=75>&nbsp; <img src=/FoE/images/Jewelry.jpeg alt="Jewelry" title="Jewelry" align=absmiddle> <span id="Jewelry">256</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="ema" width=75>&nbsp; <img src=/FoE/images/Copper.jpeg alt="Copper" title="Copper" align=absmiddle> <span id="Copper">353</span> &nbsp;</td>
+				<td class="ema" width=75>&nbsp; <img src=/FoE/images/Granite.jpeg alt="Granite" title="Granite" align=absmiddle> <span id="Granite">354</span> &nbsp;</td>
+				<td class="ema" width=75>&nbsp; <img src=/FoE/images/Alabaster.jpeg alt="Alabaster" title="Alabaster" align=absmiddle> <span id="Alabaster">354</span> &nbsp;</td>
+				<td class="ema" width=75>&nbsp; <img src=/FoE/images/Gold.jpeg alt="Gold" title="Gold" align=absmiddle> <span id="Gold">351</span> &nbsp;</td>
+				<td class="ema" width=75>&nbsp; <img src=/FoE/images/Honey.jpeg alt="Honey" title="Honey" align=absmiddle> <span id="Honey">350</span> &nbsp;</td>
+				<td class="hma" width=75>&nbsp; <img src=/FoE/images/Brick.jpeg alt="Brick" title="Brick" align=absmiddle> <span id="Brick">420</span> &nbsp;</td>
+				<td class="hma" width=75>&nbsp; <img src=/FoE/images/Rope.jpeg alt="Rope" title="Rope" align=absmiddle> <span id="Rope">424</span> &nbsp;</td>
+				<td class="hma" width=75>&nbsp; <img src=/FoE/images/Salt.jpeg alt="Salt" title="Salt" align=absmiddle> <span id="Salt">421</span> &nbsp;</td>
+				<td class="hma" width=75>&nbsp; <img src=/FoE/images/Dried_Herbs.jpeg alt="Dried Herbs" title="Dried Herbs" align=absmiddle> <span id="Dried Herbs">414</span> &nbsp;</td>
+				<td class="hma" width=75>&nbsp; <img src=/FoE/images/Glass.jpeg alt="Glass" title="Glass" align=absmiddle> <span id="Glass">420</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="lma" width=75>&nbsp; <img src=/FoE/images/Basalt.jpeg alt="Basalt" title="Basalt" align=absmiddle> <span id="Basalt">590</span> &nbsp;</td>
+				<td class="lma" width=75>&nbsp; <img src=/FoE/images/Brass.jpeg alt="Brass" title="Brass" align=absmiddle> <span id="Brass">580</span> &nbsp;</td>
+				<td class="lma" width=75>&nbsp; <img src=/FoE/images/Silk.jpeg alt="Silk" title="Silk" align=absmiddle> <span id="Silk">570</span> &nbsp;</td>
+				<td class="lma" width=75>&nbsp; <img src=/FoE/images/Talc.jpeg alt="Talc" title="Talc" align=absmiddle> <span id="Talc">580</span> &nbsp;</td>
+				<td class="lma" width=75>&nbsp; <img src=/FoE/images/Gunpowder.jpeg alt="Gunpowder" title="Gunpowder" align=absmiddle> <span id="Gunpowder">570</span> &nbsp;</td>
+				<td class="ca" width=75>&nbsp; <img src=/FoE/images/Paper.jpeg alt="Paper" title="Paper" align=absmiddle> <span id="Paper">460</span> &nbsp;</td>
+				<td class="ca" width=75>&nbsp; <img src=/FoE/images/Coffee.jpeg alt="Coffee" title="Coffee" align=absmiddle> <span id="Coffee">620</span> &nbsp;</td>
+				<td class="ca" width=75>&nbsp; <img src=/FoE/images/Wire.jpeg alt="Wire" title="Wire" align=absmiddle> <span id="Wire">580</span> &nbsp;</td>
+				<td class="ca" width=75>&nbsp; <img src=/FoE/images/Porcelain.jpeg alt="Porcelain" title="Porcelain" align=absmiddle> <span id="Porcelain">690</span> &nbsp;</td>
+				<td class="ca" width=75>&nbsp; <img src=/FoE/images/Tar.jpeg alt="Tar" title="Tar" align=absmiddle> <span id="Tar">640</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="inda" width=75>&nbsp; <img src=/FoE/images/Rubber.jpeg alt="Rubber" title="Rubber" align=absmiddle> <span id="Rubber">1,000</span> &nbsp;</td>
+				<td class="inda" width=75>&nbsp; <img src=/FoE/images/Coke.jpeg alt="Coke" title="Coke" align=absmiddle> <span id="Coke">1,000</span> &nbsp;</td>
+				<td class="inda" width=75>&nbsp; <img src=/FoE/images/Textiles.jpeg alt="Textiles" title="Textiles" align=absmiddle> <span id="Textiles">1,000</span> &nbsp;</td>
+				<td class="inda" width=75>&nbsp; <img src=/FoE/images/Whale_Oil.jpeg alt="Whale Oil" title="Whale Oil" align=absmiddle> <span id="Whale Oil">1,000</span> &nbsp;</td>
+				<td class="inda" width=75>&nbsp; <img src=/FoE/images/Fertilizer.jpeg alt="Fertilizer" title="Fertilizer" align=absmiddle> <span id="Fertilizer">1,000</span> &nbsp;</td>
+				<td class="pe" width=75>&nbsp; <img src=/FoE/images/Asbestos.jpeg alt="Asbestos" title="Asbestos" align=absmiddle> <span id="Asbestos">1,400</span> &nbsp;</td>
+				<td class="pe" width=75>&nbsp; <img src=/FoE/images/Gasoline.jpeg alt="Gasoline" title="Gasoline" align=absmiddle> <span id="Gasoline">1,400</span> &nbsp;</td>
+				<td class="pe" width=75>&nbsp; <img src=/FoE/images/Machine_Parts.jpeg alt="Machine Parts" title="Machine Parts" align=absmiddle> <span id="Machine Parts">1,400</span> &nbsp;</td>
+				<td class="pe" width=75>&nbsp; <img src=/FoE/images/Tinplate.jpeg alt="Tinplate" title="Tinplate" align=absmiddle> <span id="Tinplate">1,400</span> &nbsp;</td>
+				<td class="pe" width=75>&nbsp; <img src=/FoE/images/Explosives.jpeg alt="Explosives" title="Explosives" align=absmiddle> <span id="Explosives">1,400</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="me" width=75>&nbsp; <img src=/FoE/images/Ferroconcrete.jpeg alt="Ferroconcrete" title="Ferroconcrete" align=absmiddle> <span id="Ferroconcrete">1,600</span> &nbsp;</td>
+				<td class="me" width=75>&nbsp; <img src=/FoE/images/Packaging.jpeg alt="Packaging" title="Packaging" align=absmiddle> <span id="Packaging">1,600</span> &nbsp;</td>
+				<td class="me" width=75>&nbsp; <img src=/FoE/images/Luxury_Materials.jpeg alt="Luxury Materials" title="Luxury Materials" align=absmiddle> <span id="Luxury Materials">1,600</span> &nbsp;</td>
+				<td class="me" width=75>&nbsp; <img src=/FoE/images/Convenience_Food.jpeg alt="Convenience Food" title="Convenience Food" align=absmiddle> <span id="Convenience Food">1,600</span> &nbsp;</td>
+				<td class="me" width=75>&nbsp; <img src=/FoE/images/Flavourants.jpeg alt="Flavourants" title="Flavourants" align=absmiddle> <span id="Flavourants">1,600</span> &nbsp;</td>
+				<td class="pme" width=75>&nbsp; <img src=/FoE/images/Renewable_Resources.jpeg alt="Renewable Resources" title="Renewable Resources" align=absmiddle> <span id="Renewable Resources">1,800</span> &nbsp;</td>
+				<td class="pme" width=75>&nbsp; <img src=/FoE/images/Steel.jpeg alt="Steel" title="Steel" align=absmiddle> <span id="Steel">1,800</span> &nbsp;</td>
+				<td class="pme" width=75>&nbsp; <img src=/FoE/images/Semiconductors.jpeg alt="Semiconductors" title="Semiconductors" align=absmiddle> <span id="Semiconductors">1,800</span> &nbsp;</td>
+				<td class="pme" width=75>&nbsp; <img src=/FoE/images/Industrial_Filters.jpeg alt="Industrial Filters" title="Industrial Filters" align=absmiddle> <span id="Industrial Filters">1,800</span> &nbsp;</td>
+				<td class="pme" width=75>&nbsp; <img src=/FoE/images/Genome_Data.jpeg alt="Genome Data" title="Genome Data" align=absmiddle> <span id="Genome Data">1,800</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="ce" width=75>&nbsp; <img src=/FoE/images/Gas.jpeg alt="Gas" title="Gas" align=absmiddle> <span id="Gas">2,250</span> &nbsp;</td>
+				<td class="ce" width=75>&nbsp; <img src=/FoE/images/Robots.jpeg alt="Robots" title="Robots" align=absmiddle> <span id="Robots">2,210</span> &nbsp;</td>
+				<td class="ce" width=75>&nbsp; <img src=/FoE/images/Electromagnets.jpeg alt="Electromagnets" title="Electromagnets" align=absmiddle> <span id="Electromagnets">1,755</span> &nbsp;</td>
+				<td class="ce" width=75>&nbsp; <img src=/FoE/images/Plastics.jpeg alt="Plastics" title="Plastics" align=absmiddle> <span id="Plastics">1,700</span> &nbsp;</td>
+				<td class="ce" width=75>&nbsp; <img src=/FoE/images/Bionics_Data.jpeg alt="Bionics Data" title="Bionics Data" align=absmiddle> <span id="Bionics Data">2,480</span> &nbsp;</td>
+				<td class="te" width=75>&nbsp; <img src=/FoE/images/Translucent_Concrete.jpeg alt="Translucent Concrete" title="Translucent Concrete" align=absmiddle> <span id="Translucent Concrete">1,510</span> &nbsp;</td>
+				<td class="te" width=75>&nbsp; <img src=/FoE/images/Smart_Materials.jpeg alt="Smart Materials" title="Smart Materials" align=absmiddle> <span id="Smart Materials">1,770</span> &nbsp;</td>
+				<td class="te" width=75>&nbsp; <img src=/FoE/images/Papercrete.jpeg alt="Papercrete" title="Papercrete" align=absmiddle> <span id="Papercrete">1,885</span> &nbsp;</td>
+				<td class="te" width=75>&nbsp; <img src=/FoE/images/Preservatives.jpeg alt="Preservatives" title="Preservatives" align=absmiddle> <span id="Preservatives">1,570</span> &nbsp;</td>
+				<td class="te" width=75>&nbsp; <img src=/FoE/images/Nutrition_Research.jpeg alt="Nutrition Research" title="Nutrition Research" align=absmiddle> <span id="Nutrition Research">1,520</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="fe" width=75>&nbsp; <img src=/FoE/images/Biogeochemical_Data.jpeg alt="Biogeochemical Data" title="Biogeochemical Data" align=absmiddle> <span id="Biogeochemical Data">1,640</span> &nbsp;</td>
+				<td class="fe" width=75>&nbsp; <img src=/FoE/images/Purified_Water.jpeg alt="Purified Water" title="Purified Water" align=absmiddle> <span id="Purified Water">1,530</span> &nbsp;</td>
+				<td class="fe" width=75>&nbsp; <img src=/FoE/images/Algae.jpeg alt="Algae" title="Algae" align=absmiddle> <span id="Algae">1,490</span> &nbsp;</td>
+				<td class="fe" width=75>&nbsp; <img src=/FoE/images/Superconductor.jpeg alt="Superconductor" title="Superconductor" align=absmiddle> <span id="Superconductor">1,575</span> &nbsp;</td>
+				<td class="fe" width=75>&nbsp; <img src=/FoE/images/Nanoparticles.jpeg alt="Nanoparticles" title="Nanoparticles" align=absmiddle> <span id="Nanoparticles">1,665</span> &nbsp;</td>
+				<td class="afe" width=75>&nbsp; <img src=/FoE/images/Nanowire.jpeg alt="Nanowire" title="Nanowire" align=absmiddle> <span id="Nanowire">2,380</span> &nbsp;</td>
+				<td class="afe" width=75>&nbsp; <img src=/FoE/images/Transester_Gas.jpeg alt="Transester Gas" title="Transester Gas" align=absmiddle> <span id="Transester Gas">2,230</span> &nbsp;</td>
+				<td class="afe" width=75>&nbsp; <img src=/FoE/images/AI_Data.jpeg alt="AI Data" title="AI Data" align=absmiddle> <span id="AI Data">2,170</span> &nbsp;</td>
+				<td class="afe" width=75>&nbsp; <img src=/FoE/images/Paper_Batteries.jpeg alt="Paper Batteries" title="Paper Batteries" align=absmiddle> <span id="Paper Batteries">2,730</span> &nbsp;</td>
+				<td class="afe" width=75>&nbsp; <img src=/FoE/images/Bioplastics.jpeg alt="Bioplastics" title="Bioplastics" align=absmiddle> <span id="Bioplastics">2,060</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Artificial_Scales.jpeg alt="Artificial Scales" title="Artificial Scales" align=absmiddle> <span id="Artificial Scales">3,400</span> &nbsp;</td>
+				<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Biolight.jpeg alt="Biolight" title="Biolight" align=absmiddle> <span id="Biolight">2,870</span> &nbsp;</td>
+				<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Corals.jpeg alt="Corals" title="Corals" align=absmiddle> <span id="Corals">3,350</span> &nbsp;</td>
+				<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Pearls.jpeg alt="Pearls" title="Pearls" align=absmiddle> <span id="Pearls">2,860</span> &nbsp;</td>
+				<td class="ofe" width=75>&nbsp; <img src=/FoE/images/Plankton.jpeg alt="Plankton" title="Plankton" align=absmiddle> <span id="Plankton">3,060</span> &nbsp;</td>	
+				<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Golden_Rice.jpeg alt="Golden Rice" title="Golden Rice" align=absmiddle> <span id="Golden Rice">1,990</span> &nbsp;</td>
+				<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Cryptocash.jpeg alt="Cryptocash" title="Cryptocash" align=absmiddle> <span id="Cryptocash">1,985</span> &nbsp;</td>
+				<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Nanites.jpeg alt="Nanites" title="Nanites" align=absmiddle> <span id="Nanites">1,945</span> &nbsp;</td>
+				<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Data_Crystals.jpeg alt="Data Crystals" title="Data Crystals" align=absmiddle> <span id="Data Crystals">1,865</span> &nbsp;</td>
+				<td class="vfe" width=75>&nbsp; <img src=/FoE/images/Tea_Silk.jpeg alt="Tea Silk" title="Tea Silk" align=absmiddle> <span id="Tea Silk">1,985</span> &nbsp;</td>
+			</tr>
+			<tr>
+				<td class="sam" width=75>&nbsp; <img src=/FoE/images/Mars_Microbe.jpeg alt="Mars Microbe" title="Mars Microbe" align=absmiddle> <span id="Mars Microbe">10,000</span> &nbsp;</td>
+				<td class="sam" width=75>&nbsp; <img src=/FoE/images/Biotech_Crops.jpeg alt="Biotech Crops" title="Biotech Crops" align=absmiddle> <span id="Biotech Crops">10,000</span> &nbsp;</td>
+				<td class="sam" width=75>&nbsp; <img src=/FoE/images/Fusion_Reactors.jpeg alt="Fusion Reactors" title="Fusion Reactors" align=absmiddle> <span id="Fusion Reactors">10,000</span> &nbsp;</td>
+				<td class="sam" width=75>&nbsp; <img src=/FoE/images/Lubricant.jpeg alt="Lubricant" title="Lubricant" align=absmiddle> <span id="Lubricant">10,000</span> &nbsp;</td>
+				<td class="sam" width=75>&nbsp; <img src=/FoE/images/Superalloys.jpeg alt="Superalloys" title="Superalloys" align=absmiddle> <span id="Superalloys">10,000</span> &nbsp;</td>
+				<td class="saab" width=75>&nbsp; <img src=/FoE/images/Bromine.jpeg alt="Bromine" title="Bromine" align=absmiddle> <span id="Bromine">12,800</span> &nbsp;</td>
+				<td class="saab" width=75>&nbsp; <img src=/FoE/images/Compound_Fluid.jpeg alt="Compound Fluid" title="Compound Fluid" align=absmiddle> <span id="Compound Fluid">12,800</span> &nbsp;</td>
+				<td class="saab" width=75>&nbsp; <img src=/FoE/images/Processed_Materials.jpeg alt="Processed Materials" title="Processed Materials" align=absmiddle> <span id="Processed Materials">12,850</span> &nbsp;</td>
+				<td class="saab" width=75>&nbsp; <img src=/FoE/images/Platinum_Crystals.jpeg alt="Platinum Crystals" title="Platinum Crystals" align=absmiddle> <span id="Platinum Crystals">13,500</span> &nbsp;</td>
+				<td class="saab" width=75>&nbsp; <img src=/FoE/images/Nickel.jpeg alt="Nickel" title="Nickel" align=absmiddle> <span id="Nickel">12,850</span> &nbsp;</td>
+			</tr>
+		</table>
+	</br>
+	<br>
+		<table border=1>
+	<tr>
+		<td class="padded bold" colspan="5">Fully Completed Research Eras</td>
+	</tr>
+	<tr>
+		<td class="sa bold index" align="left"><input type="checkbox" name="allsa" id="allsa" data-obj='{"depend": [1]}'> &nbsp;Stone Age</td>
+		<td class="ba bold index" align="left"><input type="checkbox" name="allba" id="allba" data-obj='{"depend": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,"allsa"]}'> &nbsp;Bronze Age</td>
+		<td class="ia bold index" align="left"><input type="checkbox" name="allia" id="allia" data-obj='{"depend": [24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,"allba"]}'> &nbsp;Iron Age</td>
+		<td class="ema bold index" align="left"><input type="checkbox" name="allema" id="allema" data-obj='{"depend": [43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,"allia"]}'> &nbsp;Early Middle Age</td>
+		<td class="hma bold index" align="left"><input type="checkbox" name="allhma" id="allhma" data-obj='{"depend": [64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,"allema"]}'> &nbsp;High Middle Age</td>
+	</tr>
+	<tr>
+		<td class="lma bold index" align="left"><input type="checkbox" name="alllma" id="alllma" data-obj='{"depend": [84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,"allhma"]}'> &nbsp;Late Middle Age</td>
+		<td class="ca bold index" align="left"><input type="checkbox" name="allca" id="allca" data-obj='{"depend": [105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,"alllma"]}'> &nbsp;Colonial Age</td>
+		<td class="inda bold index" align="left"><input type="checkbox" name="allinda" id="allinda" data-obj='{"depend": [125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,"allca"]}'> &nbsp;Industrial Age</td>
+		<td class="pe bold index" align="left"><input type="checkbox" name="allpe" id="allpe" data-obj='{"depend": [144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,"allinda"]}'> &nbsp;Progressive Era</td>
+		<td class="me bold index" align="left"><input type="checkbox" name="allme" id="allme" data-obj='{"depend": [166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,"allpe"]}'> &nbsp;Modern Era</td>
+	</tr>
+	<tr>
+		<td class="pme bold index" align="left"><input type="checkbox" name="allpme" id="allpme" data-obj='{"depend": [184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,"allme"]}'> &nbsp;Post-Modern Era</td>
+		<td class="ce bold index" align="left"><input type="checkbox" name="allce" id="allce" data-obj='{"depend": [205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,"allpme"]}'> &nbsp;Contemporary Era</td>
+		<td class="te bold index" align="left"><input type="checkbox" name="allte" id="allte" data-obj='{"depend": [223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,"allce"]}'> &nbsp;Tomorrow Era</td>
+		<td class="fe bold index" align="left"><input type="checkbox" name="allfe" id="allfe" data-obj='{"depend": [241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,"allte"]}'> &nbsp;Future Era</td>
+		<td class="afe bold index" align="left"><input type="checkbox" name="allafe" id="allafe" data-obj='{"depend": [261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,"allfe"]}'> &nbsp;Arctic Future Era</td>
+	</tr>
+	<tr>
+		<td class="ofe bold index" align="left"><input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'> &nbsp;Oceanic Future Era</td>
+		<td class="vfe bold index" align="left"><input type="checkbox" name="allvfe" id="allvfe" data-obj='{"depend": [348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,"allofe"]}'> &nbsp;Virtual Future Era</td>
+		<td class="sam bold index" align="left"><input type="checkbox" name="allsam" id="allsam" data-obj='{"depend": [375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,"allvfe"]}'> &nbsp;Space Age Mars</td>
+		<td class="saab bold index" align="left"><input type="checkbox" name="allsaab" id="allsaab" data-obj='{"depend": [399,400,"allsam","allvfe","allofe","allafe","allfe","allema"]}'> &nbsp;Space Age Asteroid Belt</td>
+	</tr>
+		</table>
+	</br>
+	<br>
+		<table border=1>
+	<tr>
+		<td class="padded bold" colspan="12">Tech Tree</td>
+		</tr>
 
 <tr class="sa bold index">
 <td align=center><input type="checkbox" name="1" id="1" data-obj='{"FP":"3"}'></td>
@@ -6037,6 +6096,7 @@
 <td class="padded" align=center>&nbsp;</td>
 <td class="padded" align=center>Mars Ownership Patents</td>
 </tr>
-</table>
+		</table>
+	</br>
 </body>
 </html>
