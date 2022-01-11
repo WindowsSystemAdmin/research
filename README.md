@@ -1,5 +1,5 @@
 # Research
-A PHP site that will allow you to track your progress on the research tree in Forge of Empires!\
+A HTML site that will allow you to track your progress on the research tree in Forge of Empires!\
 **Current ages needed to be added are below:** 
 - [X] Virtual Future
 - [X] Space Age Mars
