@@ -17,46 +17,7 @@
 	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.min.js">
 
 	</script>
-	<script>
-		$(document).ready(function() {
-				$('input[type=checkbox]').change(function (event) {
-					$e = $(event.target);
-					json = $.parseJSON($e.attr('data-obj'));
-					if (typeof json !== 'undefined') {
-						for (var key in json) {
-							if (json.hasOwnProperty(key)) {
-								switch(key) {
-									case 'depend' :
-										// Handle dependencies later
-									break;
-									default :
-										keyname = key;
-										switch ($e.prop('checked')) {
-											case true :
-												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
-											break;
-											case false :
-												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
-											break;
-										}
-									break;
-								};
-							}
-						}
-						if (typeof json.depend !== 'undefined') {
-							$(json.depend).each(function(idx, value) {
-								$nextE = $('input[name='+value+']');
-								if($nextE.prop('checked') != $e.prop('checked')) {
-									$nextE.prop('checked', $e.prop('checked'));
-									$nextE.trigger('change');
-								}
-							});
-							return true;
-						}
-					}
-				});
-			});
-	</script>
+
 </head>
 
 <body>
@@ -66,14 +27,14 @@
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" ><span id=FP>66,702</span></td>
-			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" ><span id=Coins>1,388,680,493</span></td>
+			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" ><span id=FP>67,199</span></td>
+			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" ><span id=Coins>1,388,679,993</span></td>
 			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Supplies.jpeg alt="Supplies" title="Supplies" > <span id=Supplies>1,437,179,037</span></td>
 			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium"> <span id=Promethium>19,850</span></td>
 			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Orichalcum.jpeg alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>17,650</span></td>
-			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Mars_Ore.jpeg alt="Mars Ore" title="Mars Ore"> <span id=Mars_Ore>18,750</span></td>
-			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Asteroid_Ice.jpeg alt="Asteroid Ice" title="Asteroid Ice" > <span id=Asteroid_Ice>18,250</span></td>
-			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Venus_Carbon.jpeg alt="Venus Carbon" title="Venus Carbon" > <span id=Venus_Carbon>11,900</span></td>
+			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Mars_Ore.jpeg alt="Mars Ore" title="Mars Ore"> <span id="Mars Ore">18,750</span></td>
+			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Asteroid_Ice.jpeg alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid Ice">18,250</span></td>
+			<td colspan=1><img src=https://systemsuser.github.io/research//FoE/images/Venus_Carbon.jpeg alt="Venus Carbon" title="Venus Carbon" > <span id="Venus Carbon">11,900</span></td>
 			<td colspan=1><img src=/FoE/images/Coming_Soon.jpeg alt="Coming Soon!!" title="Coming Soon!!" > <span id=Coming_Soon>0</span></td>
 		</tr>
 		<tr>
@@ -235,7 +196,7 @@
 		</tr>
 		<tr>
 			<td class="ofe bold index">
-				<input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'>&nbsp;Oceanic Future Era</td>
+				<input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'>&nbsp;Oceanic Future Era</td>
 			<td class="vfe bold index">
 				<input type="checkbox" name="allvfe" id="allvfe" data-obj='{"depend": [348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,"allofe"]}'>&nbsp;Virtual Future Era</td>
 			<td class="sam bold index">
@@ -5653,9 +5614,9 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="352" id="352" data-obj='{"depend":[350],"Artifical Scales":"280","Corals":"220","FP":"200","Coins":"19,500,000","Orichalcum":"150"}'> </td>
+				<input type="checkbox" name="352" id="352" data-obj='{"depend":[350],"Artifical Scales":"280","Corals":"220","FP":"215","Coins":"19500000","Orichalcum":"150"}'> </td>
 			<td class="padded">Reliable Hash Generators</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 200</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 215</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 19,500,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -5667,7 +5628,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="353" id="353" data-obj='{"depend":[350],"Biolight":"180","Corals":"200","FP":"240","Coins":"20,500,000","Promethium":"150"}'> </td>
+				<input type="checkbox" name="353" id="353" data-obj='{"depend":[350],"Biolight":"180","Corals":"200","FP":"240","Coins":"20500000","Promethium":"250"}'> </td>
 			<td class="padded">Accelerated Food Engineering</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 240</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 20,500,000</td>
@@ -5675,13 +5636,13 @@
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src=/FoE/images/Biolight.jpeg alt="Biolight" title="Biolight" > 180</td>
 			<td class="padded"><img src=/FoE/images/Corals.jpeg alt="Corals" title="Corals" > 200</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 150</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 250</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Pico Computing</td>
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="354" id="354" data-obj='{"depend":[350],"Pearls":"250","Plankton":"280","FP":"210","Supplies":"25,000,000","Data Crystals":"140"}'> </td>
+				<input type="checkbox" name="354" id="354" data-obj='{"depend":[350],"Pearls":"250","Plankton":"280","FP":"210","Supplies":"25000000","Data Crystals":"140"}'> </td>
 			<td class="padded">Compounding Robotics</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 210</td>
 			<td class="padded">&nbsp;</td>
@@ -5695,7 +5656,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="355" id="355" data-obj='{"depend":[351],"Artificial Scales":"230","Corals":"250","FP":"220","Coins":"20,700,000","Cryptocash":"130"}'> </td>
+				<input type="checkbox" name="355" id="355" data-obj='{"depend":[351],"Artificial Scales":"230","Corals":"250","FP":"220","Coins":"20700000","Cryptocash":"130"}'> </td>
 			<td class="padded">Quantum Photogrammetry</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 220</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 20,700,000</td>
@@ -5709,7 +5670,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="356" id="356" data-obj='{"depend":[352,353,354],"Biolight":"250","Tea Silk":"160","FP":"245","Supplies":"19,000,000","Golden_Rice":"140"}'> </td>
+				<input type="checkbox" name="356" id="356" data-obj='{"depend":[352,353,354],"Biolight":"250","Tea Silk":"160","FP":"245","Supplies":"19000000","Golden Rice":"140"}'> </td>
 			<td class="padded">Secured VR Domains</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 245</td>
 			<td class="padded">&nbsp;</td>
@@ -5768,9 +5729,9 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="360" id="360" data-obj='{"depend":[357],"Plankton":"200","Nanites":"160","FP":"250","Cryptocash":"180","Orichalcum":"210"}'> </td>
+				<input type="checkbox" name="360" id="360" data-obj='{"depend":[357],"Plankton":"200","Nanites":"160","FP":"255","Cryptocash":"180","Orichalcum":"210"}'> </td>
 			<td class="padded">Responsive Holo-Enterainment</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 250</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 255</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Plankton.jpeg alt="Plankton" title="Plankton" > 200</td>
@@ -5812,7 +5773,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="363" id="363" data-obj='{"depend":[362],"Artificial Scales":"250","Golden Rice":"260","FP":"258","Supplies":"30,000,000","Cryptocash":"240"}'> </td>
+				<input type="checkbox" name="363" id="363" data-obj='{"depend":[362],"Artificial Scales":"250","Golden Rice":"260","FP":"258","Supplies":"30000000","Cryptocash":"240"}'> </td>
 			<td class="padded">Crypto Gambling</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 258</td>
 			<td class="padded">&nbsp;</td>
@@ -5826,7 +5787,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="364" id="364" data-obj='{"depend":[362],"Tea Silk":"260","Data Crystals":"250","FP":"260","Supplies":"35,000,000","Promethium":"180"}'> </td>
+				<input type="checkbox" name="364" id="364" data-obj='{"depend":[362],"Tea Silk":"260","Data Crystals":"250","FP":"260","Supplies":"35000000","Promethium":"180"}'> </td>
 			<td class="padded">VR Overlays</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 260</td>
 			<td class="padded">&nbsp;</td>
@@ -5854,7 +5815,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="366" id="366" data-obj='{"depend":[363,364],"Data Crystals":"240","Nanites":"210","FP":"265","Supplies":"30,000,000","Tea Silk":"160"}'> </td>
+				<input type="checkbox" name="366" id="366" data-obj='{"depend":[363,364],"Data Crystals":"240","Nanites":"210","FP":"265","Supplies":"30000000","Tea Silk":"160"}'> </td>
 			<td class="padded">Cultural Resurgence</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 265</td>
 			<td class="padded">&nbsp;</td>
@@ -5884,7 +5845,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="368" id="368" data-obj='{"depend":[364,365],"Cryptocash":"260","Nanites":"120","FP":"270","Coins":"35,000,000","Tea Silk":"250"}'> </td>
+				<input type="checkbox" name="368" id="368" data-obj='{"depend":[364,365],"Cryptocash":"260","Nanites":"120","FP":"270","Coins":"35000000","Tea Silk":"250"}'> </td>
 			<td class="padded">Non-Votile Fire Shells</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 270</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 35,000,000</td>
@@ -5913,7 +5874,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="370" id="370" data-obj='{"depend":[367],"Golden Rice":"290","Nanites":"350","FP":"275","Supplies":"30,000,000"}'> </td>
+				<input type="checkbox" name="370" id="370" data-obj='{"depend":[367],"Golden Rice":"290","Nanites":"350","FP":"275","Supplies":"30000000"}'> </td>
 			<td class="padded">Evolving VR Overlays</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 275</td>
 			<td class="padded">&nbsp;</td>
@@ -5927,7 +5888,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="371" id="371" data-obj='{"depend":[366],"Cryptocash":"280","Nanites":"325","FP":"295","Coins":"35,000,000","Promethium":"250"}'> </td>
+				<input type="checkbox" name="371" id="371" data-obj='{"depend":[366],"Cryptocash":"280","Nanites":"325","FP":"295","Coins":"35000000","Promethium":"250"}'> </td>
 			<td class="padded">VR Supported Celebrations</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 295</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 35,000,000</td>
@@ -5941,7 +5902,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="372" id="372" data-obj='{"depend":[370],"Tea Silk":"280","Golden Rice":"330","FP":"280","Coins":"30,000,000","Orichalcum":"200"}'> </td>
+				<input type="checkbox" name="372" id="372" data-obj='{"depend":[370],"Tea Silk":"280","Golden Rice":"330","FP":"280","Coins":"30000000","Orichalcum":"200"}'> </td>
 			<td class="padded">Efficient DNA Analysis</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 280</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 30,000,000</td>
@@ -5955,7 +5916,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="373" id="373" data-obj='{"depend":[369,371],"Cryptocash":"280","Data Crystals":"330","FP":"310","Supplies":"35,000,000","Promethium":"300"}'> </td>
+				<input type="checkbox" name="373" id="373" data-obj='{"depend":[369,371],"Cryptocash":"280","Data Crystals":"330","FP":"310","Supplies":"35000000","Promethium":"300"}'> </td>
 			<td class="padded">Combat Traditions</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 310</td>
 			<td class="padded">&nbsp;</td>
@@ -5970,7 +5931,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="374" id="374" data-obj='{"depend":[372,373],"Tea Silk":"300","Data Crystals":"280","FP":"330","Coins":"40,000,000","Supplies":"40,000,000"}'> </td>
+				<input type="checkbox" name="374" id="374" data-obj='{"depend":[372,373],"Tea Silk":"300","Data Crystals":"280","FP":"330","Coins":"40000000","Supplies":"40000000"}'> </td>
 			<td class="padded">High Definition VR Domains</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 330</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 40,000,000</td>
@@ -5985,7 +5946,7 @@
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="375" id="375" data-obj='{"depend":[374],"Tea Silk":"250","Cryptocash":"280","FP":"300","Coins":"50,000,000","Supplies":"50,000,000"}'> </td>
+				<input type="checkbox" name="375" id="375" data-obj='{"depend":[374],"Tea Silk":"250","Cryptocash":"280","FP":"300","Coins":"50000000","Supplies":"50000000"}'> </td>
 			<td class="padded">Spacefaring</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 300</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Coins.jpeg alt="Coins" title="Coins" > 50,000,000</td>
@@ -6049,15 +6010,15 @@
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 300</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 200</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Entangled Nuclear Fusion</td>
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="380" id="380" data-obj='{"depend":[377],"Mars Ore":"200","FP":"310"}'> </td>
+				<input type="checkbox" name="380" id="380" data-obj='{"depend":[377],"Mars Ore":"200","FP":"330"}'> </td>
 			<td class="padded">Polymerized Membranes</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 310</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 330</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -6183,7 +6144,7 @@
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="389" id="389" data-obj='{"depend":[385,386],"Biotech Crops":"950","Superalloys":"850","Promethium":"250","FP":"385"}'> </td>
+				<input type="checkbox" name="389" id="389" data-obj='{"depend":[385,386],"Biotech Crops":"950","Superalloys":"850","Promethium":"300","FP":"385"}'> </td>
 			<td class="padded">Non-Reflective Photovoltaic</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 385</td>
 			<td class="padded">&nbsp;</td>
@@ -6191,7 +6152,7 @@
 			<td class="padded"><img src=/FoE/images/Biotech_Crops.jpeg alt="Biotech Crops" title="Biotech Crops" > 950</td>
 			<td class="padded"><img src=/FoE/images/Superalloys.jpeg alt="Superalloys" title="Superalloys" > 850</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 250</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/Promethium.jpeg alt="Promethium" title="Promethium" > 300</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Enchanced Plasteel
 				<br>Mars Regulation</td>
@@ -6615,12 +6576,12 @@
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="419" id="419" data-obj='{"depend":[417],"Nickel":"1400","Bromine":"1,250","Compound Fluid":"2000","FP":"450"}'> </td>
+				<input type="checkbox" name="419" id="419" data-obj='{"depend":[417],"Nickel":"1600","Bromine":"1250","Compound Fluid":"2000","FP":"450"}'> </td>
 			<td class="padded">Simplified Data Transmission</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 450</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src=/FoE/images/Nickel.jpeg alt="Nickel" title="Nickel" > 1,400</td>
+			<td class="padded"><img src=/FoE/images/Nickel.jpeg alt="Nickel" title="Nickel" > 1,600</td>
 			<td class="padded"><img src=/FoE/images/Bromine.jpeg alt="Bromine" title="Bromine" > 1,250</td>
 			<td class="padded"><img src=/FoE/images/Compound_Fluid.jpeg alt="Compound Fluid" title="Compound Fluid" > 2,000</td>
 			<td class="padded">&nbsp;</td>
@@ -7034,9 +6995,9 @@
 		</tr>
 		<tr class="sajm bold index">
 			<td>
-				<input type="checkbox" name="448" id="448" data-obj='{"depend":[447],"Herbal Snack":"2500","Microgreen Supplement":"2400","Soy Proteins":"2100","Venus Carbon":"2150","FP":"500"}'> </td>
-			<td class="padded">Venus Goods Synthesizing</td>
-			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 500</td>
+				<input type="checkbox" name="448" id="448" key="448" data-obj='{"depend":[447],"Herbal Snack":"000","Microgreen Supplement":"000","Soy Proteins":"000","Venus Carbon":"000","FP":"600"}'> </td>
+			<td class="padded">Gene synthesizer</td>
+			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 600</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -7047,5 +7008,45 @@
 			<td class="padded">Directed Nature</td>
 		</tr>
 	</table>
+	<script>
+		$(document).ready(function() {
+				$('input[type=checkbox]').change(function (event) {
+					$e = $(event.target);
+					json = $.parseJSON($e.attr('data-obj'));
+					if (typeof json !== 'undefined') {
+						for (var key in json) {
+							if (json.hasOwnProperty(key)) {
+								switch(key) {
+									case 'depend' :
+										// Handle dependencies later
+									break;
+									default :
+										keyname = key;
+										switch ($e.prop('checked')) {
+											case true :
+												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
+											break;
+											case false :
+												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
+											break;
+										}
+									break;
+								};
+							}
+						}
+						if (typeof json.depend !== 'undefined') {
+							$(json.depend).each(function(idx, value) {
+								$nextE = $('input[name='+value+']');
+								if($nextE.prop('checked') != $e.prop('checked')) {
+									$nextE.prop('checked', $e.prop('checked'));
+									$nextE.trigger('change');
+								}
+							});
+							return true;
+						}
+					}
+				});
+			});
+	</script>
 </body>
 </html>
