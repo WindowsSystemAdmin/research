@@ -2,6 +2,41 @@
 <html>
 
 <head>
+	<script>
+		function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+	</script>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title>Trade Tools - Figures Table</title>
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
@@ -6056,7 +6091,7 @@
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="383" id="383" data-obj='{"depend":[380,381],"Biotech Crops":"250","Mars Microbe":"300","Fusion Reactors":"400","FP":"335"}'> </td>
+				<input type="checkbox" name="383" id="383" data-obj='{"depend":[380,381],"Biotech Crops":"250","Mars Microbe":"300","Fusion Reactors":"280","FP":"335"}'> </td>
 			<td class="padded">Multispectral Sensors</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 335</td>
 			<td class="padded">&nbsp;</td>
@@ -6386,7 +6421,7 @@
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="406" id="406" data-obj='{"depend":[402,403],"Supplies":"75000000","Biotech Crops":"750","Nickel":"650","Asteroid Ice":"600","FP":"410"}'> </td>
+				<input type="checkbox" name="406" id="406" data-obj='{"depend":[402,403],"Supplies":"75000000","Mars Microbe":"1000","Nickel":"650","Asteroid Ice":"600","FP":"410"}'> </td>
 			<td class="padded">Self-sealing Alloys</td>
 			<td class="padded"><img src=https://systemsuser.github.io/research//FoE/images/FP.jpeg alt="Forge Points" title="Forge Points" > 410</td>
 			<td class="padded">&nbsp;</td>
