@@ -11,33 +11,33 @@
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
+	function getCookie(cname) {
+  	let name = cname + "=";
+  	let ca = document.cookie.split(';');
+  	for(let i = 0; i < ca.length; i++) {
+    	let c = ca[i];
+    	while (c.charAt(0) == ' ') {
+      	c = c.substring(1);
+    	}
+    	if (c.indexOf(name) == 0) {
+      	return c.substring(name.length, c.length);
+    	}
+  	}
+  	return "";
+	}
 
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
-	</script>
+	function checkCookie() {
+  	let user = getCookie("username");
+  	if (user != "") {
+    	alert("Welcome again " + user);
+  	} else {
+    	user = prompt("Please enter your name:", "");
+    	if (user != "" && user != null) {
+      	setCookie("username", user, 365);
+    	}
+  	}
+	}
+</script>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
 	<link rel="stylesheet" href="https://research.ethanlin9.repl.co/style.css" />
