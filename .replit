@@ -23,10 +23,10 @@ pattern = "**/*.html"
     wrapLineLength = 120
     unformatted = "wbr"
     contentUnformatted = "pre,code,textarea"
-    indentInnerHtml = false
+    indentInnerHtml = true
     preserveNewLines = true
-    indentHandlebars = false
-    endWithNewline = false
+    indentHandlebars = true
+    endWithNewline = truw
     extraLiners = "head, body, /html"
     wrapAttributes = "auto"
     templating = false
@@ -44,7 +44,7 @@ pattern = "**/*.html"
     references = true
   
     [languages.html.languageServer.configuration.html.trace]
-    server = "off"
+    server = "on"
 
 [languages.javascript]
 pattern = "**/{*.js,*.jsx,*.ts,*.tsx,*.mjs,*.cjs}"
