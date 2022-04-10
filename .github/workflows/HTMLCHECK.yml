@@ -21,6 +21,9 @@ jobs:
     - run: sudo apt update && sudo apt upgrade -y
     - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
     - run: sudo apt update && sudo apt upgrade -y
+    - run: sudo apt autoremove && sudo apt autoclean
+    - run: lsb_release -a
+    - run: uname -a
     - uses: actions/checkout@v3
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@master
