@@ -18,7 +18,7 @@ jobs:
   HTMLCHECK:
     runs-on: ubuntu-latest
     steps:
-    - run: apt update && apt upgrade -y
+    - run: sudo apt update && apt upgrade -y
     - uses: actions/checkout@v3
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@master
