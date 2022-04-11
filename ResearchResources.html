@@ -3,7 +3,7 @@
 
 <head>
 	<title>Trade Tools - Figures Table</title>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
 	<link rel="stylesheet" href="https://research.ethanlin9.repl.co/style.css" integrity="sha512-DFMtKYOWFVbQXT9TxH0grNGJeH6/1bLzndd2Vo8tnB1oITzsJq5AFYxlCd+kGcPik2quRhk9g0rHgexH4zspyg==" crossorigin="anonymous">
 	<!--<script src="jquery-2.1.3.min.js">
@@ -50,11 +50,50 @@
     	}
   	}
 	}
-</script>
-
+	</script>
 </head>
 
 <body onload="checkCookie()">
+		<script>
+		$(document).ready(function() {
+			$('input[type=checkbox]').change(function (event) {
+				$e = $(event.target);
+				json = $.parseJSON($e.attr('data-obj'));
+				if (typeof json !== 'undefined') {
+					for (var key in json) {
+						if (json.hasOwnProperty(key)) {
+							switch(key) {
+								case 'depend' :
+									// Handle dependencies later
+								break;
+								default :
+									keyname = key;
+									switch ($e.prop('checked')) {
+										case true :
+											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
+										break;
+										case false :
+											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
+										break;
+									}
+								break;
+							};
+						}
+					}
+					if (typeof json.depend !== 'undefined') {
+						$(json.depend).each(function(idx, value) {
+							$nextE = $('input[name='+value+']');
+							if($nextE.prop('checked') != $e.prop('checked')) {
+								$nextE.prop('checked', $e.prop('checked'));
+								$nextE.trigger('change');
+							}
+						});
+						return true;
+					}
+				}
+			});
+		});
+	</script>
 	
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
@@ -62,11 +101,11 @@
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,732</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Coins.jpeg" alt="Coins" title="Coins" ><span id=Coins>1849180493</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,347</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Coins.jpeg" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Supplies.jpeg" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Orichalcum.jpeg" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>19,500</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Orichalcum.jpeg" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>19,650</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Mars_Ore.jpeg" alt="Mars Ore" title="Mars Ore"> <span id="Mars-Ore">20,250</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
@@ -158,9 +197,9 @@
 			<td class="afe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Bioplastics.jpeg" alt="Bioplastics" title="Bioplastics" > <span id="Bioplastics">2,060</span>&nbsp;</td>
 		</tr>
 		<tr>
-			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Artificial_Scales.jpeg" alt="Artificial Scales" title="Artificial Scales" > <span id="Artificial-Scales">3,120</span>&nbsp;</td>
+			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Artificial_Scales.jpeg" alt="Artificial Scales" title="Artificial Scales" > <span id="Artificial-Scales">3,400</span>&nbsp;</td>
 			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Biolight.jpeg" alt="Biolight" title="Biolight" > <span id="Biolight">2,870</span>&nbsp;</td>
-			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Corals.jpeg" alt="Corals" title="Corals" > <span id="Corals">3,350</span>&nbsp;</td>
+			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Corals.jpeg" alt="Corals" title="Corals" > <span id="Corals">3,570</span>&nbsp;</td>
 			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Pearls.jpeg" alt="Pearls" title="Pearls" > <span id="Pearls">2,830</span>&nbsp;</td>
 			<td class="ofe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Plankton.jpeg" alt="Plankton" title="Plankton" > <span id="Plankton">2,970</span>&nbsp;</td>
 			<td class="vfe">&nbsp; <img src="https://systemsuser.github.io/research//FoE/images/Golden_Rice.jpeg" alt="Golden Rice" title="Golden Rice" > <span id="Golden-Rice">2,395</span>&nbsp;</td>
@@ -5671,7 +5710,7 @@
 		</tr>
 		<tr class="vfe bold index">
 			<td>
-				<input type="checkbox" name="352" id="352" data-obj='{"depend":[350],"Artifical Scales":"280","Corals":"220","FP":"215","Coins":"19500000","Orichalcum":"150"}'> </td>
+				<input type="checkbox" name="352" id="352" data-obj='{"depend":[350],"Artificial-Scales":"280","Corals":"220","FP":"215","Coins":"19500000","Orichalcum":"150"}'> </td>
 			<td class="padded">Reliable Hash Generators</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 215</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research//FoE/images/Coins.jpeg" alt="Coins" title="Coins" > 19,500,000</td>
@@ -7148,7 +7187,7 @@
 		</tr>
 		<tr class="sajm bold index">
 			<td>
-				<input type="checkbox" name="448" id="448" data-obj='{"depend":[447],"Herbal-Snack":"000","Microgreen-Supplement":"000","Soy-Proteins":"000","Venus-Carbon":"000","FP":"600"}'> </td>
+				<input type="checkbox" name="448" id="448" data-obj='{"depend":[447],"Red-Algae":"000","Microgreen-Supplement":"000","Soy-Proteins":"000","Venus-Carbon":"000","FP":"600"}'> </td>
 			<td class="padded">Gene synthesizer</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 600</td>
 			<td class="padded">&nbsp;</td>
@@ -7162,45 +7201,6 @@
 			<td class="padded">&nbsp;</td>
 		</tr>
 	</table>
-	<script>
-		$(document).ready(function() {
-				$('input[type=checkbox]').change(function (event) {
-					$e = $(event.target);
-					json = $.parseJSON($e.attr('data-obj'));
-					if (typeof json !== 'undefined') {
-						for (var key in json) {
-							if (json.hasOwnProperty(key)) {
-								switch(key) {
-									case 'depend' :
-										// Handle dependencies later
-									break;
-									default :
-										keyname = key;
-										switch ($e.prop('checked')) {
-											case true :
-												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
-											break;
-											case false :
-												document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
-											break;
-										}
-									break;
-								};
-							}
-						}
-						if (typeof json.depend !== 'undefined') {
-							$(json.depend).each(function(idx, value) {
-								$nextE = $('input[name='+value+']');
-								if($nextE.prop('checked') != $e.prop('checked')) {
-									$nextE.prop('checked', $e.prop('checked'));
-									$nextE.trigger('change');
-								}
-							});
-							return true;
-						}
-					}
-				});
-			});
-	</script>
+
 </body>
 </html>
