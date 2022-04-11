@@ -55,6 +55,46 @@
 </head>
 
 <body onload="checkCookie()">
+		<script>
+		$(document).ready(function() {
+			$('input[type=checkbox]').change(function (event) {
+				$e = $(event.target);
+				json = $.parseJSON($e.attr('data-obj'));
+				if (typeof json !== 'undefined') {
+					for (var key in json) {
+						if (json.hasOwnProperty(key)) {
+							switch(key) {
+								case 'depend' :
+									// Handle dependencies later
+								break;
+								default :
+									keyname = key;
+									switch ($e.prop('checked')) {
+										case true :
+											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
+										break;
+										case false :
+											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
+										break;
+									}
+								break;
+							};
+						}
+					}
+					if (typeof json.depend !== 'undefined') {
+						$(json.depend).each(function(idx, value) {
+							$nextE = $('input[name='+value+']');
+							if($nextE.prop('checked') != $e.prop('checked')) {
+								$nextE.prop('checked', $e.prop('checked'));
+								$nextE.trigger('change');
+							}
+						});
+						return true;
+					}
+				}
+			});
+		});
+		</script>
 	
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
@@ -62,7 +102,7 @@
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,947</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,347</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Coins.jpeg" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Supplies.jpeg" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research//FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
@@ -7162,45 +7202,6 @@
 			<td class="padded">&nbsp;</td>
 		</tr>
 	</table>
-	<script>
-		$(document).ready(function() {
-			$('input[type=checkbox]').change(function (event) {
-				$e = $(event.target);
-				json = $.parseJSON($e.attr('data-obj'));
-				if (typeof json !== 'undefined') {
-					for (var key in json) {
-						if (json.hasOwnProperty(key)) {
-							switch(key) {
-								case 'depend' :
-									// Handle dependencies later
-								break;
-								default :
-									keyname = key;
-									switch ($e.prop('checked')) {
-										case true :
-											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
-										break;
-										case false :
-											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) + parseInt(json[key]);
-										break;
-									}
-								break;
-							};
-						}
-					}
-					if (typeof json.depend !== 'undefined') {
-						$(json.depend).each(function(idx, value) {
-							$nextE = $('input[name='+value+']');
-							if($nextE.prop('checked') != $e.prop('checked')) {
-								$nextE.prop('checked', $e.prop('checked'));
-								$nextE.trigger('change');
-							}
-						});
-						return true;
-					}
-				}
-			});
-		});
-		</script>
+
 </body>
 </html>
