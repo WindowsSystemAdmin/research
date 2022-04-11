@@ -1,4 +1,5 @@
 [![HTML CHECKER](https://github.com/WindowsSystemAdmin/research/actions/workflows/HTMLCHECK.yml/badge.svg?branch=main&event=push)](https://github.com/WindowsSystemAdmin/research/actions/workflows/HTMLCHECK.yml)
+[![CodeQL](https://github.com/WindowsSystemAdmin/research/actions/workflows/codeql.yml/badge.svg?event=push)](https://github.com/WindowsSystemAdmin/research/actions/workflows/codeql.yml)
 # Research
 A HTML site that will allow you to track your progress on the research tree in Forge of Empires!\
 **Current ages needed to be added are below:** 
