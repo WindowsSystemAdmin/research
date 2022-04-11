@@ -7,6 +7,6 @@ A HTML site that will allow you to track your progress on the research tree in F
 - [X] Space Age Mars
 - [X] Space Age Asteroid Belt
 - [X] Space Age Venus
-- [X] Space Age Jupiter Moon
+- [ ] Space Age Jupiter Moon (**Due for release soon by INNO**)
 - [ ] Space Age Titan (**Coming SOON!**)\
 Here is the link: (https://research.ethanlin9.repl.co/ResearchResources.html "Research tree site")
