@@ -9,4 +9,5 @@ int main(){
   cin >> x;
   cout << "Your number is: " << x << endl;
   delete [] shape;
+  cout << "Deleted shape\n";
 }
