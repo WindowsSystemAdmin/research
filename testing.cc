@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+  char * shape = new char[10];
   int x = 0;
   cout << "Enter a number: ";
   cin >> x;
