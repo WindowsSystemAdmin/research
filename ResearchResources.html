@@ -21,7 +21,7 @@
   		const d = new Date();
   		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   		let expires = "expires="+d.toUTCString();
-  		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + ";secure";
 }
 
 	function getCookie(cname) {
@@ -110,7 +110,7 @@
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">10,000</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Coming_Soon.jpeg" alt="Coming Soon!!" title="Coming Soon!!" ><span id=Coming_Soon>None</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Coming_Soon.jpeg" alt="Coming Soon!!" title="Coming Soon!!" ><span id="Coming_Soon">None</span></td>
 		</tr>
 		<tr>
 			<td class="ba">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/Stone.jpeg" alt="Stone" title="Stone" > <span id="Stone">152</span>&nbsp;</td>
