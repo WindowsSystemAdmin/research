@@ -54,6 +54,7 @@
 </head>
 
 <body onload="checkCookie()">
+	<h1> Your IP Address is: <? echo $_SERVER["REMOTE_ADDR"]; ?> </h1>
 		<script>
 		$(document).ready(function() {
 			$('input[type=checkbox]').change(function (event) {
