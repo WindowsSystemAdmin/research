@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
 											 j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PXD833K');
-		var userAgentString = navigator.userAgent; // returns userAgent string
+		var userAgentString = navigator.userAgentData; // returns userAgent string
 			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
         ga('create', 'GTM-PXD833K', 'auto');
         ga('send', 'pageview');
@@ -33,13 +33,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
 	<title>Trade Tools - Figures Table</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
-	<link rel="stylesheet" href="https://research.ethanlin9.repl.co/style.css" integrity="sha512-DFMtKYOWFVbQXT9TxH0grNGJeH6/1bLzndd2Vo8tnB1oITzsJq5AFYxlCd+kGcPik2quRhk9g0rHgexH4zspyg==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-mWfzRtEqM/FZY2fnAEL1VSuulMYXczahEPJemKwT2U8fKmP+t9IvxvVIZF6kPWdIXRNfrOXxVLLdVjM76ncq9g==" crossorigin="anonymous">
 	<!--<script src="jquery-2.1.3.min.js">
 	</script>-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 	<!--<script src="jquery-hashtable.js">-->
-
-	</script>
 	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.min.js">
 
 	</script>
@@ -303,13 +301,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<td class="fe bold index">
 				<input type="checkbox" name="allfe" id="allfe" data-obj='{"depend": [241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,"allte"]}'>&nbsp;Future Era</td>
 			<td class="afe bold index">
-				<input type="checkbox" name="allafe" id="allafe" data-obj='{"depend": [261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,"allfe"]}'>&nbsp;Arctic Future Era</td>
+				<input type="checkbox" name="allafe" id="allafe" data-obj='{"depend": [261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,"allfe"]}'>&nbsp;Arctic Future</td>
 		</tr>
 		<tr>
 			<td class="ofe bold index">
-				<input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'>&nbsp;Oceanic Future Era</td>
+				<input type="checkbox" name="allofe" id="allofe" data-obj='{"depend": [292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,"allafe"]}'>&nbsp;Oceanic Future</td>
 			<td class="vfe bold index">
-				<input type="checkbox" name="allvfe" id="allvfe" data-obj='{"depend": [348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,"allofe"]}'>&nbsp;Virtual Future Era</td>
+				<input type="checkbox" name="allvfe" id="allvfe" data-obj='{"depend": [348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,"allofe"]}'>&nbsp;Virtual Future</td>
 			<td class="sam bold index">
 				<input type="checkbox" name="allsam" id="allsam" data-obj='{"depend": [375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,"allvfe"]}'>&nbsp;Space Age Mars</td>
 			<td class="saab bold index">
@@ -321,11 +319,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<td class="sajm bold index">
 				<input type="checkbox" name="allsajm" id="allsajm" data-obj='{"depend": [448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,"allsav"]}'>&nbsp;Space Age Jupiter Moon</td>
 			<td class="sat bold index">
-				<input type="checkbox" name="allsat" id="allsajm" data-obj='{"depend": [474,"allsajm"]}'>&nbsp;Space Age Titan</td>
+				<input type="checkbox" name="allsat" id="allsat" data-obj='{"depend": [474,"allsajm"]}'>&nbsp;Space Age Titan</td>
 			<td></td>
 			<td></td>
 			<td></td>
-			</tr>
+		</tr>
 	</table>
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
