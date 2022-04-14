@@ -13,4 +13,4 @@ Here is the link: (https://research.system-user.repl.co/ResearchResources.html "
 
 **NEWS:**
 
-INNO will release an update on April 12th, 2022. Not sure if this is the SAJM release. Stay tuned.
+INNO will release an update on April 20th, 2022. Not sure if this is the SAJM release. Stay tuned.
