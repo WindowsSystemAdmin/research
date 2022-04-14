@@ -26,8 +26,9 @@ jobs:
     # - run: lsb_release -a
     # - run: uname -a
     - uses: actions/checkout@v3
+    - run: git -C . rev-parse
     - name: HTML5Validator
-      uses: Cyb3r-Jak3/html5validator-action@master
+      uses: Cyb3r-Jak3/html5validator-action@v7.1.0
       with:
           root: ./
           log_level: INFO
