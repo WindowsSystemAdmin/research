@@ -18,13 +18,13 @@ jobs:
   HTMLCHECK:
     runs-on: ubuntu-latest
     steps:
-    - run: sudo apt update && sudo apt upgrade -y
-    - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
-    - run: sudo apt update && sudo apt upgrade -y
-    - run: sudo apt --with-new-pkgs upgrade -y
-    - run: sudo apt autoremove && sudo apt autoclean
-    - run: lsb_release -a
-    - run: uname -a
+    # - run: sudo apt update && sudo apt upgrade -y
+    # - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
+    # - run: sudo apt update && sudo apt upgrade -y
+    # - run: sudo apt --with-new-pkgs upgrade -y
+    # - run: sudo apt autoremove && sudo apt autoclean
+    # - run: lsb_release -a
+    # - run: uname -a
     - uses: actions/checkout@v3
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@master
@@ -32,6 +32,8 @@ jobs:
           root: ./
           log_level: INFO
           css: true
+      env:
+        HTML5_ACTION_DEBUG: true
     - uses: actions/upload-artifact@v3
       with:
           name: log
