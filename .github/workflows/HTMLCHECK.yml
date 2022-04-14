@@ -11,7 +11,7 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,33 +21,7 @@ jobs:
     - run: sudo apt update && sudo apt upgrade -y
     - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
     - run: sudo apt update && sudo apt upgrade -y
-    - run: sudo apt install  apt apt-utils at build-essential clang-11 clang-12 clang-format-11
-            clang-format-12 coreutils cpp cron dbus dbus-user-session debugedit dmeventd
-            dpkg findutils fwupd g++ gcc gcc-11-base gfortran gir1.2-freedesktop
-            gir1.2-glib-2.0 gir1.2-rsvg-2.0 glib-networking glib-networking-services
-            iproute2 libappstream4 libapt-pkg6.0 libasan6 libc++-dev libc++abi-dev
-            libclang-common-11-dev libclang-common-12-dev libclang-cpp11 libclang-cpp12
-            libclang1-11 libclang1-12 libdbus-1-3 libdevmapper1.02.1
-            libfile-desktopentry-perl libfwupd2 libfwupdplugin5 libgirepository-1.0-1
-            libglib2.0-0 libglib2.0-bin libglib2.0-dev libglib2.0-dev-bin libgsl-dev
-            libgslcblas0 libgstreamer1.0-0 libgtk-3-0 liblldb-11 liblldb-12 libllvm11
-            libllvm12 liblvm2cmd2.03 libmount-dev libmount1 libnetplan0 libnewt0.52
-            libnss-systemd libobjc4 libpam-modules libpam-modules-bin libpam-systemd
-            libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpython3-dev
-            libpython3-stdlib librsvg2-2 librsvg2-common librsvg2-dev libselinux1
-            libselinux1-dev libsemanage-common libsystemd0 libtsan0 libudev1 lld-11
-            lld-12 lldb-11 llvm-11 llvm-11-dev llvm-11-runtime llvm-11-tools llvm-12
-            llvm-12-dev llvm-12-linker-tools llvm-12-runtime llvm-12-tools logrotate
-            lsof ltrace lvm2 mercurial mercurial-common mount net-tools netplan.io
-            openssh-client openssh-server openssh-sftp-server passwd python3 python3-apt
-            python3-cffi-backend python3-crcmod python3-dbus python3-dev
-            python3-distutils python3-gdbm python3-gi python3-jinja2 python3-lib2to3
-            python3-lldb-11 python3-markupsafe python3-minimal python3-netifaces
-            python3-newt python3-parted python3-protobuf python3-pyrsistent
-            python3-simplejson python3-systemd python3-venv python3-yaml
-            python3-zope.interface rpm rpm-common rpm2cpio rsyslog sed ssh sudo systemd
-            systemd-sysv tar udev uidmap util-linux vim vim-common vim-runtime vim-tiny
-            xvfb
+    - run: sudo apt --with-new-pkgs upgrade -y
     - run: sudo apt autoremove && sudo apt autoclean
     - run: lsb_release -a
     - run: uname -a
@@ -55,9 +29,9 @@ jobs:
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@master
       with:
-          root: /research
+          root: ./
           log_level: INFO
-          css: false
+          css: true
     - uses: actions/upload-artifact@v3
       with:
           name: log
