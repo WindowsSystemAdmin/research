@@ -11,7 +11,7 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -55,9 +55,9 @@ jobs:
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@master
       with:
-          root: ./
+          root: WindowsSystemAdmin/research@main
           log_level: INFO
-          css: false
+          css: true
     - uses: actions/upload-artifact@v3
       with:
           name: log
