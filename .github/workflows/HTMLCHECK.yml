@@ -30,6 +30,9 @@ jobs:
         ls -la
         git -C . rev-parse
         echo $?
+        if ! git -C . rev-parse 2>/dev/null; then
+          echo "Git check fails"
+        fi
     - name: HTML5Validator
       uses: Cyb3r-Jak3/html5validator-action@v7.1.0
       with:
