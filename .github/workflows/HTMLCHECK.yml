@@ -38,7 +38,7 @@ jobs:
       with:
           root: ./
           log_level: INFO
-          css: true
+          css: false
           skip_git_check: true
       env:
         HTML5_ACTION_DEBUG: true
