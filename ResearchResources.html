@@ -3,42 +3,48 @@
 
 <head>
 	<!-- Google Tag Manager -->
-<script>
-	(function(w,d,s,l,i){w[l]=w[l]||[];
-											 w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});
-											 var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
-											 j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PXD833K');
+	<script>
+		(function(w,d,s,l,i)
+		 {
+			w[l]=w[l]||[];
+			w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+			var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+			j.async=true;
+			j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		 }
+		)
+		(window,document,'script','dataLayer','GTM-PXD833K');
 		var userAgentString = navigator.userAgentData; // returns userAgent string
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+		window.ga=window.ga||function(){
+			(ga.q=ga.q||[]).push(arguments)};
+		ga.l=+new Date;
         ga('create', 'GTM-PXD833K', 'auto');
         ga('send', 'pageview');
-        ga('send', 'event','geo')
-</script>
-<!-- End Google Tag Manager -->
+        ga('send', 'event','geo');
+	</script>
+	<!-- End Google Tag Manager -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9RHNLBXEZ"></script>
-<script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9RHNLBXEZ"></script>
+	<script>
 	
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){
+		dataLayer.push(arguments);
+	}
   gtag('js', new Date());
 
   gtag('config', 'G-X9RHNLBXEZ');
 	//gtag('event','geo');
-</script>
+	</script>
 	<title>Trade Tools - Figures Table</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
-	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-mWfzRtEqM/FZY2fnAEL1VSuulMYXczahEPJemKwT2U8fKmP+t9IvxvVIZF6kPWdIXRNfrOXxVLLdVjM76ncq9g==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-E9PBG4XXDQ+xnvAV5DrlluOGtLdfpBU6FjfUp2E23h0oZKPrGxyL2GV2cqTuyly/QX8VPRmGu1LbmcxhblEG6g==" crossorigin="anonymous">
 	<!--<script src="jquery-2.1.3.min.js">
 	</script>-->
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-	<!--<script src="jquery-hashtable.js">-->
-	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.min.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<!--<script src="">-->
+	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.js">
 
 	</script>
 
@@ -48,17 +54,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
   		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
   		let expires = "expires="+d.toUTCString();
   		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + ";secure";
-}
+		}
 
-	function getCookie(cname) {
-  	let name = cname + "=";
-  	let ca = document.cookie.split(';');
-  	for(let i = 0; i < ca.length; i++) {
-    	let c = ca[i];
-    	while (c.charAt(0) == ' ') {
-      	c = c.substring(1);
+		function getCookie(cname) {
+  		let name = cname + "=";
+  		let ca = document.cookie.split(';');
+  		for(let i = 0; i < ca.length; i++) {
+    		let c = ca[i];
+    		while (c.charAt(0) == ' ') {
+      		c = c.substring(1);
     	}
-    	if (c.indexOf(name) == 0) {
+    		if (c.indexOf(name) == 0) {
       	return c.substring(name.length, c.length);
     	}
   	}
@@ -80,11 +86,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
 </head>
 
 <body onload="checkCookie()">
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script>
+	//Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+  	if (document.body.scrollTop > 20 ||	document.documentElement.scrollTop > 20) {
+    	mybutton.style.display = "block";
+  	} else {
+    	mybutton.style.display = "none";
+  	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+  	document.body.scrollTop = 0;
+  	document.documentElement.scrollTop = 0;
+	}
+	</script>
 	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-		<script>
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<script>
 		$(document).ready(function() {
 			$('input[type=checkbox]').change(function (event) {
 				$e = $(event.target);
