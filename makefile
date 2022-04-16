@@ -7,7 +7,7 @@ SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.cc'
 OBJS = $(SRCS:.cc=.o)
 DEPS = $(SRCS:.cc=.d)
 
-%.d: %.cpp
+%.d: %.cc
 	@set -e; rm -vf $@; \
 	$(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
 	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
