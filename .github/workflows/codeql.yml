@@ -12,6 +12,10 @@
 name: "CodeQL"
 
 on:
+  deployment_status:
+    branches: [main]
+  status:
+    branches: [ main ]
   push:
     branches: [ main ]
   pull_request:
@@ -31,7 +35,7 @@ jobs:
       statuses: write
 
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         language: [ 'javascript','cpp' ]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
