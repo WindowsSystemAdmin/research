@@ -1,5 +1,5 @@
-[![CI](https://github.com/WindowsSystemAdmin/research/actions/workflows/HTMLCHECK.yaml/badge.svg?branch=main&event=push)](https://github.com/WindowsSystemAdmin/research/actions/workflows/HTMLCHECK.yaml)
-[![CodeQL](https://github.com/WindowsSystemAdmin/research/actions/workflows/codeql.yaml/badge.svg?branch=main&event=push)](https://github.com/WindowsSystemAdmin/research/actions/workflows/codeql.yaml)
+[![CI](https://github.com/WindowsSystemAdmin/research/workflows/HTMLCHECK.yaml/badge.svg?branch=main&event=push)](https://github.com/WindowsSystemAdmin/research/workflows/HTMLCHECK.yaml)
+[![CodeQL](https://github.com/WindowsSystemAdmin/research/workflows/codeql.yaml/badge.svg?branch=main&event=push)](https://github.com/WindowsSystemAdmin/research/workflows/codeql.yaml)
 
 # Research
 A HTML site that will allow you to track your progress on the research tree in Forge of Empires!\
