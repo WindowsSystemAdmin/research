@@ -39,7 +39,7 @@ jobs:
           root: ./
           log_level: INFO
           css: true
-          skip_git_check: true
+          #skip_git_check: true
       env:
         HTML5_ACTION_DEBUG: true
     - uses: actions/upload-artifact@v3
