@@ -111,6 +111,7 @@ if (isset($_GET['logout'])) {
 </script>
 	<script src="https://github.com/timdown/jshashtable/blob/master/hashtable.js"></script>
 	<script>
+		localStorage.setItem('colorSetting', '#a4509b');
 		function setCookie(cname, cvalue, exdays) {
   		const d = new Date();
   		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -164,9 +165,9 @@ if (isset($_GET['logout'])) {
 	$json =  file_get_contents('http://ip-api.com/json/'.$ip.'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
 	$ipData = json_decode($json,true);
 	echo "<br>";
-	echo "You are located in ", $ipData['city'],", ", $ipData['regionName'], ", ", $ipData['country'], ", ", $ipData['continent'], ", ", $ipData['zip'], ".";
+	echo "You are located in $ipData[city], $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
 	echo "<br>";
-	echo "Your internet service provider (ISP) is ", $ipData['isp'], ", your organisation name is ",$ipData['org']," and the AS number and organisation name is ",$ipData['as'],".";
+	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as].";
  ?>
 	<p>
                 <a href="index.php?logout='1'" style="color: red;">
@@ -214,6 +215,7 @@ if (isset($_GET['logout'])) {
 								break;
 								default :
 									keyname = key;
+									
 									switch ($e.prop('checked')) {
 										case true :
 											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
@@ -232,6 +234,7 @@ if (isset($_GET['logout'])) {
 							if($nextE.prop('checked') != $e.prop('checked')) {
 								$nextE.prop('checked', $e.prop('checked'));
 								$nextE.trigger('change');
+								localStorage.setItem(key,'checked');
 							}
 						});
 						return true;
