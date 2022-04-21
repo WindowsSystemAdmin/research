@@ -14,4 +14,4 @@ Here is the link: (https://TEST.system-user.repl.co/index.php "Research tree sit
 
 **NEWS:**
 
-INNO will release an update on April 20th, 2022. Not sure if this is the SAJM release. Stay tuned.
+INNO announced that the SAJM release date is pushed back to the beginning of May. Stay tuned.
