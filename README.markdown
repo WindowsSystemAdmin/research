@@ -14,5 +14,5 @@ Here is the link: (https://TEST.system-user.repl.co/index.php "Research tree sit
 
 INNO released the update containing the new age, Space Age Jupiter Moon! This is exciting news! Please read below for important information.
 
-																																					**IMPORTANT**
-** FOR THOSE PLAYINING GBG IN A GUILD *PLEASE* DO NOT AGE UP BEFORE GBG STARTS OR YOUR GUILD WILL BE FORCED TO USE NEW AGE GOODS FOR THEIR SIEGE CAMPS!!!**
+**IMPORTANT**
+**FOR THOSE PLAYINING GBG IN A GUILD *PLEASE* DO NOT AGE UP BEFORE GBG STARTS OR YOUR GUILD WILL BE FORCED TO USE NEW AGE GOODS FOR THEIR SIEGE CAMPS!!!**
