@@ -267,7 +267,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,347</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" ><span id=FP>82,947</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Coins.jpeg" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Supplies.jpeg" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
