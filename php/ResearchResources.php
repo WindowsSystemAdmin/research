@@ -7550,6 +7550,143 @@ if (isset($_GET['logout'])) {
 			<td class="padded">Cavitation Module</td>
 			<td class="padded">&nbsp;</td>
 		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="461" id="461" data-obj='{"depend":[458,459],"Red-Algae":"800","Mars-Ore":"350","Asteroid-Ice":"650","Unknown-DNA":"350","FP":"640"}'> </td>
+			<td class="padded">Splicing Pods</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 640</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Red_Algae.jpeg" alt="Red Algae" title="Red Algae" > 800</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Mars_Ore.jpeg" alt="Mars Ore" title="Mars Ore" > 350</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > 650</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 350</td>
+			<td class="padded">Cavitation Module
+				<br>G. J. Mendel Award</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="462" id="462" data-obj='{"depend":[459],"Red-Algae":"1050","Bio-Creatures":"900","Venus-Carbon":"850","Unknown-DNA":"450","FP":"620"}'> </td>
+			<td class="padded">Spectral Shields</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 620</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Red_Algae.jpeg" alt="Red Algae" title="Red Algae" > 1,050</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > 900</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > 850</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">G. J. Mendel Award</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="463" id="463" data-obj='{"depend":[460],"Topological-Records":"1350","Enhanced-Porifera":"950","Advanced-DNA-Data":"1150","Unknown-DNA":"500","FP":"610"}'> </td>
+			<td class="padded">Deep Frequency Module</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 610</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > 1,350</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Enhanced_Porifera.jpeg" alt="Enhanced Porifera" title="Enhanced Porifera" > 950</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,150</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 500</td>
+			<td class="padded">Plasmid Suits</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="464" id="464" data-obj='{"depend":[461,462],"Advanced-DNA-Data":"1450","Promethium":"500","Orichalcum":"600","Asteroid-Ice":"700","FP":"620"}'> </td>
+			<td class="padded">Chimerism</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 620</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,450</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium title="Promethium" > 500</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Orichalcum.jpeg" alt="Orichalcum" title="Orichalcum" > 600</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > 700</td>
+			<td class="padded">Splicing Pods
+				<br>Spectral Shields</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="465" id="465" data-obj='{"depend":[463],"Red-Algae":"1550","Topological-Records":"1800","Enhanced-Porifera":"1550","Orichalcum":"500","FP":"600"}'> </td>
+			<td class="padded">Cyanobacterial Fuel</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 600</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Red_Algae.jpeg" alt="Red Algae" title="Red Algae" > 1,550</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > 1,800</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Enhanced_Porifera.jpeg" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,550</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Orichalcum.jpeg" alt="Orichalcum" title="Orichalcum" > 500</td>
+			<td class="padded">Deep Frequency Module</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="466" id="466" data-obj='{"depend":[464],"Bio-Creatures":"1300","Enhanced-Porifera":"1700","Venus-Carbon":"950","Unknown-DNA":"600","FP":"600"}'> </td>
+			<td class="padded">Ecto Phytobiomes</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 600</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > 1,300</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Enhanced_Porifera.jpeg" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > 950</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 600</td>
+			<td class="padded">Chimerism</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="467" id="467" data-obj='{"depend":[465],"Bio-Creatures":"1400","Advanced-DNA-Data":"1800","Venus-Carbon":"1050","Unknown-DNA":"700","FP":"640"}'> </td>
+			<td class="padded">High Pressure Detector 3000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 640</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > 1,400</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,800</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > 1,050</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 700</td>
+			<td class="padded">Cyanobacterial Fuel</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="468" id="468" data-obj='{"depend":[465],"Red-Algae":"1800","Topological-Records":"2150","Promethium":"600","Unknown-DNA":"850","FP":"600"}'> </td>
+			<td class="padded">Photonic Imprint</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 600</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Red_Algae.jpeg" alt="Red Algae" title="Red Algae" > 1,800</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > 1,800</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium" > 2,150</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 850</td>
+			<td class="padded">Cyanobacterial Fuel</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="469" id="469" data-obj='{"depend":[466],"Coins":"125000000","Supplies":"125000000","Mars-Ore":"550","Asteroid-Ice":"850","FP":"660"}'> </td>
+			<td class="padded">Plasma Enducer</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 660</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Coins.jpeg" alt="Coins" title="Coins" > 125,000,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Supplies.jpeg" alt="Supplies" title="Supplies" > 125,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Mars_Ore.jpeg" alt="Mars Ore" title="Mars Ore" > 550</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > 850</td>
+			<td class="padded">Ecto Phytobiomes</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
 	</table>
 </div>
 </body>
