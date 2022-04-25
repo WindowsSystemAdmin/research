@@ -95,7 +95,7 @@ if (isset($_GET['logout'])) {
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.js">
 </script>
-		<div id="runningTime"></div>
+		<!--<div id="runningTime"></div>
 	<script>
 		$(document).ready(function() {
  		setInterval(runningTime, 1000);
@@ -108,10 +108,9 @@ if (isset($_GET['logout'])) {
      },
   });
 }
-</script>
+</script>-->
 	<script src="https://github.com/timdown/jshashtable/blob/master/hashtable.js"></script>
 	<script>
-		localStorage.setItem('colorSetting', '#a4509b');
 		function setCookie(cname, cvalue, exdays) {
   		const d = new Date();
   		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -146,39 +145,41 @@ if (isset($_GET['logout'])) {
   	}
 	}
 	</script>
-		<script>
-var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
-    $checkboxes = $("#checkbox-container :checkbox");
+	<script>
+		var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
+    	$checkboxes = $("#data1 :checkbox");
 
-$checkboxes.on("change", function(){
-  $checkboxes.each(function(){
-    checkboxValues[this.id] = this.checked;
-  });
+		$checkboxes.on("change", function(){
+  		$checkboxes.each(function(){
+    		checkboxValues[this.id] = this.checked;
+  		});
   
-  localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-});
+  		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
+		});
 
 // On page load
-$.each(checkboxValues, function(key, value) {
-  $("#" + key).prop('checked', value);
-});
+	
+		$.each(checkboxValues, function(key, value) {
+  		$("#" + key).prop('checked', value);
+		});
 	</script>
 </head>
 
 <body onload="checkCookie()"> 
+	<div id="checkbox-container">
+
 
 <br>
 		<h>Your IP Address is: </h>
 <?php 
-			echo ini_get('session.save_path');
-			
-			if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    		echo $ip = $_SERVER['HTTP_CLIENT_IP'];
-			} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    		echo $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-			} else {
-    		echo $ip = $_SERVER['REMOTE_ADDR'];
-			}
+	echo ini_get('session.save_path');
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    echo $ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    echo $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+    echo $ip = $_SERVER['REMOTE_ADDR'];
+	}
 	$json =  file_get_contents('http://ip-api.com/json/'.$ip.'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
 	$ipData = json_decode($json,true);
 	echo "<br>";
@@ -187,10 +188,10 @@ $.each(checkboxValues, function(key, value) {
 	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as].";
  ?>
 	<p>
-                <a href="index.php?logout='1'" style="color: red;">
-                    Click here to Logout
-                </a>
-            </p>
+    <a href="index.php?logout='1'" style="color: red;">
+        Click here to Logout
+    </a>
+  </p>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<script>
 	//Get the button
@@ -232,7 +233,7 @@ $.each(checkboxValues, function(key, value) {
 								break;
 								default :
 									keyname = key;
-									
+									alert($("#data1").val());
 									switch ($e.prop('checked')) {
 										case true :
 											document.getElementById(keyname).textContent = parseInt(document.getElementById(keyname).textContent.replace(/\,/g,''), 10) - parseInt(json[key]);
@@ -251,7 +252,6 @@ $.each(checkboxValues, function(key, value) {
 							if($nextE.prop('checked') != $e.prop('checked')) {
 								$nextE.prop('checked', $e.prop('checked'));
 								$nextE.trigger('change');
-								localStorage.setItem(key,'checked');
 							}
 						});
 						return true;
@@ -462,7 +462,7 @@ $.each(checkboxValues, function(key, value) {
 		</tr>
 	</table>
 	<br>
-	<table style="margin: 0 auto;vertical-align: middle;">
+	<table style="margin: 0 auto;vertical-align: middle;" id="data1">
 		<tr>
 			<td class="padded bold" colspan="12">Tech Tree</td>
 		</tr>
@@ -7355,7 +7355,7 @@ $.each(checkboxValues, function(key, value) {
 		<tr class="sajm bold index">
 			<td>
 				<input type="checkbox" name="448" id="448" data-obj='{"depend":[447],"Red-Algae":"000","Microgreen-Supplement":"000","Soy-Proteins":"000","Venus-Carbon":"000","FP":"600"}'> </td>
-			<td class="padded">Gene synthesizer</td>
+			<td class="padded">Gene Synthesizer</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 600</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -7368,6 +7368,6 @@ $.each(checkboxValues, function(key, value) {
 			<td class="padded">&nbsp;</td>
 		</tr>
 	</table>
-
+</div>
 </body>
 </html>
