@@ -8,11 +8,11 @@ A HTML site that will allow you to track your progress on the research tree in F
 - [X] Space Age Mars
 - [X] Space Age Asteroid Belt
 - [X] Space Age Venus
-- [ ] Space Age Jupiter Moon (**Due for release next GBG season on 04/27/2022**)
+- [X] Space Age Jupiter Moon
 - [ ] Space Age Titan (**Coming SOON!**)\
 Here is the link: (https://TEST.system-user.repl.co/index.php "Research tree site")
 
-INNO will release the update containing the new age, Space Age Jupiter Moon, on the day the new GBG season starts (Thursday)! This is exciting news! Please read below for important information.
+INNO released the update containing the new age, Space Age Jupiter Moon! This is exciting news! Please read below for important information.
 
 																																					**IMPORTANT**
 ** FOR THOSE PLAYINING GBG IN A GUILD *PLEASE* DO NOT AGE UP BEFORE GBG STARTS OR YOUR GUILD WILL BE FORCED TO USE NEW AGE GOODS FOR THEIR SIEGE CAMPS!!!**
