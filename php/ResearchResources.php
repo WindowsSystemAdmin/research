@@ -7687,6 +7687,21 @@ if (isset($_GET['logout'])) {
 			<td class="padded">Ecto Phytobiomes</td>
 			<td class="padded">&nbsp;</td>
 		</tr>
+		<tr class="sajm bold index">
+			<td>
+				<input type="checkbox" name="470" id="470" data-obj='{"depend":[467],"Coins":"130000000","Bio-Creatures":"1300","Enhanced-Porifera":"1700","Unknown-DNA":"50","FP":"6"}'> </td>
+			<td class="padded">Chemiluminescence Ammunition</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FP.jpeg" alt="Forge Points" title="Forge Points" > 6</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Coins.jpeg" alt="Coins" title="Coins" > 125,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > 1,300</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Enhanced_Porifera.jpeg" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > 50</td>
+			<td class="padded">High Pressure Detector 3000</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
 	</table>
 </div>
 </body>
