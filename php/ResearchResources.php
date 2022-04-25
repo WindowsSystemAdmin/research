@@ -7499,7 +7499,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > 600</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Enhanced_Porifera.jpeg" alt="Enhanced Porifera" title="Enhanced Porifera" > 650</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium title="Promethium" > 450</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium" > 450</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > 550</td>
 			<td class="padded">Genomic Databank</td>
 			<td class="padded">&nbsp;</td>
@@ -7605,7 +7605,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,450</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium title="Promethium" > 500</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Promethium.jpeg" alt="Promethium" title="Promethium" > 500</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Orichalcum.jpeg" alt="Orichalcum" title="Orichalcum" > 600</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > 700</td>
 			<td class="padded">Splicing Pods
