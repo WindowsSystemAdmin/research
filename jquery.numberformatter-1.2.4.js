@@ -100,7 +100,6 @@
  **/
 
 (function(jQuery) {
-    import * from "hashtable.js";
     var nfLocales = new Hashtable();
     
     var nfLocalesLikeUS = [ 'ae','au','ca','cn','eg','gb','hk','il','in','jp','sk','th','tw','us' ];
