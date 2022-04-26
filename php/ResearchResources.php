@@ -93,7 +93,8 @@ if (isset($_GET['logout'])) {
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
 	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-E9PBG4XXDQ+xnvAV5DrlluOGtLdfpBU6FjfUp2E23h0oZKPrGxyL2GV2cqTuyly/QX8VPRmGu1LbmcxhblEG6g==" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-	<script type="module" src="https://windowssystemadmin.github.io/research/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
+	<script type="module" src="https://windowssystemadmin.github.io/research/javascript/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
+	<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-JSPN6pbU8uTwEd5LYTO+KOJQfkl4/IYZ9n7gXfndd5gFRjD3gHAAv0b278CzX2ilt9PuHjeQotAGLpAEMcTm3w==" crossorigin="anonymous"></script>
 		<!--<div id="runningTime"></div>
 	<script>
 		$(document).ready(function() {
@@ -108,42 +109,7 @@ if (isset($_GET['logout'])) {
   });
 }
 </script>-->
-<script src="https://windowssystemadmin.github.io/research/hashtable.js" integrity="sha512-CIFOlF6aak0M/hRIRY1xtzo9x01ouvZcoe2FWqYCt7iKXukLW8nBUed/heP5dMpa9bP8xC4yqAoLK5nWQtK0kw==" crossorigin="anonymous"></script>
-	<script>
-		function setCookie(cname, cvalue, exdays) {
-  		const d = new Date();
-  		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  		let expires = "expires="+d.toUTCString();
-  		document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/" + ";secure";
-		}
-
-		function getCookie(cname) {
-  		let name = cname + "=";
-  		let ca = document.cookie.split(';');
-  		for(let i = 0; i < ca.length; i++) {
-    		let c = ca[i];
-    		while (c.charAt(0) == ' ') {
-      		c = c.substring(1);
-    	}
-    		if (c.indexOf(name) == 0) {
-      	return c.substring(name.length, c.length);
-    	}
-  	}
-  	return "";
-	}
-
-	function checkCookie() {
-  	let user = getCookie("username");
-  	if (user != "") {
-    	alert("Welcome again " + user);
-  	} else {
-    	user = prompt("Please enter your name:", "");
-    	if (user != "" && user != null) {
-      	setCookie("username", user, 365);
-    	}
-  	}
-	}
-	</script>
+<script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-qvhlRO2Ki2qbCBK8NiXw5m/iRVjREJ2zJEUcCUJouym7WIrDQ1py97fsD+1BBJmd4MbhD3nt3tFyZe06vbJI9w==" crossorigin="anonymous"></script>
 	<script>
 		var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
     	$checkboxes = $("#data1 :checkbox");
@@ -192,27 +158,7 @@ if (isset($_GET['logout'])) {
     </a>
   </p>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<script>
-	//Get the button
-	var mybutton = document.getElementById("myBtn");
-
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
-	function scrollFunction() {
-  	if (document.body.scrollTop > 20 ||	document.documentElement.scrollTop > 20) {
-    	mybutton.style.display = "block";
-  	} else {
-    	mybutton.style.display = "none";
-  	}
-	}
-
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-  	document.body.scrollTop = 0;
-  	document.documentElement.scrollTop = 0;
-	}
-	</script>
+	<script src="https://windowssystemadmin.github.io/research/javascript/topofpage.js" integrity="sha512-3yOdbW1ajz21btuJAy63u1ZGi57P1UUeJ861Bdfk59C3BhCPqrr7R6qmb68ark9VRzGE/gPjKSRIKLAnh7huNw==" crossorigin="anonymous"></script>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript>
 		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
