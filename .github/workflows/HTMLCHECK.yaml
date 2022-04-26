@@ -18,13 +18,13 @@ jobs:
   HTMLCHECK:
     runs-on: ubuntu-latest
     steps:
-    # - run: sudo apt update && sudo apt upgrade -y
-    # - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
-    # - run: sudo apt update && sudo apt upgrade -y
-    # - run: sudo apt --with-new-pkgs upgrade -y
-    # - run: sudo apt autoremove && sudo apt autoclean
-    # - run: lsb_release -a
-    # - run: uname -a
+    - run: sudo apt update && sudo apt upgrade -y
+    - run: sudo sed -i 's/focal/devel/g' /etc/apt/sources.list
+    - run: sudo apt update && sudo apt upgrade -y
+    - run: sudo apt dist-upgrade upgrade -y
+    - run: sudo apt autoremove && sudo apt autoclean
+    - run: lsb_release -a
+    - run: uname -a
     - uses: actions/checkout@v3.0.1
     - run: |
         ls -la
