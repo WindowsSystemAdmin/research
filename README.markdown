@@ -10,9 +10,10 @@ A HTML site that will allow you to track your progress on the research tree in F
 - [X] Space Age Venus
 - [X] Space Age Jupiter Moon
 - [ ] Space Age Titan (**Coming SOON!**)\
-Here is the link: (https://TEST.system-user.repl.co/index.php "Research tree site")
+Here is the link: (https://TEST.system-user.repl.co/index.php)
 
 INNO released the update containing the new age, Space Age Jupiter Moon! This is exciting news! Please read below for important information.
 
-																																					**IMPORTANT**
-** FOR THOSE PLAYINING GBG IN A GUILD *PLEASE* DO NOT AGE UP BEFORE GBG STARTS OR YOUR GUILD WILL BE FORCED TO USE NEW AGE GOODS FOR THEIR SIEGE CAMPS!!!**
+<h2 align="center">**IMPORTANT**</h2>
+
+**FOR THOSE PLAYINING GBG IN A GUILD *PLEASE* DO NOT AGE UP BEFORE GBG STARTS OR YOUR GUILD WILL BE FORCED TO USE NEW AGE GOODS FOR THEIR SIEGE CAMPS!!!**
