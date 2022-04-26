@@ -93,8 +93,7 @@ if (isset($_GET['logout'])) {
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
 	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-E9PBG4XXDQ+xnvAV5DrlluOGtLdfpBU6FjfUp2E23h0oZKPrGxyL2GV2cqTuyly/QX8VPRmGu1LbmcxhblEG6g==" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-	<script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/jquery-numberformatter/jquery.numberformatter-1.2.4.js">
-</script>
+	<script type="module" src="https://windowssystemadmin.github.io/research/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
 		<!--<div id="runningTime"></div>
 	<script>
 		$(document).ready(function() {
@@ -109,7 +108,7 @@ if (isset($_GET['logout'])) {
   });
 }
 </script>-->
-	<script src="https://github.com/timdown/jshashtable/blob/master/hashtable.js"></script>
+<script src="https://windowssystemadmin.github.io/research/hashtable.js" integrity="sha512-CIFOlF6aak0M/hRIRY1xtzo9x01ouvZcoe2FWqYCt7iKXukLW8nBUed/heP5dMpa9bP8xC4yqAoLK5nWQtK0kw==" crossorigin="anonymous"></script>
 	<script>
 		function setCookie(cname, cvalue, exdays) {
   		const d = new Date();
