@@ -7,3 +7,5 @@ Insert INTO tblStudents VALUES ('Ram')
 SAVE Tran C;  
   
 SELECT * from tblStudents 
+ROLLBACK TRAN B  
+COMMIT  
