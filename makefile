@@ -9,7 +9,7 @@ DEPS = $(SRCS:.cc=.d)
 
 %.d: %.cc
 	@set -e; rm -vf $@; \
-	$(CXX) -MM $(CXXFLAGS) < $@.$$$$ > ; \
+	$(CXX) -MM $(CXXFLAGS) $< > $@.$$$$; \
 	sed 's,\($*\)\.o[ :]*,\1.o $@ : ,g' < $@.$$$$ > $@; \
 	rm -vf $@.$$$$
 
