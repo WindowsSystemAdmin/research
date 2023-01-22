@@ -54,6 +54,20 @@ if (isset($_GET['logout'])) {
 <html lang="en-GB">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Ads: 10892806425 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10892806425"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10892806425');
+</script>
+	<!-- Event snippet for Website traffic conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-10892806425/0wwvCOrg67cDEJmSjMoo'});
+</script>
+
 	<!-- Google Tag Manager -->
 	<script>
 		(function(w,d,s,l,i)
@@ -125,7 +139,7 @@ if (isset($_GET['logout'])) {
 // On page load
 	
 		$.each(checkboxValues, function(key, value) {
-  		$("#" + key).prop('checked', value);
+  		$("#" + key).prop('checked', true);
 		});
 	</script>
 </head>
@@ -135,8 +149,9 @@ if (isset($_GET['logout'])) {
 
 
 <br>
-		<h>Your IP Address is: </h>
-<?php 
+		
+<?php
+	echo "Your IP Address is: ";
 	echo ini_get('session.save_path');
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     echo $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -154,7 +169,7 @@ if (isset($_GET['logout'])) {
  ?>
 	<p>
     <a href="index.php?logout='1'" style="color: red;">
-        Click here to Logout
+        Click here to Logout!
     </a>
   </p>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
