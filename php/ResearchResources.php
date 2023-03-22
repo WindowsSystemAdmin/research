@@ -357,7 +357,7 @@ if (isset($_GET['logout'])) {
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > <span id="Bio-Creatures">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > <span id="Advanced-DNA-Data">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > <span id="Topological-Records">10,900</span>&nbsp;</td>		</tr>
-            		<tr>
+        <tr>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.jpeg" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">N/A</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.jpeg" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">N/A</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.jpeg" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">N/A</span>&nbsp;</td>
