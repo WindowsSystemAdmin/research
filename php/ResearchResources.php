@@ -236,7 +236,7 @@ if (isset($_GET['logout'])) {
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">10,000</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coming_Soon.jpeg" alt="Coming Soon!!" title="Coming Soon!!" ><span id="Coming_Soon">None</span></td>
+            <td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystalized_Hydro_Carbon.jpeg" alt="Crystalized Hydro Carbon" title="Crystalized Hydro Carbon" ><span id="Crystalized-Hydro-Carbon">N/A</span></td>
 		</tr>
 		<tr>
 			<td class="ba">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/BA/Stone.jpeg" alt="Stone" title="Stone" > <span id="Stone">152</span>&nbsp;</td>
