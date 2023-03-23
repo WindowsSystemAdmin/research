@@ -50,7 +50,7 @@ jobs:
     - run: lsb_release -a
     - run: uname -a
     - name: Checkout repository
-      uses: actions/checkout@v3.0.1
+      uses: actions/checkout@v3.4.0
 
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
