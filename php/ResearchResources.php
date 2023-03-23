@@ -54,6 +54,20 @@ if (isset($_GET['logout'])) {
 <html lang="en-GB">
 
 <head>
+	<!-- Global site tag (gtag.js) - Google Ads: 10892806425 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10892806425"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10892806425');
+</script>
+	<!-- Event snippet for Website traffic conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-10892806425/0wwvCOrg67cDEJmSjMoo'});
+</script>
+
 	<!-- Google Tag Manager -->
 	<script>
 		(function(w,d,s,l,i)
@@ -125,7 +139,7 @@ if (isset($_GET['logout'])) {
 // On page load
 	
 		$.each(checkboxValues, function(key, value) {
-  		$("#" + key).prop('checked', value);
+  		$("#" + key).prop('checked', true);
 		});
 	</script>
 </head>
@@ -135,8 +149,9 @@ if (isset($_GET['logout'])) {
 
 
 <br>
-		<h>Your IP Address is: </h>
-<?php 
+		
+<?php
+	echo "Your IP Address is: ";
 	echo ini_get('session.save_path');
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
     echo $ip = $_SERVER['HTTP_CLIENT_IP'];
@@ -154,7 +169,7 @@ if (isset($_GET['logout'])) {
  ?>
 	<p>
     <a href="index.php?logout='1'" style="color: red;">
-        Click here to Logout
+        Click here to Logout!
     </a>
   </p>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -221,7 +236,7 @@ if (isset($_GET['logout'])) {
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.jpeg" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.jpeg" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.jpeg" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">10,000</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coming_Soon.jpeg" alt="Coming Soon!!" title="Coming Soon!!" ><span id="Coming_Soon">None</span></td>
+            <td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystalized_Hydro_Carbon.jpeg" alt="Crystalized Hydro Carbon" title="Crystalized Hydro Carbon" ><span id="Crystalized-Hydro-Carbon">N/A</span></td>
 		</tr>
 		<tr>
 			<td class="ba">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/BA/Stone.jpeg" alt="Stone" title="Stone" > <span id="Stone">152</span>&nbsp;</td>
@@ -342,6 +357,12 @@ if (isset($_GET['logout'])) {
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.jpeg" alt="Bio Creatures" title="Bio Creatures" > <span id="Bio-Creatures">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.jpeg" alt="Advanced DNA Data" title="Advanced DNA Data" > <span id="Advanced-DNA-Data">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.jpeg" alt="Topological Records" title="Topological Records" > <span id="Topological-Records">10,900</span>&nbsp;</td>		</tr>
+        <tr>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.jpeg" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">N/A</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.jpeg" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">N/A</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.jpeg" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">N/A</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Liquid_Binder.jpeg" alt="Liquid Binder" title="Liquid Binder" > <span id="Liquid-Binder">N/A</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.jpeg" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > <span id="Upcycled-Hydrocarbons">N/A</span>&nbsp;</td> </tr>
 	</table>
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
