@@ -314,7 +314,7 @@ if (isset($_GET['logout'])) {
 			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Biogeochemical_Data.webp" alt="Biogeochemical Data" title="Biogeochemical Data" > <span id="Biogeochemical-Data">1,640</span>&nbsp;</td>
 			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Purified_Water.webp" alt="Purified Water" title="Purified Water" > <span id="Purified-Water">1,530</span>&nbsp;</td>
 			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Algae.webp" alt="Algae" title="Algae" > <span id="Algae">1,490</span>&nbsp;</td>
-			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > <span id="Superconductor">1,575</span>&nbsp;</td>
+			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > <span id="Superconductors">1,575</span>&nbsp;</td>
 			<td class="fe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/FE/Nanoparticles.webp" alt="Nanoparticles" title="Nanoparticles" > <span id="Nanoparticles">1,665</span>&nbsp;</td>
 			<td class="afe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/AF/Nanowire.webp" alt="Nanowire" title="Nanowire" > <span id="Nanowire">2,380</span>&nbsp;</td>
 			<td class="afe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/AF/Transester_Gas.webp" alt="Transester Gas" title="Transester Gas" > <span id="Transester-Gas">2,230</span>&nbsp;</td>
@@ -335,8 +335,8 @@ if (isset($_GET['logout'])) {
 			<td class="vfe">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/VF/Tea_Silk.webp" alt="Tea Silk" title="Tea Silk" > <span id="Tea-Silk">2,345</span>&nbsp;</td>
 		</tr>
 		<tr>
-			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > <span id="Mars-Microbe">10,000</span>&nbsp;</td>
-			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > <span id="Biotech-Crops">10,000</span>&nbsp;</td>
+			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > <span id="Mars-Microbes">10,000</span>&nbsp;</td>
+			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > <span id="BioTech-Crops">10,000</span>&nbsp;</td>
 			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > <span id="Fusion-Reactors">10,000</span>&nbsp;</td>
 			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > <span id="Lubricant">10,000</span>&nbsp;</td>
 			<td class="sam">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > <span id="Superalloys">10,000</span>&nbsp;</td>
@@ -4268,14 +4268,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="fe bold index">
 			<td>
-				<input type="checkbox" name="250" id="250" data-obj='{"depend":[246],"Semiconductors":"240","Superconductor":"185","FP":"108","Coins":"4000500","Supplies":"1100000"}'> </td>
+				<input type="checkbox" name="250" id="250" data-obj='{"depend":[246],"Semiconductors":"240","Superconductors":"185","FP":"108","Coins":"4000500","Supplies":"1100000"}'> </td>
 			<td class="padded">Gravity Fields</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 108</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 4,000,500</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 1,100,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/PME/Semiconductors.webp" alt="Semiconductors" title="Semiconductors" > 240</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 185</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 185</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Anti-Gravitation</td>
@@ -4391,14 +4391,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="fe bold index">
 			<td>
-				<input type="checkbox" name="258" id="258" data-obj='{"depend":[254,255],"Bionics-Data":"425","Superconductor":"240","FP":"118","Coins":"1010100","Supplies":"1010100"}'> </td>
+				<input type="checkbox" name="258" id="258" data-obj='{"depend":[254,255],"Bionics-Data":"425","Superconductors":"240","FP":"118","Coins":"1010100","Supplies":"1010100"}'> </td>
 			<td class="padded">Orbital Networks</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 118</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 1,010,100</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 1,010,100</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/CE/Bionics_Data.webp" alt="Bionics Data" title="Bionics Data" > 425</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 240</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 240</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Xenomineralogy
@@ -4455,14 +4455,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="afe bold index">
 			<td>
-				<input type="checkbox" name="262" id="262" data-obj='{"depend":[261],"Nanoparticles":"210","Superconductor":"300","FP":"115","Coins":"1200000","Supplies":"2700000"}'> </td>
+				<input type="checkbox" name="262" id="262" data-obj='{"depend":[261],"Nanoparticles":"210","Superconductors":"300","FP":"115","Coins":"1200000","Supplies":"2700000"}'> </td>
 			<td class="padded">Nanotubes</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 115</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 1,200,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 2,700,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Nanoparticles.webp" alt="Nanoparticles" title="Nanoparticles" > 210</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 300</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 300</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Arctic Harvest</td>
@@ -4485,14 +4485,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="afe bold index">
 			<td>
-				<input type="checkbox" name="264" id="264" data-obj='{"depend":[261],"Robots":"420","Superconductor":"160","FP":"122","Coins":"1010101","Supplies":"1010010"}'> </td>
+				<input type="checkbox" name="264" id="264" data-obj='{"depend":[261],"Robots":"420","Superconductors":"160","FP":"122","Coins":"1010101","Supplies":"1010010"}'> </td>
 			<td class="padded">A.I. Research</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 122</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 1,010,101</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 1,010,010</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/CE/Robots.webp" alt="Robots" title="Robots" > 420</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 160</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 160</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Arctic Harvest</td>
@@ -4745,13 +4745,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="afe bold index">
 			<td>
-				<input type="checkbox" name="281" id="281" data-obj='{"depend":[278,280],"Superconductor":"280","FP":"136","Coins":"2200000","Supplies":"2800000","Promethium":"200"}'> </td>
+				<input type="checkbox" name="281" id="281" data-obj='{"depend":[278,280],"Superconductors":"280","FP":"136","Coins":"2200000","Supplies":"2800000","Promethium":"200"}'> </td>
 			<td class="padded">Arctic Cargo</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 136</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 2,200,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 2,800,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 280</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 280</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 200</td>
 			<td class="padded">&nbsp;</td>
@@ -5022,13 +5022,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="ofe bold index">
 			<td>
-				<input type="checkbox" name="299" id="299" data-obj='{"depend":[294,295],"Superconductor":"220","Bioplastics":"100","FP":"154","Promethium":"170"}'> </td>
+				<input type="checkbox" name="299" id="299" data-obj='{"depend":[294,295],"Superconductors":"220","Bioplastics":"100","FP":"154","Promethium":"170"}'> </td>
 			<td class="padded">Subaquatic Filters</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 154</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 220</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 220</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Bioplastics.webp" alt="Bioplastics" title="Bioplastics" > 100</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 170</td>
 			<td class="padded">&nbsp;</td>
@@ -5239,13 +5239,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="ofe bold index">
 			<td>
-				<input type="checkbox" name="313" id="313" data-obj='{"depend":[310],"Superconductor":"190","Transester-Gas":"140","FP":"152","Orichalcum":"130"}'> </td>
+				<input type="checkbox" name="313" id="313" data-obj='{"depend":[310],"Superconductors":"190","Transester-Gas":"140","FP":"152","Orichalcum":"130"}'> </td>
 			<td class="padded">Maelstrom Stabilization</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 152</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductor.webp" alt="Superconductor" title="Superconductor" > 190</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/FE/Superconductors.webp" alt="Superconductors" title="Superconductors" > 190</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Transester_Gas.webp" alt="Transester Gas" title="Transester Gas" > 140</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 130</td>
@@ -6318,13 +6318,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="383" id="383" data-obj='{"depend":[380,381],"Biotech-Crops":"250","Mars-Microbe":"300","Fusion-Reactors":"280","FP":"335"}'> </td>
+				<input type="checkbox" name="383" id="383" data-obj='{"depend":[380,381],"BioTech-Crops":"250","Mars-Microbes":"300","Fusion-Reactors":"280","FP":"335"}'> </td>
 			<td class="padded">Multispectral Sensors</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 335</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 250</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 300</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 250</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 300</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 280</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -6350,12 +6350,12 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="385" id="385" data-obj='{"depend":[383],"Biotech-Crops":"600","Mars-Ore":"300","Orichalcum":"250","FP":"340"}'> </td>
+				<input type="checkbox" name="385" id="385" data-obj='{"depend":[383],"BioTech-Crops":"600","Mars-Ore":"300","Orichalcum":"250","FP":"340"}'> </td>
 			<td class="padded">Enchanced Plasteel</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 340</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 600</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 600</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 300</td>
@@ -6365,14 +6365,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="386" id="386" data-obj='{"depend":[383],"Coins":"60000000","Mars-Microbe":"650","Lubricant":"600","Biotech-Crops":"600","FP":"350"}'> </td>
+				<input type="checkbox" name="386" id="386" data-obj='{"depend":[383],"Coins":"60000000","Mars-Microbes":"650","Lubricant":"600","BioTech-Crops":"600","FP":"350"}'> </td>
 			<td class="padded">Mars Regulation</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 350</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 60,000,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 650</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 650</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 600</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 600</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 600</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Multispectral Sensors</td>
@@ -6380,12 +6380,12 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="387" id="387" data-obj='{"depend":[384],"Mars-Microbe":"500","Lubricant":"650","Fusion-Reactors":"800","FP":"365"}'> </td>
+				<input type="checkbox" name="387" id="387" data-obj='{"depend":[384],"Mars-Microbes":"500","Lubricant":"650","Fusion-Reactors":"800","FP":"365"}'> </td>
 			<td class="padded">Pressurized Plasma</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 365</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 500</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 500</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 650</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 800</td>
 			<td class="padded">&nbsp;</td>
@@ -6410,12 +6410,12 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="389" id="389" data-obj='{"depend":[385,386],"Biotech-Crops":"950","Superalloys":"850","Promethium":"300","FP":"385"}'> </td>
+				<input type="checkbox" name="389" id="389" data-obj='{"depend":[385,386],"BioTech-Crops":"950","Superalloys":"850","Promethium":"300","FP":"385"}'> </td>
 			<td class="padded">Non-Reflective Photovoltaic</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 385</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 950</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 950</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 850</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 300</td>
@@ -6426,13 +6426,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="390" id="390" data-obj='{"depend":[387],"Coins":"55000000","Lubricant":"1200","Mars-Microbe":"1150","Mars-Ore":"600","FP":"360"}'> </td>
+				<input type="checkbox" name="390" id="390" data-obj='{"depend":[387],"Coins":"55000000","Lubricant":"1200","Mars-Microbes":"1150","Mars-Ore":"600","FP":"360"}'> </td>
 			<td class="padded">Anti-Gravitational Fields</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 360</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 55,000,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 1,200</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 1,150</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 1,150</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 600</td>
 			<td class="padded">&nbsp;</td>
@@ -6441,14 +6441,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="391" id="391" data-obj='{"depend":[388,389],"Fusion-Reactors":"1400","Lubricant":"950","Biotech-Crops":"1050","FP":"365"}'> </td>
+				<input type="checkbox" name="391" id="391" data-obj='{"depend":[388,389],"Fusion-Reactors":"1400","Lubricant":"950","BioTech-Crops":"1050","FP":"365"}'> </td>
 			<td class="padded">Waste Management Enzymes</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 365</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 1,400</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 950</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 1,050</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 1,050</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Repurposable Furniture
@@ -6457,12 +6457,12 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="392" id="392" data-obj='{"depend":[389],"Superalloys":"1450","Mars-Microbe":"1400","Orichalcum":"400","FP":"385"}'> </td>
+				<input type="checkbox" name="392" id="392" data-obj='{"depend":[389],"Superalloys":"1450","Mars-Microbes":"1400","Orichalcum":"400","FP":"385"}'> </td>
 			<td class="padded">Mars Infrastructure</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 385</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 1,400</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 1,400</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 1,450</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 400</td>
@@ -6487,14 +6487,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="394" id="394" data-obj='{"depend":[390,392],"Superalloys":"1700","Lubricant":"1450","Mars-Microbe":"1300","FP":"380"}'> </td>
-			<td class="padded">Superconductor Particle Streams</td>
+				<input type="checkbox" name="394" id="394" data-obj='{"depend":[390,392],"Superalloys":"1700","Lubricant":"1450","Mars-Microbes":"1300","FP":"380"}'> </td>
+			<td class="padded">Superconductors Particle Streams</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 380</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 1,700</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 1,450</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 1,300</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 1,300</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Anti-Gravitational Fields
@@ -6518,13 +6518,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="396" id="396" data-obj='{"depend":[392],"Superalloys":"1700","Biotech-Crops":"1900","Orichalcum":"300","FP":"395"}'> </td>
+				<input type="checkbox" name="396" id="396" data-obj='{"depend":[392],"Superalloys":"1700","BioTech-Crops":"1900","Orichalcum":"300","FP":"395"}'> </td>
 			<td class="padded">Neural Augmented Frameworks</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 395</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 1,700</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 1,900</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 1,900</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 300</td>
 			<td class="padded">&nbsp;</td>
@@ -6533,31 +6533,31 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="397" id="397" data-obj='{"depend":[394,395,396],"Supplies":"65000000","Mars-Microbe":"2000","Mars-Ore":"900","Promethium":"600","FP":"390"}'> </td>
+				<input type="checkbox" name="397" id="397" data-obj='{"depend":[394,395,396],"Supplies":"65000000","Mars-Microbes":"2000","Mars-Ore":"900","Promethium":"600","FP":"390"}'> </td>
 			<td class="padded">Mars Ownership Patents</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 390</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 65,000,000</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 2,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 2,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 900</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 600</td>
-			<td class="padded">Superconductor Particle Streams
+			<td class="padded">Superconductors Particle Streams
 				<br>Self-Repairing Alloys
 				<br>Neural Augmented Frameworks</td>
 			<td class="padded">&nbsp;</td>
 		</tr>
 		<tr class="sam bold index">
 			<td>
-				<input type="checkbox" name="398" id="398" data-obj='{"depend":[396],"Fusion-Reactors":"2800","Lubricant":"1500","Biotech-Crops":"1900","FP":"400"}'> </td>
+				<input type="checkbox" name="398" id="398" data-obj='{"depend":[396],"Fusion-Reactors":"2800","Lubricant":"1500","BioTech-Crops":"1900","FP":"400"}'> </td>
 			<td class="padded">Multipurpose Code Routines</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 400</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 2,800</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 1,500</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 1,900</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 1,900</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Neural Augmented Frameworks</td>
@@ -6565,14 +6565,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="399" id="399" data-obj='{"depend":[397],"Fusion-Reactors":"800","Lubricant":"1200","Mars-Microbe":"500","Mars-Ore":"1200","FP":"450"}'> </td>
+				<input type="checkbox" name="399" id="399" data-obj='{"depend":[397],"Fusion-Reactors":"800","Lubricant":"1200","Mars-Microbes":"500","Mars-Ore":"1200","FP":"450"}'> </td>
 			<td class="padded">Solar Powered EmDrive</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 450</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 800</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Lubricant.webp" alt="Lubricant" title="Lubricant" > 1,200</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 500</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 500</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 1,200</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Mars Ownership Patents</td>
@@ -6610,14 +6610,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="402" id="402" data-obj='{"depend":[400],"Coins":"60000000","Superalloys":"1500","Fusion-Reactors":"920","Mars-Microbe":"1200","FP":"420"}'> </td>
+				<input type="checkbox" name="402" id="402" data-obj='{"depend":[400],"Coins":"60000000","Superalloys":"1500","Fusion-Reactors":"920","Mars-Microbes":"1200","FP":"420"}'> </td>
 			<td class="padded">Artificial Gravitation Module</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 420</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 60,000,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 1,500</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Fusion_Reactors.webp" alt="Fusion Reactors" title="Fusion Reactors" > 920</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 1,200</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 1,200</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Mars Goods Synthesizing I</td>
@@ -6625,13 +6625,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="403" id="403" data-obj='{"depend":[400,401],"Coins":"50000000","Superalloys":"1250","Biotech-Crops":"800","Asteroid-Ice":"350","FP":"425"}'> </td>
+				<input type="checkbox" name="403" id="403" data-obj='{"depend":[400,401],"Coins":"50000000","Superalloys":"1250","BioTech-Crops":"800","Asteroid-Ice":"350","FP":"425"}'> </td>
 			<td class="padded">Advanced Vacuum Distillation</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 425</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 50,000,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Superalloys.webp" alt="Superalloys" title="Superalloys" > 1,250</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 800</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 800</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.webp" alt="Asteroid Ice" title="Asteroid Ice" > 350</td>
 			<td class="padded">&nbsp;</td>
@@ -6656,14 +6656,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="405" id="405" data-obj='{"depend":[402],"Processed-Materials":"700","Biotech-Crops":"750","Bromine":"600","Promethium":"500","FP":"450"}'> </td>
+				<input type="checkbox" name="405" id="405" data-obj='{"depend":[402],"Processed-Materials":"700","BioTech-Crops":"750","Bromine":"600","Promethium":"500","FP":"450"}'> </td>
 			<td class="padded">Multi-purpose Space Training</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 450</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Processed_Materials.webp" alt="Processed Materials" title="Processed Materials" > 700</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Bromine.webp" alt="Bromine" title="Bromine" > 600</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 750</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 750</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 500</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Artificial Gravitation Module</td>
@@ -6671,13 +6671,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="406" id="406" data-obj='{"depend":[402,403],"Supplies":"75000000","Mars-Microbe":"1000","Nickel":"650","Asteroid-Ice":"600","FP":"410"}'> </td>
+				<input type="checkbox" name="406" id="406" data-obj='{"depend":[402,403],"Supplies":"75000000","Mars-Microbes":"1000","Nickel":"650","Asteroid-Ice":"600","FP":"410"}'> </td>
 			<td class="padded">Self-sealing Alloys</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 410</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 75,000,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Nickel.webp" alt="Nickel" title="Nickel" > 650</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbe.webp" alt="Mars Microbe" title="Mars Microbe" > 1,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Microbes.webp" alt="Mars Microbes" title="Mars Microbes" > 1,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.webp" alt="Asteroid Ice" title="Asteroid Ice" > 600</td>
 			<td class="padded">&nbsp;</td>
@@ -6687,14 +6687,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="saab bold index">
 			<td>
-				<input type="checkbox" name="407" id="407" data-obj='{"depend":[404],"Platinum-Crystals":"680","Biotech-Crops":"1200","Compound-Fluid":"450","Orichalcum":"800","FP":"375"}'> </td>
+				<input type="checkbox" name="407" id="407" data-obj='{"depend":[404],"Platinum-Crystals":"680","BioTech-Crops":"1200","Compound-Fluid":"450","Orichalcum":"800","FP":"375"}'> </td>
 			<td class="padded">Smart Home 2.0</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 375</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Platinum_Crystals.webp" alt="Platinum Crystals" title="Platinum Crystals" > 680</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Compound_Fluid.webp" alt="Compound Fluid" title="Compound Fluid" > 450</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Biotech_Crops.webp" alt="Biotech Crops" title="Biotech Crops" > 1,200</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/BioTech_Crops.webp" alt="BioTech Crops" title="BioTech Crops" > 1,200</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 800</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Thermal Mining</td>
