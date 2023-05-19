@@ -227,7 +227,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>82,947</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>83,047</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
@@ -7718,7 +7718,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sat bold index">
 			<td>
-				<input type="checkbox" name="474" id="474" data-obj='{"depend":[473],"Bio-Creatures":"0","Enhanced-Porifera":"0","Red-Algae":"0","Unknown-DNA":"0","FP":"600"}'> </td>
+				<input type="checkbox" name="474" id="474" data-obj='{"depend":[473],"Bio-Creatures":"0","Enhanced-Porifera":"0","Red-Algae":"0","Unknown-DNA":"0","FP":"700"}'> </td>
 			<td class="padded">Anomalous Chemicals</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
 			<td class="padded">&nbsp;</td>
