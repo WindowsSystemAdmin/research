@@ -168,7 +168,7 @@ if (isset($_GET['logout'])) {
 	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as].";
  ?>
 	<p>
-    <a href="index.php?logout='1'" style="color: red;">
+    <a href="logout.php?logout='1'" style="color: red;">
         Click here to Logout!
     </a>
   </p>
@@ -227,16 +227,16 @@ if (isset($_GET['logout'])) {
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>83,047</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>83,047</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>19,650</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore"> <span id="Mars-Ore">20,250</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.webp" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">10,000</span></td>
-            <td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystalized_Hydro_Carbon.webp" alt="Crystalized Hydro Carbon" title="Crystalized Hydro Carbon" ><span id="Crystalized-Hydro-Carbon">N/A</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" ><span id="Crystallized-Hydrocarbons">N/A</span></td>
 		</tr>
 		<tr>
 			<td class="ba">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/BA/Stone.webp" alt="Stone" title="Stone" > <span id="Stone">152</span>&nbsp;</td>
@@ -266,7 +266,7 @@ if (isset($_GET['logout'])) {
 			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Basalt.webp" alt="Basalt" title="Basalt" > <span id="Basalt">590</span>&nbsp;</td>
 			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Brass.webp" alt="Brass" title="Brass" > <span id="Brass">580</span>&nbsp;</td>
 			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Silk.webp" alt="Silk" title="Silk" > <span id="Silk">570</span>&nbsp;</td>
-			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > <span id="Talc">580</span>&nbsp;</td>
+			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > <span id="Talc-Powder">580</span>&nbsp;</td>
 			<td class="lma">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/LMA/Gunpowder.webp" alt="Gunpowder" title="Gunpowder" > <span id="Gunpowder">570</span>&nbsp;</td>
 			<td class="ca">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/CA/Paper.webp" alt="Paper" title="Paper" > <span id="Paper">460</span>&nbsp;</td>
 			<td class="ca">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/CA/Coffee.webp" alt="Coffee" title="Coffee" > <span id="Coffee">620</span>&nbsp;</td>
@@ -291,7 +291,7 @@ if (isset($_GET['logout'])) {
 			<td class="me">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/ME/Packaging.webp" alt="Packaging" title="Packaging" > <span id="Packaging">1,600</span>&nbsp;</td>
 			<td class="me">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/ME/Luxury_Materials.webp" alt="Luxury Materials" title="Luxury Materials" > <span id="Luxury-Materials">1,600</span>&nbsp;</td>
 			<td class="me">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/ME/Convenience_Food.webp" alt="Convenience Food" title="Convenience Food" > <span id="Convenience-Food">1,600</span>&nbsp;</td>
-			<td class="me">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > <span id="Flavourants">1,600</span>&nbsp;</td>
+			<td class="me">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > <span id="Flavorants">1,600</span>&nbsp;</td>
 			<td class="pme">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/PME/Renewable_Resources.webp" alt="Renewable Resources" title="Renewable Resources" > <span id="Renewable-Resources">1,800</span>&nbsp;</td>
 			<td class="pme">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/PME/Steel.webp" alt="Steel" title="Steel" > <span id="Steel">1,800</span>&nbsp;</td>
 			<td class="pme">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/PME/Semiconductors.webp" alt="Semiconductors" title="Semiconductors" > <span id="Semiconductors">1,800</span>&nbsp;</td>
@@ -357,7 +357,7 @@ if (isset($_GET['logout'])) {
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > <span id="Bio-Creatures">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > <span id="Advanced-DNA-Data">10,900</span>&nbsp;</td>
 			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > <span id="Topological-Records">10,900</span>&nbsp;</td>		</tr>
-        <tr>
+		<tr>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">N/A</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">N/A</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">N/A</span>&nbsp;</td>
@@ -1993,7 +1993,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 25,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 30,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 70</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 70</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/IA/Jewelry.webp" alt="Jewelry" title="Jewelry" > 140</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -2178,7 +2178,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 18,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Silk.webp" alt="Silk" title="Silk" > 90</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 140</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 140</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Arcade Houses</td>
@@ -2425,7 +2425,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 10,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 20,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 130</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 130</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/HMA/Glass.webp" alt="Glass" title="Glass" > 50</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -2705,7 +2705,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 75,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 75,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 60</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 60</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/INDY/Coke.webp" alt="Coke" title="Coke" > 50</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -2781,7 +2781,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 120,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 90</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 90</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/INDY/Whale_Oil.webp" alt="Whale Oil" title="Whale Oil" > 80</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -2811,7 +2811,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 40,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 80,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc.webp" alt="Talc" title="Talc" > 90</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/LMA/Talc_Powder.webp" alt="Talc Powder" title="Talc Powder" > 90</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/CA/Porcelain.webp" alt="Porcelain" title="Porcelain" > 80</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -3080,13 +3080,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="me bold index">
 			<td>
-				<input type="checkbox" name="173" id="173" data-obj='{"depend":[168],"Flavourants":"190","Packaging":"140","FP":"73","Coins":"100000","Supplies":"50000"}'> </td>
+				<input type="checkbox" name="173" id="173" data-obj='{"depend":[168],"Flavorants":"190","Packaging":"140","FP":"73","Coins":"100000","Supplies":"50000"}'> </td>
 			<td class="padded">Advertisement</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 73</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 100,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 50,000</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 190</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 190</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Packaging.webp" alt="Packaging" title="Packaging" > 140</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -3372,14 +3372,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="pme bold index">
 			<td>
-				<input type="checkbox" name="192" id="192" data-obj='{"depend":[187],"Fertilizer":"100","Flavourants":"130","FP":"82","Coins":"250000","Supplies":"20000"}'> </td>
+				<input type="checkbox" name="192" id="192" data-obj='{"depend":[187],"Fertilizer":"100","Flavorants":"130","FP":"82","Coins":"250000","Supplies":"20000"}'> </td>
 			<td class="padded">Genetics Research</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 82</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 250,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 20,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/INDY/Fertilizer.webp" alt="Fertilizer" title="Fertilizer" > 100</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 130</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 130</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Species Conservation</td>
@@ -3402,14 +3402,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="pme bold index">
 			<td>
-				<input type="checkbox" name="194" id="194" data-obj='{"depend":[189,190,191],"Luxury-Materials":"200","Flavourants":"190","FP":"5","Coins":"1000000","Supplies":"50000"}'> </td>
+				<input type="checkbox" name="194" id="194" data-obj='{"depend":[189,190,191],"Luxury-Materials":"200","Flavorants":"190","FP":"5","Coins":"1000000","Supplies":"50000"}'> </td>
 			<td class="padded">High Society</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 5</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 1,000,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 50,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Luxury_Materials.webp" alt="Luxury Materials" title="Luxury Materials" > 200</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 190</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 190</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Renewable Resources
@@ -3803,13 +3803,13 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="ce bold index">
 			<td>
-				<input type="checkbox" name="220" id="220" data-obj='{"depend":[216,217],"Flavourants":"400","Bionics-Data":"175","FP":"42","Coins":"25914","Supplies":"251147"}'> </td>
+				<input type="checkbox" name="220" id="220" data-obj='{"depend":[216,217],"Flavorants":"400","Bionics-Data":"175","FP":"42","Coins":"25914","Supplies":"251147"}'> </td>
 			<td class="padded">Stress Management</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 42</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 25,914</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 251,147</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 400</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 400</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/CE/Bionics_Data.webp" alt="Bionics Data" title="Bionics Data" > 175</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
@@ -3867,14 +3867,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="te bold index">
 			<td>
-				<input type="checkbox" name="224" id="224" data-obj='{"depend":[223],"Convenience-Food":"410","Flavourants":"310","FP":"68","Coins":"100000","Supplies":"700000"}'> </td>
+				<input type="checkbox" name="224" id="224" data-obj='{"depend":[223],"Convenience-Food":"410","Flavorants":"310","FP":"68","Coins":"100000","Supplies":"700000"}'> </td>
 			<td class="padded">Nutrition Science</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 68</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 100,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 700,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Convenience_Food.webp" alt="Convenience Food" title="Convenience Food" > 410</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 310</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 310</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Fusion Power</td>
@@ -3974,14 +3974,14 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="te bold index">
 			<td>
-				<input type="checkbox" name="231" id="231" data-obj='{"depend":[226,227],"Translucent-Concrete":"180","Flavourants":"380","FP":"79","Coins":"1200000","Supplies":"120000"}'> </td>
+				<input type="checkbox" name="231" id="231" data-obj='{"depend":[226,227],"Translucent-Concrete":"180","Flavorants":"380","FP":"79","Coins":"1200000","Supplies":"120000"}'> </td>
 			<td class="padded">Industrial Design</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 79</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 1,200,000</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 120,000</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/TE/Translucent_Concrete.webp" alt="Translucent Concrete" title="Translucent Concrete" > 180</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavourants.webp" alt="Flavourants" title="Flavourants" > 380</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/ME/Flavorants.webp" alt="Flavorants" title="Flavorants" > 380</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">High-Tech Materials
