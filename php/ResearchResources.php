@@ -102,11 +102,12 @@ if (isset($_GET['logout'])) {
   gtag('config', 'G-X9RHNLBXEZ');
 	//gtag('event','geo');
 	</script>
-	<title>Trade Tools - Figures Table</title>
+	<title>Research List - Checklist</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
 	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-E9PBG4XXDQ+xnvAV5DrlluOGtLdfpBU6FjfUp2E23h0oZKPrGxyL2GV2cqTuyly/QX8VPRmGu1LbmcxhblEG6g==" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>-->
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous"></script>
 	<script type="module" src="https://windowssystemadmin.github.io/research/javascript/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
 	<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-JSPN6pbU8uTwEd5LYTO+KOJQfkl4/IYZ9n7gXfndd5gFRjD3gHAAv0b278CzX2ilt9PuHjeQotAGLpAEMcTm3w==" crossorigin="anonymous"></script>
 		<!--<div id="runningTime"></div>
@@ -123,7 +124,7 @@ if (isset($_GET['logout'])) {
   });
 }
 </script>-->
-<script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-qvhlRO2Ki2qbCBK8NiXw5m/iRVjREJ2zJEUcCUJouym7WIrDQ1py97fsD+1BBJmd4MbhD3nt3tFyZe06vbJI9w==" crossorigin="anonymous"></script>
+<script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-rWZItmIZ8c+NWNNre/4tX1EeUkf3f4hv4yuAmD96xdBJyzgccfIDluCL4SHRDS6POFCQfbG8jqT8oHsb0BQYHw==" crossorigin="anonymous"></script>
 	<script>
 		var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
     	$checkboxes = $("#data1 :checkbox");
@@ -1987,7 +1988,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="lma bold index">
 			<td>
-				<input type="checkbox" name="102" id="102" data-obj='{"depend":[99,100],"Talc":"70","Jewelry":"140","FP":"70","Coins":"25000","Supplies":"30000"}'> </td>
+				<input type="checkbox" name="102" id="102" data-obj='{"depend":[99,100],"Talc-Powder":"70","Jewelry":"140","FP":"70","Coins":"25000","Supplies":"30000"}'> </td>
 			<td class="padded">Apartment Houses</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 70</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 25,000</td>
@@ -2095,7 +2096,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="ca bold index">
 			<td>
-				<input type="checkbox" name="109" id="109" data-obj='{"depend":[107,106],"Salt":"100","Glass":"130","FP":"36","Coins":"20000","Supplies":"50000"}'> </td>
+				<input type="checkbox" name="109" id="109" data-obj='{"depend":[106,107],"Salt":"100","Glass":"130","FP":"36","Coins":"20000","Supplies":"50000"}'> </td>
 			<td class="padded">Colonies</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 36</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 20,000</td>
@@ -2171,7 +2172,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="ca bold index">
 			<td>
-				<input type="checkbox" name="114" id="114" data-obj='{"depend":[110],"Silk":"90","Talc":"140","FP":"59","Coins":"18000","Supplies":"18000"}'> </td>
+				<input type="checkbox" name="114" id="114" data-obj='{"depend":[110],"Silk":"90","Talc-Powder":"140","FP":"59","Coins":"18000","Supplies":"18000"}'> </td>
 			<td class="padded">Fashion</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 59</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 18,000</td>
@@ -2419,7 +2420,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="inda bold index">
 			<td>
-				<input type="checkbox" name="130" id="130" data-obj='{"depend":[126],"Talc":"130","Glass":"50","FP":"48","Coins":"10000","Supplies":"20000"}'> </td>
+				<input type="checkbox" name="130" id="130" data-obj='{"depend":[126],"Talc-Powder":"130","Glass":"50","FP":"48","Coins":"10000","Supplies":"20000"}'> </td>
 			<td class="padded">Modern Chemistry</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 48</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 10,000</td>
@@ -2699,7 +2700,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="pe bold index">
 			<td>
-				<input type="checkbox" name="148" id="148" data-obj='{"depend":[144],"Talc":"60","Coke":"50","FP":"85","Coins":"75000","Supplies":"75000"}'> </td>
+				<input type="checkbox" name="148" id="148" data-obj='{"depend":[144],"Talc-Powder":"60","Coke":"50","FP":"85","Coins":"75000","Supplies":"75000"}'> </td>
 			<td class="padded">Modern Materials</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 85</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 75,000</td>
@@ -2775,7 +2776,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="pe bold index">
 			<td>
-				<input type="checkbox" name="153" id="153" data-obj='{"depend":[148],"Talc":"90","Whale-Oil":"80","FP":"51","Supplies":"120000"}'> </td>
+				<input type="checkbox" name="153" id="153" data-obj='{"depend":[148],"Talc-Powder":"90","Whale-Oil":"80","FP":"51","Supplies":"120000"}'> </td>
 			<td class="padded">Tenement Houses</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 51</td>
 			<td class="padded">&nbsp;</td>
@@ -2805,7 +2806,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="pe bold index">
 			<td>
-				<input type="checkbox" name="155" id="155" data-obj='{"depend":[150],"Talc":"90","Porcelain":"80","FP":"65","Coins":"40000","Supplies":"80000"}'> </td>
+				<input type="checkbox" name="155" id="155" data-obj='{"depend":[150],"Talc-Powder":"90","Porcelain":"80","FP":"65","Coins":"40000","Supplies":"80000"}'> </td>
 			<td class="padded">Council Houses</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 65</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 40,000</td>
