@@ -1,4 +1,6 @@
 <?php
+// PHP Data Objects(PDO) Sample Code:
+
 
 // My session start function support timestamp management
 function my_session_start() {
@@ -105,11 +107,11 @@ if (isset($_GET['logout'])) {
 	<title>Research List - Checklist</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
-	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-E9PBG4XXDQ+xnvAV5DrlluOGtLdfpBU6FjfUp2E23h0oZKPrGxyL2GV2cqTuyly/QX8VPRmGu1LbmcxhblEG6g==" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-lN7dAmgwsbfo9kzLaocSRfYiDHI4PMIHyyzMMNL1lyKS0apQchBrJJSlirnza3Nq+6GhiSAXC9yB3FKw5+h3tw==" crossorigin="anonymous">
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>-->
 	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous"></script>
 	<script type="module" src="https://windowssystemadmin.github.io/research/javascript/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
-	<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-JSPN6pbU8uTwEd5LYTO+KOJQfkl4/IYZ9n7gXfndd5gFRjD3gHAAv0b278CzX2ilt9PuHjeQotAGLpAEMcTm3w==" crossorigin="anonymous"></script>
+	<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-d+mEUXGerIN2eW5pCLQX5n0tvMni0Up5vJdl3FqlXAeKdr9UqlfBTm4AR3qHinrkJ+uvAFVMNM49EE9Y+t3heA==" crossorigin="anonymous"></script>
 		<!--<div id="runningTime"></div>
 	<script>
 		$(document).ready(function() {
@@ -228,16 +230,16 @@ if (isset($_GET['logout'])) {
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>83,047</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>1868680493</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>1907179037</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium"> <span id=Promethium>21,850</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>19,650</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore"> <span id="Mars-Ore">20,250</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>103,437</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>2768680493</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>2807179037</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium"> <span id=Promethium>24,850</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>21,650</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore"> <span id="Mars-Ore">21,850</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.webp" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">19,900</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">10,000</span></td>
-			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" ><span id="Crystallized-Hydrocarbons">N/A</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">21,875</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">15,120</span></td>
+			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" ><span id="Crystallized-Hydrocarbons">11,650</span></td>
 		</tr>
 		<tr>
 			<td class="ba">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/BA/Stone.webp" alt="Stone" title="Stone" > <span id="Stone">152</span>&nbsp;</td>
@@ -353,17 +355,17 @@ if (isset($_GET['logout'])) {
 			<td class="sav">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAV/Herbal_Snack.webp" alt="Herbal Snack" title="Herbal Snack" > <span id="Herbal-Snack">13,900</span>&nbsp;</td>
 			<td class="sav">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAV/Microgreen_Supplement.webp" alt="Microgreen Supplement" title="Microgreen Supplement" > <span id="Microgreen-Supplement">13,900</span>&nbsp;</td>
 			<td class="sav">&nbsp; <img src="https://systemsuser.github.io/research/FoE/images/SAV/Sugar_Crystals.webp" alt="Sugar Crystals" title="Sugar Crystals" > <span id="Sugar-Crystals">14,000</span>&nbsp;</td>
-			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > <span id="Red-Algae">10,900</span>&nbsp;</td>
-			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > <span id="Enhanced-Porifera">10,900</span>&nbsp;</td>
-			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > <span id="Bio-Creatures">10,900</span>&nbsp;</td>
-			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > <span id="Advanced-DNA-Data">10,900</span>&nbsp;</td>
-			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > <span id="Topological-Records">10,900</span>&nbsp;</td>		</tr>
+			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > <span id="Red-Algae">16,165</span>&nbsp;</td>
+			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > <span id="Enhanced-Porifera">16,625</span>&nbsp;</td>
+			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > <span id="Bio-Creatures">16,925</span>&nbsp;</td>
+			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > <span id="Advanced-DNA-Data">15,890</span>&nbsp;</td>
+			<td class="sajm">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > <span id="Topological-Records">16,830</span>&nbsp;</td>		</tr>
 		<tr>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">N/A</span>&nbsp;</td>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">N/A</span>&nbsp;</td>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">N/A</span>&nbsp;</td>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > <span id="Liquid-Binder">N/A</span>&nbsp;</td>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > <span id="Upcycled-Hydrocarbons">N/A</span>&nbsp;</td> </tr>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">12,200</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">12,090</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">11,690</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > <span id="Liquid-Binder">11,895</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > <span id="Upcycled-Hydrocarbons">11,790</span>&nbsp;</td> </tr>
 	</table>
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
@@ -422,8 +424,9 @@ if (isset($_GET['logout'])) {
 			<td class="sajm bold index">
 				<input type="checkbox" name="allsajm" id="allsajm" data-obj='{"depend": [448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,"allsav"]}'>&nbsp;Space Age Jupiter Moon</td>
 			<td class="sat bold index">
-				<input type="checkbox" name="allsat" id="allsat" data-obj='{"depend": [474,"allsajm"]}'>&nbsp;Space Age Titan</td>
-			<td></td>
+				<input type="checkbox" name="allsat" id="allsat" data-obj='{"depend": [474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,"allsajm"]}'>&nbsp;Space Age Titan</td>
+			<td class="sash bold index">
+				<input type="checkbox" name="allsash" id="allsash" data-obj='{"depend":[504,"allsat"]}'>&nbsp;Space Age Space Hub</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -7719,18 +7722,271 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sat bold index">
 			<td>
-				<input type="checkbox" name="474" id="474" data-obj='{"depend":[473],"Bio-Creatures":"0","Enhanced-Porifera":"0","Red-Algae":"0","Unknown-DNA":"0","FP":"700"}'> </td>
+				<input type="checkbox" name="474" id="474" data-obj='{"depend":[473],"Bio-Creatures":"895","Red-Algae":"955","Mars-Ore":"750","Venus-Carbon":"450","FP":"700"}'> </td>
 			<td class="padded">Anomalous Chemicals</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 895</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 950</td>
 			<td class="padded">&nbsp;</td>
-			<td class="padded">&nbsp;</td>
-			<td class="padded">&nbsp;</td>
-			<td class="padded">&nbsp;</td>
-			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 750</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 450</td>
 			<td class="padded">Ionic Drill</td>
-			<td class="padded">Coming Soon!!</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="475" id="475" data-obj='{"depend":[474],"Enhanced-Porifera":"1045","Topological-Records":"895","Orichalcum":"450","Venus-Carbon":"650","FP":"650"}'> </td>
+			<td class="padded">Jupiter Moon Goods Synthesizing I</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 650</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,045</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 895</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 450</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 650</td>
+			<td class="padded">Anomalous Chemicals</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="476" id="476" data-obj='{"depend":[474],"Advanced-DNA-Data":"1010","Red-Algae":"810","Bio-Creatures":"855","Unknown-DNA":"400","FP":"650"}'> </td>
+			<td class="padded">Jupiter Moon Goods Synthesizing II</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 650</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,010</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 810</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 855</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 400</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Anomalous Chemicals</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="477" id="477" data-obj='{"depend":[474],"Advanced-DNA-Data":"880","Red-Algae":"855","Bio-Creatures":"895","Unknown-DNA":"420","FP":"770"}'> </td>
+			<td class="padded">Jupiter Moon Goods Synthesizing III</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 770</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 880</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 855</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 895</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 420</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Anomalous Chemicals</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="478" id="478" data-obj='{"depend":[475,477],"Bio-Creatures":"840","Topological-Records":"860","Promethium":"1180","Orichalcum":"350","FP":"670"}'> </td>
+			<td class="padded">Self-regulating Heat Shield</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 670</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 840</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 860</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 1,180</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 350</td>
+			<td class="padded">Jupiter Moon Goods Synthesizing I
+			<br>Jupiter Moon Goods Synthesizing III</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="479" id="479" data-obj='{"depend":[476,477],"Advanced-DNA-Data":"1110","Red-Algae":"910","Bio-Creatures":"770","Unknown-DNA":"350","FP":"675"}'> </td>
+			<td class="padded">Ultrapure Elements</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 675</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,110</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 910</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 770</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 350</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Jupiter Moon Goods Synthesizing II
+			<br>Jupiter Moon Goods Synthesizing III</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="480" id="480" data-obj='{"depend":[478,479],"Bio-Creatures":"820","Topological-Records":"950","Venus-Carbon":"875","Unknown-DNA":"450","FP":"660"}'> </td>
+			<td class="padded">Negative Purification</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 660</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 820</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 950</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 875</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">Self-regulating Heat Shield
+			<br>Ultrapure Elements</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+	<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="481" id="481" data-obj='{"depend":[478,479],"Advanced-DNA-Data":"1040","Red-Algae":"885","Enhanced-Porifera":"935","Unknown-DNA":"300","FP":"700"}'> </td>
+			<td class="padded">Molecular Enhanced Filter</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,040</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 885</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > 935</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">Self-regulating Heat Shield
+			<br>Ultrapure Elements</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="482" id="482" data-obj='{"depend":[478,479],"Bio-Creatures":"950","Topological-Records":"930","Enhanced-Porifera":"1200","Unknown-DNA":"450","FP":"660"}'> </td>
+			<td class="padded">Extended Periodic Table</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 660</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 950</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 930</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,200</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">Self-regulating Heat Shield
+			<br>Ultrapure Elements</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="483" id="483" data-obj='{"depend":[478,479],"Advanced-DNA-Data":"950","Topological-Records":"1160","Enhanced-Porifera":"1500","Unknown-DNA":"450","FP":"625"}'> </td>
+			<td class="padded">ChemiPro Inc.</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 625</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 950</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 1,160</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,500</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">Self-regulating Heat Shield
+			<br>Ultrapure Elements</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="484" id="484" data-obj='{"depend":[480,481,482],"Red-Algae":"850","Topological-Records":"1135","Promethium":"1250","Mars-Ore":"850","FP":"720"}'> </td>
+			<td class="padded">Permafrost Prevention</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 720</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 850</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Topological_Records.webp" alt="Topological Records" title="Topological Records" > 1,135</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 1,250</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore" > 850</td>
+			<td class="padded">Negative Purification
+			<br>Molecular Enhanced Filter
+			<br>Extended Periodic Table</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="485" id="485" data-obj='{"depend":[481,482,483],"Compressed-Matter-Capsule":"755","Enhanced-Porifera":"1045","Promethium":"570","Unknown-DNA":"500","FP":"675"}'> </td>
+			<td class="padded">Advanced Hydrocarbon Binder</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 675</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 755</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Enhanced_Porifera.webp" alt="Enhanced Porifera" title="Enhanced Porifera" > 1,045</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/AF/Promethium.webp" alt="Promethium" title="Promethium" > 570</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 500</td>
+			<td class="padded">Molecular Enhanced Filter
+			<br>Extended Periodic Table
+			<br>ChemiPro Inc.</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="486" id="486" data-obj='{"depend":[484],"Experimental-Data":"540","Isolated-Molecules":"640","Liquid-Binder":"705","Unknown-DNA":"550","FP":"630"}'> </td>
+			<td class="padded">Extended Pressurizer</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 630</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 540</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 640</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 705</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 550</td>
+			<td class="padded">Permafrost Prevention</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="487" id="487" data-obj='{"depend":[484,485],"Compressed-Matter-Capsule":"695","Upcycled-Hydrocarbons":"890","Liquid-Binder":"750","Crystallized-Hydrocarbons":"250","FP":"800"}'> </td>
+			<td class="padded">Passive Construction 2.0</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 800</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 695</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 890</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 750</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 250</td>
+			<td class="padded">Permafrost Prevention
+			<br>Advanced Hydrocarbon Binder</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="488" id="488" data-obj='{"depend":[485],"Coins":"190000000","Upcycled-Hydrocarbons":"750","Orichalcum":"700","Crystallized-Hydrocarbons":"300","FP":"740"}'> </td>
+			<td class="padded">Chemical XVI</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 740</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 190,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 750</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 700</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 300</td>
+			<td class="padded">Advanced Hydrocarbon Binder</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="489" id="489" data-obj='{"depend":[486,487],"Compressed-Matter-Capsule":"600","Isolated-Molecules":"750","Experimental-Data":"550","Unknown-DNA":"550","FP":"720"}'> </td>
+			<td class="padded">Synthetic Hot Chocolate</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 720</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 600</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 750</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 550</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 450</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Extended Pressurizer
+	 		<br>Passive Construction 2.0</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="490" id="490" data-obj='{"depend":[487,488],"Supplies":"270000000","Liquid-Binder":"790","Upcycled-Hydrocarbons":"700","Crystallized-Hydrocarbons":"250","FP":"710"}'> </td>
+			<td class="padded">Chemical Moral Contract</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 710</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 270,000,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 790</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 250</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Passive Construction 2.0
+			<br>Chemical XVI</td>
+			<td class="padded">&nbsp;</td>
 		</tr>
 	</table>
 </div>
