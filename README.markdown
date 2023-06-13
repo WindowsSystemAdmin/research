@@ -11,6 +11,6 @@ First signs of Space Age Titan is released!. Check it out here:
 - [X] Space Age Asteroid Belt
 - [X] Space Age Venus
 - [X] Space Age Jupiter Moon
-- [ ] Space Age Titan (**In Beta!!**)\
+- [X] Space Age Titan (**In Beta!!**)\
 - [ ] Space Age Space Hub
 Here is the link: (https://forge.system-user.repl.co/index.php)
