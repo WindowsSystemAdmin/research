@@ -364,7 +364,7 @@ if (isset($_GET['logout'])) {
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > <span id="Compressed-Matter-Capsule">12,200</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > <span id="Experimental-Data">12,090</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > <span id="Isolated-Molecules">11,690</span>&nbsp;</td>
-			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > <span id="Liquid-Binder">11,895</span>&nbsp;</td>
+			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > <span id="Liquid-Binder">11,845</span>&nbsp;</td>
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > <span id="Upcycled-Hydrocarbons">11,790</span>&nbsp;</td> </tr>
 	</table>
 	<br>
@@ -7987,6 +7987,226 @@ if (isset($_GET['logout'])) {
 			<td class="padded">Passive Construction 2.0
 			<br>Chemical XVI</td>
 			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="491" id="491" data-obj='{"depend":[489,490],"Compressed-Matter-Capsule":"1000","Experimental-Data":"900","Isolated-Molecules":"750","Unknown-DNA":"700","FP":"720"}'> </td>
+			<td class="padded">Cold Resistant Force Field</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 720</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 1,000</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 900</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 750</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Synthetic Hot Chocolate
+			<br>Chemical Moral Contract</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="492" id="492" data-obj='{"depend":[490],"Coins":"210000000","Liquid-Binder":"950","Experimental-Data":"1000","Orichalcum":"500","FP":"700"}'> </td>
+			<td class="padded">Refined Decrystallization</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 210,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 950</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 1,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum" > 500</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Chemical Moral Contract</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="493" id="493" data-obj='{"depend":[490],"Compressed-Matter-Capsule":"850","Isolated-Molecules":"950","Upcycled-Hydrocarbons":"1000","Crystallized-Hydrocarbons":"350","FP":"700"}'> </td>
+			<td class="padded">Alchemist's Gold Contract</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 850</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 950</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 1,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 350</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Chemical Moral Contract</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="494" id="494" data-obj='{"depend":[491],"Supplies":"300000000","Experimental-Data":"1050","Liquid-Binder":"1050","Crystallized-Hydrocarbons":"400","FP":"740"}'> </td>
+			<td class="padded">Effective Liquefaction</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 740</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 300,000,000</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 1,050</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 1,050</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 400</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Cold Resistant Force Field</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="495" id="495" data-obj='{"depend":[491,492,493],"Compressed-Matter-Capsule":"1200","Isolated-Molecules":"1200","Upcycled-Hydrocarbons":"1000","Crystallized-Hydrocarbons":"400","FP":"700"}'> </td>
+			<td class="padded">Chemical Titan Competition</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 1,200</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 1,200</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 1,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 400</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Cold Resistant Force Field
+			<br>Refined Decrystallization
+			<br>Alchemist's Gold Contract</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="496" id="496" data-obj='{"depend":[492,493],"Compressed-Matter-Capsule":"1000","Experimental-Data":"900","Isolated-Molecules":"1350","Crystallized-Hydrocarbons":"550","FP":"760"}'> </td>
+			<td class="padded">Synthetization Law</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 760</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 1,000</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 900</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 1,350</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 550</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Refined Decrystallization
+			<br>Alchemist's Gold Contract</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="497" id="497" data-obj='{"depend":[494,495],"Coins":"250000000","Experimental-Data":"1450","Upcycled-Hydrocarbons":"850","Crystallized-Hydrocarbons":"600","FP":"770"}'> </td>
+			<td class="padded">Optic Fiber 2.0</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 770</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 250,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 1,450</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 850</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 600</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Effective Liquefaction
+	 		<br>Chemical Titan Competition</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="498" id="498" data-obj='{"depend":[494,495,496],"Supplies":"330000000","Upcycled-Hydrocarbons":"1850","Liquid-Binder":"1350","Crystallized-Hydrocarbons":"750","FP":"740"}'> </td>
+			<td class="padded">Purified Additives</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 740</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > 330,000,000</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 1,850</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 1,350</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 750</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Effective Liquefaction
+	 		<br>Chemical Titan Competition
+			<br>Synthetization Law</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="499" id="499" data-obj='{"depend":[497],"Coins":"250000000","Experimental-Data":"1250","Isolated-Molecules":"1900","Crystallized-Hydrocarbons":"950","FP":"730"}'> </td>
+			<td class="padded">Modular Pocket Reactor</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 770</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" > 250,000,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 1,250</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 1,900</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 950</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Optic Fiber 2.0</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="500" id="500" data-obj='{"depend":[497,498],"Compressed-Matter-Capsule":"1900","Upcycled-Hydrocarbons":"2000","Liquid-Binder":"1950","Crystallized-Hydrocarbons":"1250","FP":"750"}'> </td>
+			<td class="padded">Antifreeze Skincare</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 750</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 1,900</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 2,000</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 1,950</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 1,250</td>
+			<td class="padded">Optic Fiber 2.0
+			<br>Purified Additives</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="501" id="501" data-obj='{"depend":[498],"Experimental-Data":"1900","Isolated-Molecules":"1950","Liquid-Binder":"2300","Crystallized-Hydrocarbons":"1500","FP":"720"}'> </td>
+			<td class="padded">Biosensor</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 720</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 1,900</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 1,950</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 2,300</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 1,500</td>
+			<td class="padded">Purified Additives</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="502" id="502" data-obj='{"depend":[499,500,501],"Compressed-Matter-Capsule":"2000","Upcycled-Hydrocarbons":"2750","Liquid-Binder":"2000","Crystallized-Hydrocarbons":"1750","FP":"675"}'> </td>
+			<td class="padded">Crystal Data Storage</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 675</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 2,000</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > 2,750</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Liquid_Binder.webp" alt="Liquid Binder" title="Liquid Binder" > 2,000</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 1,750</td>
+			<td class="padded">Modular Pocket Reactor
+			<br>Antifreeze Skincare
+			<br>Biosensor</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sat bold index">
+			<td>
+				<input type="checkbox" name="503" id="503" data-obj='{"depend":[502],"Compressed-Matter-Capsule":"2200","Experimental-Data":"2550","Isolated-Molecules":"2200","Crystallized-Hydrocarbons":"2350","FP":"630"}'> </td>
+			<td class="padded">Synthetic A.I. 0.1</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 630</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Compressed_Matter_Capsule.webp" alt="Compressed Matter Capsule" title="Compressed Matter Capsule" > 2,200</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Experimental_Data.webp" alt="Experimental Data" title="Experimental Data" > 2,550</td>
+			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Isolated_Molecules.webp" alt="Isolated Molecules" title="Isolated Molecules" > 2,200</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" > 2,350</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Crystal Data Storage</td>
+			<td class="padded">&nbsp;</td>
+		</tr>
+		<tr class="sash bold index">
+			<td>
+				<input type="checkbox" name="504" id="504" data-obj='{"depend":[503],"Compressed-Matter-Capsule":"0","Experimental-Data":"0","Isolated-Molecules":"0","Crystallized-Hydrocarbons":"0","FP":"700"}'> </td>
+			<td class="padded">Titan Goods Synthesizing I</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">&nbsp;</td>
+			<td class="padded">Synthetic A.I. 0.1</td>
+			<td class="padded">Coming soon!!</td>
 		</tr>
 	</table>
 </div>
