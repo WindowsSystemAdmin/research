@@ -154,6 +154,8 @@ if (isset($_GET['logout'])) {
 <br>
 		
 <?php
+    echo "Everything below is for your reference and is not stored or visible to anyone but you.👌";
+    echo "<br>";
 	echo "Your IP Address is: ";
 	echo ini_get('session.save_path');
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
