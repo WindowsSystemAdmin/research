@@ -3,14 +3,14 @@
 
 # Research
 A HTML site that will allow you to track your progress on the research tree in Forge of Empires!\
-First signs of Space Age Titan is released!. Check it out here:
-[Space Age Titan (actual spoilers!)](https://forum.beta.forgeofempires.com/index.php?threads/space-age-titan.16321/) <br>
+Space Age Titan is released on live servers!!. Check it out here:
+[Space Age Titan (Feature Update!)](https://forum.us.forgeofempires.com/index.php?threads/space-age-titan.45420/) <br>
 **Current ages needed to be added are below:** 
 - [X] Virtual Future
 - [X] Space Age Mars
 - [X] Space Age Asteroid Belt
 - [X] Space Age Venus
 - [X] Space Age Jupiter Moon
-- [X] Space Age Titan (**In Beta!!**)\
+- [X] Space Age Titan
 - [ ] Space Age Space Hub
 Here is the link: (https://forge.system-user.repl.co/index.php)
