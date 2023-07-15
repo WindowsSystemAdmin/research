@@ -1,8 +1,5 @@
 <?php
-// PHP Data Objects(PDO) Sample Code:
 
-
-// My session start function support timestamp management
 function my_session_start() {
     session_start();
     // Do not allow to use too old session ID
@@ -30,6 +27,9 @@ function my_session_regenerate_id() {
     ini_set('session.use_strict_mode', 0);
     // Set new custom session ID
     session_id($newid);
+		$sql = 'INSERT INTO datahold(session_id) VALUES ($newid)';  
+
+
     // Start with custom session ID
     session_start();
 }
@@ -56,45 +56,9 @@ if (isset($_GET['logout'])) {
 <html lang="en-GB">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Ads: 10892806425 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10892806425"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-10892806425');
-</script>
-	<!-- Event snippet for Website traffic conversion page -->
-<script>
-  gtag('event', 'conversion', {'send_to': 'AW-10892806425/0wwvCOrg67cDEJmSjMoo'});
-</script>
-
-	<!-- Google Tag Manager -->
-	<script>
-		(function(w,d,s,l,i)
-		 {
-			w[l]=w[l]||[];
-			w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-			var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-			j.async=true;
-			j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		 }
-		)
-		(window,document,'script','dataLayer','GTM-PXD833K');
-		var userAgentString = navigator.userAgentData; // returns userAgent string
-		window.ga=window.ga||function(){
-			(ga.q=ga.q||[]).push(arguments)};
-		ga.l=+new Date;
-        ga('create', 'GTM-PXD833K', 'auto');
-        ga('send', 'pageview');
-        ga('send', 'event','geo');
-	</script>
-	<!-- End Google Tag Manager -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9RHNLBXEZ"></script>
 	<script>
-	
   window.dataLayer = window.dataLayer || [];
   function gtag(){
 		dataLayer.push(arguments);
@@ -102,8 +66,23 @@ if (isset($_GET['logout'])) {
   gtag('js', new Date());
 
   gtag('config', 'G-X9RHNLBXEZ');
-	//gtag('event','geo');
+	gtag('event', 'page_view', {
+	'user_agent': navigator.userAgent
+	});
 	</script>
+	<p>
+    <a href="logout.php?logout='1'" style="color: red;">
+        Click here to Logout!
+    </a>
+  </p>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<script src="https://windowssystemadmin.github.io/research/javascript/topofpage.js" integrity="sha512-3yOdbW1ajz21btuJAy63u1ZGi57P1UUeJ861Bdfk59C3BhCPqrr7R6qmb68ark9VRzGE/gPjKSRIKLAnh7huNw==" crossorigin="anonymous"></script>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
 	<title>Research List - Checklist</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
@@ -127,7 +106,7 @@ if (isset($_GET['logout'])) {
 }
 </script>-->
 <script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-rWZItmIZ8c+NWNNre/4tX1EeUkf3f4hv4yuAmD96xdBJyzgccfIDluCL4SHRDS6POFCQfbG8jqT8oHsb0BQYHw==" crossorigin="anonymous"></script>
-	<script>
+	<!--<script>
 		var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
     	$checkboxes = $("#data1 :checkbox");
 
@@ -144,7 +123,7 @@ if (isset($_GET['logout'])) {
 		$.each(checkboxValues, function(key, value) {
   		$("#" + key).prop('checked', true);
 		});
-	</script>
+	</script>-->
 </head>
 
 <body onload="checkCookie()"> 
@@ -154,8 +133,8 @@ if (isset($_GET['logout'])) {
 <br>
 		
 <?php
-    echo "Everything below is for your reference and is not stored or visible to anyone but you.👌";
-    echo "<br>";
+  echo "Everything below is for your reference and is not stored or visible to anyone but you.👌";
+  echo "<br>";
 	echo "Your IP Address is: ";
 	echo ini_get('session.save_path');
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
@@ -168,23 +147,51 @@ if (isset($_GET['logout'])) {
 	$json =  file_get_contents('http://ip-api.com/json/'.$ip.'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
 	$ipData = json_decode($json,true);
 	echo "<br>";
-	echo "You are located in $ipData[city], $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+	$json2 = file_get_contents('http://www.yaddress.net/api/Address?AddressLine1=&AddressLine2='."$ipData[zip]".'&UserKey=');
+	$ipData2 = json_decode($json2,true);
+	$zip = "$ipData[zip]";
+$response = file_get_contents('https://app.zipcodebase.com/api/v1/search?apikey=0ff83f50-22a7-11ee-b02e-df85d3f7b743&codes='."$ipData[zip]".'&country='."$ipData[countryCode]".'');
+//$response = '{"query":{"codes":["32317"],"country":"US"},"results":{"10123":[{"postal_code":"32317","country_code":"US","latitude":"30.46510000","longitude":"-84.11280000","city":"Tallahassee","state":"Florida","city_en":"Tallahassee","state_en":"Florida","state_code":"FL","province":"Leon","province_code":"073"}]}}';
+$ipData3 = json_decode($response,true);
+
+
+	if ("$ipData[regionName]" == "Louisiana" && "$ipData[country]" == "United States"){
+		echo "You are located in ";
+		echo "$ipData[city]";
+		echo ",";
+		echo " ";
+		echo $ipData3["results"]["$zip"][0]["province"];
+		echo " Parish, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+	}
+	elseif ("$ipData[regionName]" != "Louisiana" && "$ipData[country]" == "United States"){
+		echo "You are located in ";
+		echo "$ipData[city]";
+		echo ",";
+		echo " ";
+		echo $ipData3["results"]["$zip"][0]["province"];
+		echo " County, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+	}
+	else{
+		echo "You are located in ";
+		echo $ipData[city];
+		echo ",";
+		echo " ";
+		echo $ipData3["results"]["$zip"][0]["province"];
+		echo ", $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+	}
 	echo "<br>";
-	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as].";
+	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as], your AS name is $ipData[asname].";
+		echo "<br>";
+	if ("$ipData[mobile]" != 1){
+		echo "You are not using celluar data.";
+	}
+	else{
+		echo "You are using cellular data.";
+	}
  ?>
-	<p>
-    <a href="logout.php?logout='1'" style="color: red;">
-        Click here to Logout!
-    </a>
-  </p>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<script src="https://windowssystemadmin.github.io/research/javascript/topofpage.js" integrity="sha512-3yOdbW1ajz21btuJAy63u1ZGi57P1UUeJ861Bdfk59C3BhCPqrr7R6qmb68ark9VRzGE/gPjKSRIKLAnh7huNw==" crossorigin="anonymous"></script>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
 	<script>
+		var city = "<?php echo"$ipData[city]"?>";
+		
 		$(document).ready(function() {
 			$('input[type=checkbox]').change(function (event) {
 				$e = $(event.target);
@@ -225,7 +232,24 @@ if (isset($_GET['logout'])) {
 			});
 		});
 	</script>
-	
+	<!--<script>
+		$(document).ready(function() {
+  $('#data1 tr').each(function() {
+    if( $(this.id).is(':checked') ){
+    alert("Checkbox Is checked. $(this.id)");
+}
+else{
+    alert("Checkbox Is not checked");
+};
+  })
+});
+		if( $('#data1').is(':checked') ){
+    alert("Checkbox Is checked");
+}
+else{
+    alert("Checkbox Is not checked");
+};
+</script>-->
 	<br>
 	<table style="margin: 0 auto;vertical-align: middle;">
 		<tr>
@@ -241,8 +265,8 @@ if (isset($_GET['logout'])) {
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/OF/Orichalcum.webp" alt="Orichalcum" title="Orichalcum"> <span id=Orichalcum>21,650</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAM/Mars_Ore.webp" alt="Mars Ore" title="Mars Ore"> <span id="Mars-Ore">21,850</span></td>
 			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAAB/Asteroid_Ice.webp" alt="Asteroid Ice" title="Asteroid Ice" > <span id="Asteroid-Ice">22,150</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">21,875</span></td>
-			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">15,120</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > <span id="Venus-Carbon">23,045</span></td>
+			<td colspan=1><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > <span id="Unknown-DNA">13,950</span></td>
 			<td colspan=1><img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Crystallized_Hydrocarbons.webp" alt="Crystallized Hydrocarbons" title="Crystallized Hydrocarbons" ><span id="Crystallized-Hydrocarbons">11,650</span></td>
 		</tr>
 		<tr>
@@ -372,7 +396,8 @@ if (isset($_GET['logout'])) {
 			<td class="sat">&nbsp; <img src="https://windowssystemadmin.github.io/research/FoE/images/SAT/Upcycled_Hydrocarbons.webp" alt="Upcycled Hydrocarbons" title="Upcycled Hydrocarbons" > <span id="Upcycled-Hydrocarbons">11,790</span>&nbsp;</td> </tr>
 	</table>
 	<br>
-	<table style="margin: 0 auto;vertical-align: middle;">
+	<form action="submit.php" method="post" enctype="multipart/form-data">  
+	<table style="margin: 0 auto;vertical-align: middle;" id="data1">
 		<tr>
 			<td class="padded bold" colspan="5">Fully Completed Research Eras</td>
 		</tr>
@@ -436,7 +461,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 	</table>
 	<br>
-	<table style="margin: 0 auto;vertical-align: middle;" id="data1">
+	<table style="margin: 0 auto;vertical-align: middle;">
 		<tr>
 			<td class="padded bold" colspan="12">Tech Tree</td>
 		</tr>
@@ -7756,7 +7781,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sat bold index">
 			<td>
-				<input type="checkbox" name="476" id="476" data-obj='{"depend":[474],"Advanced-DNA-Data":"1010","Red-Algae":"810","Bio-Creatures":"855","Unknown-DNA":"400","FP":"650"}'> </td>
+				<input type="checkbox" name="476" id="476" data-obj='{"depend":[474],"Advanced-DNA-Data":"1010","Red-Algae":"810","Bio-Creatures":"855","Venus-Carbon":"400","FP":"650"}'> </td>
 			<td class="padded">Jupiter Moon Goods Synthesizing II</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 650</td>
 			<td class="padded">&nbsp;</td>
@@ -7764,14 +7789,14 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,010</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 810</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 855</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 400</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 400</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Anomalous Chemicals</td>
 			<td class="padded">&nbsp;</td>
 		</tr>
 		<tr class="sat bold index">
 			<td>
-				<input type="checkbox" name="477" id="477" data-obj='{"depend":[474],"Advanced-DNA-Data":"880","Red-Algae":"855","Bio-Creatures":"895","Unknown-DNA":"420","FP":"770"}'> </td>
+				<input type="checkbox" name="477" id="477" data-obj='{"depend":[474],"Advanced-DNA-Data":"880","Red-Algae":"855","Bio-Creatures":"895","Venus-Carbon":"420","FP":"770"}'> </td>
 			<td class="padded">Jupiter Moon Goods Synthesizing III</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 770</td>
 			<td class="padded">&nbsp;</td>
@@ -7779,7 +7804,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 880</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 855</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 895</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 420</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 420</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Anomalous Chemicals</td>
 			<td class="padded">&nbsp;</td>
@@ -7802,7 +7827,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 		<tr class="sat bold index">
 			<td>
-				<input type="checkbox" name="479" id="479" data-obj='{"depend":[476,477],"Advanced-DNA-Data":"1110","Red-Algae":"910","Bio-Creatures":"770","Unknown-DNA":"350","FP":"675"}'> </td>
+				<input type="checkbox" name="479" id="479" data-obj='{"depend":[476,477],"Advanced-DNA-Data":"1110","Red-Algae":"910","Bio-Creatures":"770","Venus-Carbon":"350","FP":"675"}'> </td>
 			<td class="padded">Ultrapure Elements</td>
 			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 675</td>
 			<td class="padded">&nbsp;</td>
@@ -7810,7 +7835,7 @@ if (isset($_GET['logout'])) {
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Advanced_DNA_Data.webp" alt="Advanced DNA Data" title="Advanced DNA Data" > 1,110</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Red_Algae.webp" alt="Red Algae" title="Red Algae" > 910</td>
 			<td class="padded"><img src="https://windowssystemadmin.github.io/research/FoE/images/SAJM/Bio_Creatures.webp" alt="Bio Creatures" title="Bio Creatures" > 770</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAJM/Unknown_DNA.webp" alt="Unknown DNA" title="Unknown DNA" > 350</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/SAV/Venus_Carbon.webp" alt="Venus Carbon" title="Venus Carbon" > 350</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">Jupiter Moon Goods Synthesizing II
 			<br>Jupiter Moon Goods Synthesizing III</td>
@@ -8214,5 +8239,7 @@ if (isset($_GET['logout'])) {
 		</tr>
 	</table>
 </div>
+</form>
+<input type="submit" value="Submit" name="sub"></td>
 </body>
 </html>
