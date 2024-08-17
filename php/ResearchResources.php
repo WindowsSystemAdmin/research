@@ -1,37 +1,37 @@
 <?php
-
+header("accept-ch: Sec-Ch-Ua-Platform,Sec-Ch-Ua-Platform-Version");
 function my_session_start() {
-    session_start();
-    // Do not allow to use too old session ID
-    if (!empty($_SESSION['deleted_time']) && $_SESSION['deleted_time'] < time() - 180) {
-        session_destroy();
-        session_start();
-    }
+		session_start();
+		// Do not allow to use too old session ID
+		if (!empty($_SESSION['deleted_time']) && $_SESSION['deleted_time'] < time() - 180) {
+				session_destroy();
+				session_start();
+		}
 }
 
 // My session regenerate id function
 function my_session_regenerate_id() {
-    // Call session_create_id() while session is active to 
-    // make sure collision free.
-    if (session_status() != PHP_SESSION_ACTIVE) {
-        session_start();
-    }
-    // WARNING: Never use confidential strings for prefix!
-    $newid = session_create_id('GOV-');
-    // Set deleted timestamp. Session data must not be deleted immediately for reasons.
-    $_SESSION['deleted_time'] = time();
-    // Finish session
-    session_commit();
-    // Make sure to accept user defined session ID
-    // NOTE: You must enable use_strict_mode for normal operations.
-    ini_set('session.use_strict_mode', 0);
-    // Set new custom session ID
-    session_id($newid);
+		// Call session_create_id() while session is active to 
+		// make sure collision free.
+		if (session_status() != PHP_SESSION_ACTIVE) {
+				session_start();
+		}
+		// WARNING: Never use confidential strings for prefix!
+		$newid = session_create_id('GOV-');
+		// Set deleted timestamp. Session data must not be deleted immediately for reasons.
+		$_SESSION['deleted_time'] = time();
+		// Finish session
+		session_commit();
+		// Make sure to accept user defined session ID
+		// NOTE: You must enable use_strict_mode for normal operations.
+		ini_set('session.use_strict_mode', 0);
+		// Set new custom session ID
+		session_id($newid);
 		$sql = 'INSERT INTO datahold(session_id) VALUES ($newid)';  
 
 
-    // Start with custom session ID
-    session_start();
+		// Start with custom session ID
+		session_start();
 }
 
 // Make sure use_strict_mode is enabled.
@@ -48,147 +48,115 @@ my_session_regenerate_id();
 // Write useful codes
 
 if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['deleted_time']);
-    header("location: index.php");
+		session_destroy();
+		unset($_SESSION['deleted_time']);
+		header("location: index.php");
 }?>
-<!DOCTYPE html>
-<html lang="en-GB">
-
-<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9RHNLBXEZ"></script>
-	<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){
-		dataLayer.push(arguments);
-	}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X9RHNLBXEZ');
-	gtag('event', 'page_view', {
-	'user_agent': navigator.userAgent
-	});
-	</script>
-	<p>
-    <a href="logout.php?logout='1'" style="color: red;">
-        Click here to Logout!
-    </a>
-  </p>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	<script src="https://windowssystemadmin.github.io/research/javascript/topofpage.js" integrity="sha512-3yOdbW1ajz21btuJAy63u1ZGi57P1UUeJ861Bdfk59C3BhCPqrr7R6qmb68ark9VRzGE/gPjKSRIKLAnh7huNw==" crossorigin="anonymous"></script>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript>
-		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PXD833K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-	</noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-	<title>Research List - Checklist</title>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
-	<link rel="stylesheet" href="https://research.system-user.repl.co/style.css" integrity="sha512-lN7dAmgwsbfo9kzLaocSRfYiDHI4PMIHyyzMMNL1lyKS0apQchBrJJSlirnza3Nq+6GhiSAXC9yB3FKw5+h3tw==" crossorigin="anonymous">
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>-->
-	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous"></script>
-	<script type="module" src="https://windowssystemadmin.github.io/research/javascript/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
-	<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-d+mEUXGerIN2eW5pCLQX5n0tvMni0Up5vJdl3FqlXAeKdr9UqlfBTm4AR3qHinrkJ+uvAFVMNM49EE9Y+t3heA==" crossorigin="anonymous"></script>
-		<!--<div id="runningTime"></div>
-	<script>
-		$(document).ready(function() {
- 		setInterval(runningTime, 1000);
-		});
-		function runningTime() {
-  	$.ajax({
-    url: 'time.php',
-    success: function(data) {
-       $('#runningTime').html(data);
-     },
-  });
-}
-</script>-->
-<script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-rWZItmIZ8c+NWNNre/4tX1EeUkf3f4hv4yuAmD96xdBJyzgccfIDluCL4SHRDS6POFCQfbG8jqT8oHsb0BQYHw==" crossorigin="anonymous"></script>
-	<!--<script>
-		var checkboxValues = JSON.parse(localStorage.getItem('checkboxValues')) || {},
-    	$checkboxes = $("#data1 :checkbox");
-
-		$checkboxes.on("change", function(){
-  		$checkboxes.each(function(){
-    		checkboxValues[this.id] = this.checked;
-  		});
-  
-  		localStorage.setItem("checkboxValues", JSON.stringify(checkboxValues));
-		});
-
-// On page load
-	
-		$.each(checkboxValues, function(key, value) {
-  		$("#" + key).prop('checked', true);
-		});
-	</script>-->
-</head>
+	<!DOCTYPE html>
+	<html lang="en-GB">
+	<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-X9RHNLBXEZ"></script>
+			<script>
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					gtag('js', new Date());
+					gtag('config', 'G-X9RHNLBXEZ');
+					gtag('event', 'page_view', {'user_agent': navigator.userAgent});
+			</script>
+			<title>Research List - Checklist</title>
+			<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+			<link rel="shortcut icon" href="https://foeus.innogamescdn.com/favicon.ico?946cdd8b" type="image/x-icon">
+		<link rel="stylesheet" href="https://windowssystemadmin.github.io/research/style.css" integrity="sha512-lN7dAmgwsbfo9kzLaocSRfYiDHI4PMIHyyzMMNL1lyKS0apQchBrJJSlirnza3Nq+6GhiSAXC9yB3FKw5+h3tw==" crossorigin="anonymous">
+			<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous"></script>
+			<script type="module" src="https://windowssystemadmin.github.io/research/javascript/jquery.numberformatter-1.2.4.js" integrity="sha512-PGloC036YTkSagJj9KWqc3qUehAgB8axq+Ca68wiwMVwIg8TbNCdtWR9/d0Y0LswNDQNZtHnlrfRzfYmUSp8aQ==" crossorigin="anonymous"></script>
+			<script src="https://windowssystemadmin.github.io/research/javascript/cookies.js" integrity="sha512-d+mEUXGerIN2eW5pCLQX5n0tvMni0Up5vJdl3FqlXAeKdr9UqlfBTm4AR3qHinrkJ+uvAFVMNM49EE9Y+t3heA==" crossorigin="anonymous"></script>
+			<script src="https://windowssystemadmin.github.io/research/javascript/hashtable.js" integrity="sha512-rWZItmIZ8c+NWNNre/4tX1EeUkf3f4hv4yuAmD96xdBJyzgccfIDluCL4SHRDS6POFCQfbG8jqT8oHsb0BQYHw==" crossorigin="anonymous"></script>
+			<!-- Other <meta>, <link>, or <script> elements as needed -->
+	</head>
 
 <body onload="checkCookie()"> 
+	<!-- Content elements like <p>, <a>, and <button> should go here -->
+		<p>
+				<a href="logout.php?logout='1'" style="color: red;">
+						Click here to Logout!
+				</a>
+		</p>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<div id="checkbox-container">
 
 
 <br>
 		
-<?php
-  echo "Everything below is for your reference and is not stored or visible to anyone but you.👌";
-  echo "<br>";
-	echo "Your IP Address is: ";
-	echo ini_get('session.save_path');
-	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-    echo $ip = $_SERVER['HTTP_CLIENT_IP'];
-	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-    echo $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-	} else {
-    echo $ip = $_SERVER['REMOTE_ADDR'];
-	}
-	$json =  file_get_contents('http://ip-api.com/json/'.$ip.'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
-	$ipData = json_decode($json,true);
-	echo "<br>";
-	$json2 = file_get_contents('http://www.yaddress.net/api/Address?AddressLine1=&AddressLine2='."$ipData[zip]".'&UserKey=');
-	$ipData2 = json_decode($json2,true);
-	$zip = "$ipData[zip]";
-$response = file_get_contents('https://app.zipcodebase.com/api/v1/search?apikey=0ff83f50-22a7-11ee-b02e-df85d3f7b743&codes='."$ipData[zip]".'&country='."$ipData[countryCode]".'');
-//$response = '{"query":{"codes":["32317"],"country":"US"},"results":{"10123":[{"postal_code":"32317","country_code":"US","latitude":"30.46510000","longitude":"-84.11280000","city":"Tallahassee","state":"Florida","city_en":"Tallahassee","state_en":"Florida","state_code":"FL","province":"Leon","province_code":"073"}]}}';
-$ipData3 = json_decode($response,true);
+		<?php
+		echo "Everything below is for your reference and is not stored or visible to anyone but you.👌<br>";
+		// Attempt to get the client's IP address from HTTP_X_FORWARDED_FOR
+		if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+				// Get the first IP address from HTTP_X_FORWARDED_FOR
+				$ips = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+				$ip = trim($ips[0]); // Assuming the first IP is the client's real IP
+		} else {
+				// Fallback to REMOTE_ADDR if HTTP_X_FORWARDED_FOR is not available
+				$ip = $_SERVER['REMOTE_ADDR'];
+		}
 
+		echo "IP Address: $ip<br>";
 
-	if ("$ipData[regionName]" == "Louisiana" && "$ipData[country]" == "United States"){
-		echo "You are located in ";
-		echo "$ipData[city]";
-		echo ",";
-		echo " ";
-		echo $ipData3["results"]["$zip"][0]["province"];
-		echo " Parish, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
-	}
-	elseif ("$ipData[regionName]" != "Louisiana" && "$ipData[country]" == "United States"){
-		echo "You are located in ";
-		echo "$ipData[city]";
-		echo ",";
-		echo " ";
-		echo $ipData3["results"]["$zip"][0]["province"];
-		echo " County, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
-	}
-	else{
-		echo "You are located in ";
-		echo $ipData[city];
-		echo ",";
-		echo " ";
-		echo $ipData3["results"]["$zip"][0]["province"];
-		echo ", $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
-	}
-	echo "<br>";
-	echo "Your internet service provider (ISP) is $ipData[isp], your organisation name is $ipData[org], and the AS number and organisation name is $ipData[as], your AS name is $ipData[asname].";
-		echo "<br>";
-	if ("$ipData[mobile]" != 1){
-		echo "You are not using celluar data.";
-	}
-	else{
-		echo "You are using cellular data.";
-	}
- ?>
+		// Attempt to get geolocation data
+		$json = file_get_contents('http://ip-api.com/json/'.$ip.'?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,district,zip,lat,lon,timezone,offset,currency,isp,org,as,asname,reverse,mobile,proxy,hosting,query');
+		$ipData = json_decode($json, true);
+
+		if (!empty($ipData) && isset($ipData['zip']) && isset($ipData['countryCode'])) {
+				$zip = $ipData['zip'];
+				// Proceed with additional API calls using $zip and $ipData['countryCode']
+				// For example:
+				$response = file_get_contents('https://app.zipcodebase.com/api/v1/search?apikey=0ff83f50-22a7-11ee-b02e-df85d3f7b743&codes='.$zip.'&country='.$ipData['countryCode']);
+				$ipData3 = json_decode($response, true);
+
+				// Additional code for using $ipData and $ipData3
+				if (isset($ipData['regionName'], $ipData['country'])) {
+						if ($ipData['regionName'] == "Louisiana" && $ipData['country'] == "United States") {
+							echo "You are located in ";
+							echo "$ipData[city]";
+							echo ",";
+							echo " ";
+							echo $ipData3["results"]["$zip"][0]["province"];
+							echo " Parish, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+						}
+					elseif ("$ipData[regionName]" != "Louisiana" && "$ipData[country]" == "United States"){
+						echo "You are located in ";
+						echo "$ipData[city]";
+						echo ",";
+						echo " ";
+						echo $ipData3["results"]["$zip"][0]["province"];
+						echo " County, $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+					}
+					else{
+						echo "You are located in ";
+						echo $ipData[city];
+						echo ",";
+						echo " ";
+						echo $ipData3["results"]["$zip"][0]["province"];
+						echo ", $ipData[regionName], $ipData[country], $ipData[continent], $ipData[zip].";
+					}
+				}
+		} else {
+				echo "Geolocation data is not available.<br>";
+		}
+
+		// Check and use $ipData['isp'], $ipData['org'], etc., with similar checks
+		if (isset($ipData['isp'], $ipData['org'])) {
+				echo "Your internet service provider (ISP) is " . $ipData['isp'] . ", your organisation name is " . $ipData['org'] . ".<br>";
+		}
+
+		// Handle cellular data information
+		if (isset($ipData['mobile']) && $ipData['mobile']) {
+				echo "You are using cellular data.<br>";
+		} else {
+				echo "You are not using cellular data.<br>";
+		}
+		?>
+
 	<script>
 		var city = "<?php echo"$ipData[city]"?>";
 		
@@ -256,7 +224,7 @@ else{
 			<td class="padded bold" colspan="10">Resources Required for Remaining Research</td>
 		</tr>
 		<tr>
-			<td colspan=3><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>104,137</span></td>
+			<td colspan=3><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" ><span id=FP>107,302</span></td>
 			<td colspan=3><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Coins.webp" alt="Coins" title="Coins" ><span id=Coins>2,768,680,493</span></td>
 			<td colspan=3><img src="https://windowssystemadmin.github.io/research/FoE/images/Resources/Supplies.webp" alt="Supplies" title="Supplies" > <span id=Supplies>2,807,179,037</span></td>
 		</tr>
@@ -8224,9 +8192,9 @@ else{
 		</tr>
 		<tr class="sash bold index">
 			<td>
-				<input type="checkbox" name="504" id="504" data-obj='{"depend":[503],"Compressed-Matter-Capsule":"0","Experimental-Data":"0","Isolated-Molecules":"0","Crystallized-Hydrocarbons":"0","FP":"700"}'> </td>
-			<td class="padded">Titan Goods Synthesizing I</td>
-			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 700</td>
+				<input type="checkbox" name="504" id="504" data-obj='{"depend":[503],"Compressed-Matter-Capsule":"0","Experimental-Data":"0","Isolated-Molecules":"0","Crystallized-Hydrocarbons":"0","FP":"3865"}'> </td>
+			<td class="padded">Cryobiology Funding</td>
+			<td class="padded"><img src="https://systemsuser.github.io/research/FoE/images/Resources/FP.webp" alt="Forge Points" title="Forge Points" > 3865</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
 			<td class="padded">&nbsp;</td>
